@@ -19,3 +19,16 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+collections:
+  news:
+    output: true
+    permalink: /news/:year/:month/:day/:title.html
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "post"
