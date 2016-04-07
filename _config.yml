@@ -25,6 +25,10 @@ collections:
     output: true
     permalink: /news/:year/:month/:day/:title.html
 
+  people:
+    output: true
+    permalink: /people/:path/
+
 defaults:
   -
     scope:
@@ -32,3 +36,9 @@ defaults:
       type: "news"
     values:
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: "people"
+    values:
+      layout: "person"

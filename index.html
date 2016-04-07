@@ -7,7 +7,7 @@ layout: default
   <h1 class="page-heading">News</h1>
   <ul>
   {% for item in site.news %}
-    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+  <li><a href="{{ item.url }}">{{ item.title }}</a>( {{ item.location }}) </li>
   {% endfor %}
   </ul>
 
