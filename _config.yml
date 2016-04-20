@@ -35,9 +35,6 @@ collections:
     output: true
     permalink: /:collection/:path/
  
-  sponsors:
-    output: true
-    permalink: /:collection/:path/
 
 defaults:
   -
