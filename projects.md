@@ -17,6 +17,7 @@ permalink: /projects/
            {{ project.category }} <br><br>
            {{ project.blurb }} <br><br>
        <small>Read more about <a href="{{ project.permalink }}">{{ project.name}}</a>. </small><br><br>
+       <a href="https://github.com/systemslab/systemslab.github.io/edit/master/{{project.path}}" target="_blank"> Edit {{project.name}}</a>
         </p>
         </div>
   {% endfor %}

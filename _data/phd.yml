@@ -4,7 +4,9 @@
 
 - name: Ivo Jimenez
   email: ivo@soe.ucsc.edu
+  offsite: true
   permalink: http://users.soe.ucsc.edu/~ivo/
+  
   blurb: I’m a 3rd year PhD student at the UCSC Computer Science Department. I’m a member of the Systems Research Lab, advised by Professor Carlos Maltzahn. Currently, I’m a collaborator of the DAMASC project, investigating ways of fusing data management services with file systems.
 
 
