@@ -2,6 +2,46 @@
 layout: default
 ---
 
+<!-- MDL grid -->
+<div class="mdl-grid portfolio-max-width">
+    {% for item in site.news %}
+      <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+          <div class="mdl-card__media">
+              <img class="article-image" src="images/example-work01.jpg" border="0" alt="">
+          </div>
+          <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">{{item.title}}</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+              {{ post.excerpt }}
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ item.url }}">Read more</a>
+          </div>
+      </div>
+    {% endfor %}
+
+    <!-- Event card -->
+    {% for event in site.events %}
+      <div class="demo-card-event mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp portfolio-blog-card-event-bg mdl-color-text--white">
+          <div class="mdl-card__title mdl-card--expand">
+              <h4 class="mdl-color-text--white">
+                {{ event.name }}<br><br>
+                {{ event.date | date: "%b %-d, %Y" }}<br>
+              </h4>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+              <div class="mdl-layout-spacer"></div>
+              <i class="material-icons ">event</i>
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" href="http://www.google.com/calendar/event?action=TEMPLATE&text={{event.name}}&dates={20131124T010000Z/20131124T020000Z}&details=Event%20Details%20Here&location=123%20Main%20St%2C%20Example%2C%20NY">
+                Add to Calendar
+              </a>
+          </div>
+      </div>
+    {% endfor %}
+</div>
+
+<!--
 <div class="home">
 
   <h1 class="page-heading">News</h1>
@@ -29,3 +69,4 @@ layout: default
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
+-->

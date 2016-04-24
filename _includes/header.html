@@ -1,20 +1,16 @@
-<!-- Uses a header that scrolls with the text, rather than staying locked at the top -->
-<header class="mdl-layout__header mdl-layout__header--scroll">
-  <div class="mdl-layout__header-row">
-    
+<header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
     <!-- Title -->
-    <span class="mdl-layout-title">{{ site.title }}</span>
-    
-    <!-- Add spacer, to align navigation to the right -->
-    <div class="mdl-layout-spacer"></div>
-    
-    <!-- Navigation -->
-    <nav class="mdl-navigation">
-       {% for my_page in site.pages %}
-          {% if my_page.title %}
-             <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-       {% endfor %}
-    </nav>
-  </div>
+    <div class="mdl-layout__header-row">
+        <span class="mdl-layout__title">{{ site.title }}</span>
+    </div>
+    <!-- Tabs -->
+    <div class="mdl-layout__header-row portfolio-navigation-row">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            {% for my_page in site.pages %}
+               {% if my_page.title %}
+                  <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+               {% endif %}
+            {% endfor %}
+        </nav>
+    </div>
 </header>

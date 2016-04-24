@@ -1,27 +1,10 @@
-<div class="drawer mdl-layout__drawer">
-
-  <span class="mdl-layout-title"><img class="logo-image" src=""></span>
-
-  <nav class="navigation mdl-navigation">
-    <!-- TODO: Encapsulate all of this in a for loop and make it automatic -->
-
-    <a class="mdl-navigation__link" href="">
-        <i class="material-icons" role="presentation">code</i>Projects</a>
-
-    <a class="mdl-navigation__link" href="">
-        <i class="material-icons" role="presentation">people</i>People</a>
-
-    <a class="mdl-navigation__link" href="">
-        <i class="material-icons" role="presentation">book</i>Publications</a>
-
-    <div class="drawer-separator"></div>
-
-    <a class="mdl-navigation__link" href="">
-        <i class="material-icons" role="presentation">group_work</i>Events</a>
-
-    <a class="mdl-navigation__link" href="">
-        <i class="material-icons" role="presentation">group_work</i>Symposia</a>
-
-  </nav>
-
+<div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    <span class="mdl-layout__title">Simple portfolio website</span>
+    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+      {% for my_page in site.pages %}
+         {% if my_page.title %}
+            <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+         {% endif %}
+      {% endfor %}
+    </nav>
 </div>

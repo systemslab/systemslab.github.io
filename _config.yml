@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
+title: Systems Research Lab
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  systemslab
 
 # Build settings
 markdown: kramdown
@@ -28,6 +28,10 @@ collections:
   people:
     output: true
     permalink: /people/:path/
+
+  events:
+    output: true
+    permalink: /events/:path/
 
 defaults:
   -
@@ -42,3 +46,9 @@ defaults:
       type: "people"
     values:
       layout: "person"
+  -
+    scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
