@@ -1,38 +1,56 @@
-<footer class="site-footer">
+<footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer__middle-section">
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Directors</h1>
+      <ul class="mdl-mega-footer__link-list">
+        {% for person in site.data.faculty %}
+          <li><a href="mailto:{{ person.email }}">{{ person.name }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
 
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li>{{ site.title }}</li>
+        <li>1156 High Street, Santa Cruz, CA 95064</li>
+        <li>Engineering 2 Building Room 375</li>
+        <li>Phone: +1 (831) 459-1627</li>
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">Pages</h1>
+      <ul class="mdl-mega-footer__link-list">
+        {% for my_page in site.pages %}
+           {% if my_page.title %}
+              <li><a href="{{ my_page.url | prepend: site.baseurl }}"></a>{{ my_page.title }}</li>
+           {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="mdl-mega-footer__drop-down-section">
+      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="#">Questions</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
   </div>
 
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">{{ site.title }}</div>
+    <ul class="mdl-mega-footer__link-list">
+      <li><a href="http://ucsc.edu">UCSC Home</a></li>
+      <li><a href="http://soe.ucsc.edu">BSOE Home</a></li>
+      <li><a href="http://issdm.ucsc.edu">ISSDM Home</a></li>
+    </ul>
+  </div>
 </footer>

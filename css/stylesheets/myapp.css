@@ -1,0 +1,482 @@
+/* line 1, ../sass/_main.scss */
+.portfolio-header {
+  position: relative;
+  /* Replace these with background-image: url('../../../images/pic.png')
+   * if you want a picture instead of a gradient in the header. */
+  background: #134E5E;
+  background: -webkit-linear-gradient(to left, #134E5E, #71B280);
+  background: linear-gradient(to left, #134e5e, #71b280);
+}
+
+/* line 15, ../sass/_main.scss */
+.portfolio-header .mdl-layout__header-row {
+  padding: 0;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 22, ../sass/_main.scss */
+.mdl-layout__title {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* line 28, ../sass/_main.scss */
+.is-compact .mdl-layout__title span {
+  display: none;
+}
+
+/* line 32, ../sass/_main.scss */
+.portfolio-logo-row {
+  min-height: 200px;
+}
+
+/* line 36, ../sass/_main.scss */
+.is-compact .portfolio-logo-row {
+  min-height: auto;
+}
+
+/* line 40, ../sass/_main.scss */
+.portfolio-logo {
+  background: url("../../../images/Baskin_logo2.png") 50% no-repeat;
+  background-size: 60%;
+  height: 150px;
+  width: 1100px;
+  margin: auto auto 10px;
+}
+
+/* line 48, ../sass/_main.scss */
+.is-compact .portfolio-logo {
+  height: 350px;
+  width: 350px;
+  margin-top: 7px;
+}
+
+/* line 54, ../sass/_main.scss */
+.portfolio-navigation-row {
+  background-color: rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+  height: 45px;
+}
+
+/* line 60, ../sass/_main.scss */
+.portfolio-navigation-row .mdl-navigation {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* line 66, ../sass/_main.scss */
+.portfolio-navigation-row .mdl-navigation__link {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  line-height: 42px;
+}
+
+/* line 73, ../sass/_main.scss */
+.portfolio-header .mdl-layout__drawer-button {
+  background-color: rgba(197, 197, 197, 0.44);
+}
+
+/* line 77, ../sass/_main.scss */
+.portfolio-navigation-row .is-active {
+  position: relative;
+  font-weight: bold;
+}
+
+/* line 82, ../sass/_main.scss */
+.portfolio-navigation-row .is-active:after {
+  content: "";
+  width: 70%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #ff4081;
+  left: 15%;
+}
+
+/* line 94, ../sass/_main.scss */
+.portfolio-blog-card-compact .mdl-card__title {
+  padding-bottom: 0;
+}
+
+/* line 98, ../sass/_main.scss */
+.portfolio-blog-card-bg > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 104, ../sass/_main.scss */
+img.article-image {
+  width: 100%;
+  height: auto;
+}
+
+/* line 109, ../sass/_main.scss */
+.portfolio-max-width {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* line 114, ../sass/_main.scss */
+.portfolio-copy {
+  max-width: 700px;
+}
+
+/* line 118, ../sass/_main.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 122, ../sass/_main.scss */
+.no-left-padding {
+  padding-left: 0;
+}
+
+/* line 126, ../sass/_main.scss */
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+/* line 130, ../sass/_main.scss */
+.padding-top {
+  padding: 10px 0 0;
+}
+
+/* line 134, ../sass/_main.scss */
+.portfolio-share-btn {
+  position: relative;
+  float: right;
+  top: -4px;
+}
+
+/* line 140, ../sass/_main.scss */
+.article-image .mdl-card__media {
+  width: 250px;
+  /* you can use % */
+  height: auto;
+}
+
+/* line 1, ../sass/_people.scss */
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../sass/_people.scss */
+.mdl-demo .mdl-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 12, ../sass/_people.scss */
+.mdl-demo .mdl-card > * {
+  height: auto;
+}
+
+/* line 15, ../sass/_people.scss */
+.mdl-demo .mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
+}
+
+/* line 22, ../sass/_people.scss */
+.mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* line 26, ../sass/_people.scss */
+.mdl-demo .mdl-card__actions {
+  margin: 0;
+  padding: 4px 40px;
+  color: inherit;
+}
+
+/* line 31, ../sass/_people.scss */
+.mdl-demo .mdl-card__actions a {
+  color: #00BCD4;
+  margin: 0;
+}
+
+/* line 35, ../sass/_people.scss */
+.mdl-demo .mdl-card__actions a:hover,
+.mdl-demo .mdl-card__actions a:active {
+  color: inherit;
+  background-color: transparent;
+}
+
+/* line 40, ../sass/_people.scss */
+.mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* line 43, ../sass/_people.scss */
+.mdl-demo #add {
+  position: absolute;
+  right: 40px;
+  top: 36px;
+  z-index: 999;
+}
+
+/* line 50, ../sass/_people.scss */
+.mdl-demo .mdl-layout__content section:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+/* line 54, ../sass/_people.scss */
+.mdl-demo section.section--center {
+  max-width: 860px;
+}
+
+/* line 57, ../sass/_people.scss */
+.mdl-demo #features section.section--center {
+  max-width: 620px;
+}
+
+/* line 60, ../sass/_people.scss */
+.mdl-demo section > header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 65, ../sass/_people.scss */
+.mdl-demo section > .section__play-btn {
+  min-height: 200px;
+}
+
+/* line 68, ../sass/_people.scss */
+.mdl-demo section > header > .material-icons {
+  font-size: 3rem;
+}
+
+/* line 71, ../sass/_people.scss */
+.mdl-demo section > button {
+  position: absolute;
+  z-index: 99;
+  top: 8px;
+  right: 8px;
+}
+
+/* line 77, ../sass/_people.scss */
+.mdl-demo section .section__circle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+/* line 84, ../sass/_people.scss */
+.mdl-demo section .section__text {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+
+/* line 89, ../sass/_people.scss */
+.mdl-demo section .section__text h5 {
+  font-size: inherit;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+/* line 94, ../sass/_people.scss */
+.mdl-demo section .section__text a {
+  text-decoration: none;
+}
+
+/* line 97, ../sass/_people.scss */
+.mdl-demo section .section__circle-container > .section__circle-container__circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  margin: 8px 0;
+}
+
+/* line 103, ../sass/_people.scss */
+.mdl-demo section.section--footer .section__circle--big {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 8px 32px;
+}
+
+/* line 109, ../sass/_people.scss */
+.mdl-demo .is-small-screen section.section--footer .section__circle--big {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 8px 16px;
+}
+
+/* line 115, ../sass/_people.scss */
+.mdl-demo section.section--footer {
+  padding: 64px 0;
+  margin: 0 -8px -8px -8px;
+}
+
+/* line 119, ../sass/_people.scss */
+.mdl-demo section.section--center .section__text:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+/* line 122, ../sass/_people.scss */
+.mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
+  margin-bottom: 24px;
+}
+
+/* line 125, ../sass/_people.scss */
+.mdl-demo .mdl-layout__tab-panel:not(#overview) {
+  background-color: white;
+}
+
+/* line 128, ../sass/_people.scss */
+.mdl-demo #features section {
+  margin-bottom: 72px;
+}
+
+/* line 131, ../sass/_people.scss */
+.mdl-demo #features h4, #features h5 {
+  margin-bottom: 16px;
+}
+
+/* line 134, ../sass/_people.scss */
+.mdl-demo .toc {
+  border-left: 4px solid #C1EEF4;
+  margin: 24px;
+  padding: 0;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 142, ../sass/_people.scss */
+.mdl-demo .toc h4 {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+/* line 146, ../sass/_people.scss */
+.mdl-demo .toc a {
+  color: #4DD0E1;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 28px;
+  display: block;
+}
+
+/* line 153, ../sass/_people.scss */
+.mdl-demo .mdl-menu__container {
+  z-index: 99;
+}
+
+/* http://uigradients.com/ */
+/* line 2, ../sass/_card.scss */
+.portfolio-blog-card-event-bg {
+  background: #005C97;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #005C97, #363795);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #005c97, #363795);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* line 8, ../sass/_card.scss */
+.mdl-card__title-text {
+  font-size: 20px;
+}
+
+/* line 12, ../sass/_card.scss */
+.demo-card-event > .mdl-card__actions {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 22, ../sass/_card.scss */
+.portfolio-card .mdl-card__title {
+  padding-bottom: 0;
+}
+
+/* line 26, ../sass/_card.scss */
+.portfolio-blog-card-full-bg {
+  background: url("../../../images/example-blog03.jpg") center/cover;
+}
+
+/* line 31, ../sass/_card.scss */
+.portfolio-blog-card-strip-bg {
+  background: url("../../../images/example-blog06.jpg") center/cover;
+}
+
+/* line 1, ../sass/_post.scss */
+.demo-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #004D40;
+  flex-shrink: 0;
+}
+
+/* line 8, ../sass/_post.scss */
+.demo-main {
+  margin-top: -35vh;
+  flex-shrink: 0;
+}
+
+/* line 13, ../sass/_post.scss */
+.demo-header .mdl-layout__header-row {
+  padding-left: 40px;
+}
+
+/* line 17, ../sass/_post.scss */
+.demo-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+/* line 23, ../sass/_post.scss */
+.demo-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+/* line 29, ../sass/_post.scss */
+.demo-layout.is-small-screen .demo-content {
+  padding: 40px 28px;
+}
+
+/* line 34, ../sass/_post.scss */
+.demo-footer {
+  padding-left: 40px;
+}
+
+/* line 38, ../sass/_post.scss */
+.demo-footer .mdl-mini-footer--link-list a {
+  font-size: 13px;
+}
+
+ /*.mdl-mega-footer {
+https://github.com/google/material-design-lite/issues/913
+ position: absolute !important;
+ bottom: 0 !important;
+ left: 0 !important;
+ right: 0 !important; }*/

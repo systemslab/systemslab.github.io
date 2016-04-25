@@ -6,16 +6,16 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Systems Research Lab
+email: srl@srl.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+   The Systems Research Lab (SRL) is part of the Jack Baskin School of Engineering at the University of California, Santa Cruz. The SRL is interested in a broad range of topics including real-time systems, performance management, and large-scale storage systems. We are particularly interested in the intersection of these topics, and in their application to problems requiring inter-disciplinary collaboration. The SRL is composed of a broad range of students and collaborators from industry, government research labs, and other universities.
+
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://systems.soe.ucsc.edu" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  systemslab
 
 # Build settings
 markdown: kramdown
@@ -23,11 +23,24 @@ markdown: kramdown
 collections:
   news:
     output: true
-    permalink: /news/:year/:month/:day/:title.html
+    permalink: /:collection/:year/:month/:day/:title
+
+  events:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title
 
   people:
     output: true
-    permalink: /people/:path/
+    permalink: /:collection/:path/
+
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+
+  events:
+    output: true
+    permalink: /events/:path/
 
 defaults:
   -
@@ -42,3 +55,21 @@ defaults:
       type: "people"
     values:
       layout: "person"
+  -
+    scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "default"
+  -
+   scope:
+      path: ""
+      type: "sponsors"
+   values:
+      layout: "default"
