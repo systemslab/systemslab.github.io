@@ -1,5 +1,5 @@
 ---
-layout: intro
+layout: slidable
 title: People
 permalink: /people/
 ---

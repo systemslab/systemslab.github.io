@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: slidable
 title: Projects
 permalink: /projects/
 ---
