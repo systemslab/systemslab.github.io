@@ -40,10 +40,10 @@
 
 /* line 40, ../sass/_main.scss */
 .portfolio-logo {
-  background: url("../../../images/logo.png") 50% no-repeat;
-  background-size: cover;
+  background: url("../../../images/Baskin_logo2.png") 50% no-repeat;
+  background-size: 60%;
   height: 150px;
-  width: 150px;
+  width: 1100px;
   margin: auto auto 10px;
 }
 
@@ -193,10 +193,386 @@ img.article-image {
   margin: auto;
 }
 
-/* line 173, ../sass/_main.scss */
-footer {
-  background-image: url(images/footer-background.png);
-  background-size: cover;
+/* AddEvent theme CSS
+---------------------------------------------------------------------- */
+/* The button */
+/* line 5, ../sass/calendar.scss */
+.addeventatc {
+  display: inline-block;
+  position: relative;
+  z-index: 999998;
+  font-family: Roboto,Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
+  font-weight: 300;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* line 16, ../sass/calendar.scss */
+.addeventatc:hover {
+  color: #555;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+/* line 21, ../sass/calendar.scss */
+.addeventatc .start, .addeventatc .end, .addeventatc .timezone, .addeventatc .title, .addeventatc .description, .addeventatc .location, .addeventatc .organizer, .addeventatc .organizer_email, .addeventatc .facebook_event, .addeventatc .all_day_event, .addeventatc .date_format, .addeventatc .alarm_reminder, .addeventatc .recurring, .addeventatc .attendees, .addeventatc .calname {
+  display: none !important;
+}
+
+/* The drop down */
+/* line 26, ../sass/calendar.scss */
+.addeventatc_dropdown {
+  width: 200px;
+  position: absolute;
+  z-index: 99999;
+  padding: 6px 0px 0px 0px;
+  background: #fff;
+  text-align: left;
+  display: none;
+  margin-top: 4px;
+  margin-left: -1px;
+  border-top: 1px solid #c8c8c8;
+  border-right: 1px solid #bebebe;
+  border-bottom: 1px solid #a8a8a8;
+  border-left: 1px solid #bebebe;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* line 46, ../sass/calendar.scss */
+.addeventatc_dropdown span {
+  display: block;
+  line-height: 100%;
+  background: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  padding: 9px 10px 9px 40px;
+}
+
+/* line 47, ../sass/calendar.scss */
+.addeventatc_dropdown span:hover {
+  background-color: #f4f4f4;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* line 48, ../sass/calendar.scss */
+.addeventatc_dropdown em {
+  color: #999 !important;
+  font-size: 12px !important;
+}
+
+/* line 49, ../sass/calendar.scss */
+.addeventatc_dropdown .frs {
+  background: #fff;
+  color: #cacaca !important;
+  cursor: pointer;
+  font-size: 9px !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  line-height: 110% !important;
+  padding-left: 10px;
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  text-decoration: none;
+  top: 5px;
+  z-index: 101;
+}
+
+/* line 50, ../sass/calendar.scss */
+.addeventatc_dropdown .frs:hover {
+  color: #999 !important;
+}
+
+/* line 51, ../sass/calendar.scss */
+.addeventatc_dropdown .ateappleical {
+  background-image: url(../gfx/dropdown-apple-t1.png);
+  background-position: 13px 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 52, ../sass/calendar.scss */
+.addeventatc_dropdown .ateoutlook {
+  background-image: url(../gfx/dropdown-outlook-t1.png);
+  background-position: 13px 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 53, ../sass/calendar.scss */
+.addeventatc_dropdown .ateoutlookcom {
+  background-image: url(../gfx/dropdown-outlook-t1.png);
+  background-position: 13px 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 54, ../sass/calendar.scss */
+.addeventatc_dropdown .ategoogle {
+  background-image: url(../gfx/dropdown-google-t1.png);
+  background-position: 13px 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 55, ../sass/calendar.scss */
+.addeventatc_dropdown .ateyahoo {
+  background-image: url(../gfx/dropdown-yahoo-t1.png);
+  background-position: 13px 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 56, ../sass/calendar.scss */
+.addeventatc_dropdown .atefacebook {
+  background-image: url(../gfx/dropdown-facebook-t1.png);
+  background-position: 13px 50%;
+  background-repeat: no-repeat;
+}
+
+/* line 57, ../sass/calendar.scss */
+.addeventatc_dropdown .copyx {
+  height: 21px;
+  display: block;
+  position: relative;
+  cursor: default;
+}
+
+/* line 58, ../sass/calendar.scss */
+.addeventatc_dropdown .brx {
+  height: 1px;
+  overflow: hidden;
+  background: #e0e0e0;
+  position: absolute;
+  z-index: 100;
+  left: 10px;
+  right: 10px;
+  top: 9px;
+}
+
+/* line 1, ../sass/_people.scss */
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 7, ../sass/_people.scss */
+.mdl-demo .mdl-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 12, ../sass/_people.scss */
+.mdl-demo .mdl-card > * {
+  height: auto;
+}
+
+/* line 15, ../sass/_people.scss */
+.mdl-demo .mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
+}
+
+/* line 22, ../sass/_people.scss */
+.mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* line 26, ../sass/_people.scss */
+.mdl-demo .mdl-card__actions {
+  margin: 0;
+  padding: 4px 40px;
+  color: inherit;
+}
+
+/* line 31, ../sass/_people.scss */
+.mdl-demo .mdl-card__actions a {
+  color: #00BCD4;
+  margin: 0;
+}
+
+/* line 35, ../sass/_people.scss */
+.mdl-demo .mdl-card__actions a:hover,
+.mdl-demo .mdl-card__actions a:active {
+  color: inherit;
+  background-color: transparent;
+}
+
+/* line 40, ../sass/_people.scss */
+.mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* line 43, ../sass/_people.scss */
+.mdl-demo #add {
+  position: absolute;
+  right: 40px;
+  top: 36px;
+  z-index: 999;
+}
+
+/* line 50, ../sass/_people.scss */
+.mdl-demo .mdl-layout__content section:not(:last-of-type) {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+/* line 54, ../sass/_people.scss */
+.mdl-demo section.section--center {
+  max-width: 860px;
+}
+
+/* line 57, ../sass/_people.scss */
+.mdl-demo #features section.section--center {
+  max-width: 620px;
+}
+
+/* line 60, ../sass/_people.scss */
+.mdl-demo section > header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 65, ../sass/_people.scss */
+.mdl-demo section > .section__play-btn {
+  min-height: 200px;
+}
+
+/* line 68, ../sass/_people.scss */
+.mdl-demo section > header > .material-icons {
+  font-size: 3rem;
+}
+
+/* line 71, ../sass/_people.scss */
+.mdl-demo section > button {
+  position: absolute;
+  z-index: 99;
+  top: 8px;
+  right: 8px;
+}
+
+/* line 77, ../sass/_people.scss */
+.mdl-demo section .section__circle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+/* line 84, ../sass/_people.scss */
+.mdl-demo section .section__text {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+
+/* line 89, ../sass/_people.scss */
+.mdl-demo section .section__text h5 {
+  font-size: inherit;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+/* line 94, ../sass/_people.scss */
+.mdl-demo section .section__text a {
+  text-decoration: none;
+}
+
+/* line 97, ../sass/_people.scss */
+.mdl-demo section .section__circle-container > .section__circle-container__circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  margin: 8px 0;
+}
+
+/* line 103, ../sass/_people.scss */
+.mdl-demo section.section--footer .section__circle--big {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 8px 32px;
+}
+
+/* line 109, ../sass/_people.scss */
+.mdl-demo .is-small-screen section.section--footer .section__circle--big {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  margin: 8px 16px;
+}
+
+/* line 115, ../sass/_people.scss */
+.mdl-demo section.section--footer {
+  padding: 64px 0;
+  margin: 0 -8px -8px -8px;
+}
+
+/* line 119, ../sass/_people.scss */
+.mdl-demo section.section--center .section__text:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+/* line 122, ../sass/_people.scss */
+.mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
+  margin-bottom: 24px;
+}
+
+/* line 125, ../sass/_people.scss */
+.mdl-demo .mdl-layout__tab-panel:not(#overview) {
+  background-color: white;
+}
+
+/* line 128, ../sass/_people.scss */
+.mdl-demo #features section {
+  margin-bottom: 72px;
+}
+
+/* line 131, ../sass/_people.scss */
+.mdl-demo #features h4, #features h5 {
+  margin-bottom: 16px;
+}
+
+/* line 134, ../sass/_people.scss */
+.mdl-demo .toc {
+  border-left: 4px solid #C1EEF4;
+  margin: 24px;
+  padding: 0;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 142, ../sass/_people.scss */
+.mdl-demo .toc h4 {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+/* line 146, ../sass/_people.scss */
+.mdl-demo .toc a {
+  color: #4DD0E1;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 28px;
+  display: block;
+}
+
+/* line 153, ../sass/_people.scss */
+.mdl-demo .mdl-menu__container {
+  z-index: 99;
 }
 
 /* http://uigradients.com/ */

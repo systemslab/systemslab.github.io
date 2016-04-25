@@ -33,41 +33,27 @@ layout: frontpage
           <div class="mdl-card__actions mdl-card--border">
               <div class="mdl-layout-spacer"></div>
               <i class="material-icons ">event</i>
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" href="http://www.google.com/calendar/event?action=TEMPLATE&text={{event.name}}&dates={20131124T010000Z/20131124T020000Z}&details=Event%20Details%20Here&location=123%20Main%20St%2C%20Example%2C%20NY">
-                Add to Calendar
-              </a>
+              <div title="Add to Calendar" class="addeventatc">
+              	    Add to Calendar
+              	    <span class="start">06/18/2015 09:00 AM</span>
+              	    <span class="end">06/18/2015 11:00 AM</span>
+              	    <span class="timezone">Europe/Paris</span>
+              	    <span class="title">Summary of the event</span>
+              	    <span class="description">Description of the event</span>
+              	    <span class="location">Location of the event</span>
+              	    <span class="organizer">Organizer</span>
+              	    <span class="organizer_email">Organizer e-mail</span>
+              	    <span class="all_day_event">false</span>
+              	    <span class="date_format">MM/DD/YYYY</span>
+              	</div>
+              
           </div>
       </div>
     {% endfor %}
 </div>
-
-<!--
-<div class="home">
-  <h1 class="page-heading">News</h1>
-  <ul>
-  {% for item in site.news %}
-    <li><a href="{{ item.url }}">{{ item.title }}</a>
-       {% if item.location %}
-           ({{ item.location }})
-       {% endif %}
-    </li>
-  {% endfor %}
-  </ul>
-
-  <h1 class="page-heading">Events</h1>
-  <ul>
-  {% for item in site.events %}
-     <li>
-       <a href="{{ item.date }}">{{ item.title }}</a>
-         {% if item.location %}
-             ({{ item.location }})
-         {% endif %}
-     </li>
-  {% endfor %}
-  </ul>
-
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
--->
+<script type="text/javascript">
+		addeventatc.settings({
+			license    : "replace-with-your-licensekey",
+			css        : false
+		});
+</script>
