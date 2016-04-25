@@ -1,51 +1,51 @@
 - name: Google
-  image: /images/Sponsors/Logo_2013_Google.png
+  image: /images/Sponsors/Google-logo.png
   permalink: http://google.com/
-  
+
 - name: CITRIS
   image: /images/Sponsors/citris_logo_.png
   permalink: http://citris-uc.org/
-  
+
 - name: Department of Energy
   image: /images/Sponsors/doe-office-of-science-logo.png
   permalink: http://science.energy.gov/
-  
+
 - name: Intel
-  image: /images/Sponsors/intel.png/
+  image: /images/Sponsors/intel-xxl.png/
   permalink: http://intel.com/
 
 - name: Lawrence Livermore National Lab
   image: /images/Sponsors/LLNL.gif
   permalink: http://llnl.gov/
-  
+
 - name: Microsoft
-  image: /images/Sponsors/microsoft.png
+  image: /images/Sponsors/Microsoft_logo_alt.png
   permalink: http://microsoft.com/
-  
+
 - name: NetApp
   image: /images/Sponsors/netapp.jpg
   permalink: http://netapp.com/
-  
+
 - name: NSF
   image: /images/Sponsors/nsf1.gif/
   permalink: http://nsf.gov/
-  
+
 - name: Oracle
   image: /images/Sponsors/logo-oracle.png
   permalink: http://oracle.com/
-  
+
 - name: Oak Ridge National Laboratory
   image: /images/Sponsors/ORNL-logo.jpg
   permalink: http://ornl.gov/
-  
+
 - name: University of California
   image: /images/Sponsors/UCOP.jpg/
   permalink: http://universityofcalifornia.edu/
-  
+
 - name: Yahoo!
-  image: /images/Sponsors/Yahoo_Logo.png
+  image: /images/Sponsors/yahoo-logo.jpg
   permalink: http://yahoo.com/
-  
+
 - name: Los Alamos National Laboratory
   image: /images/Sponsors/ylanlbanner_www_1.jpg
   permalink: http://lanl.gov/

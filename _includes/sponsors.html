@@ -1,16 +1,8 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
- <h1><center>  Sponsors </center></h1>
-
-<ul>
-{% for sponsor in site.data.sponsors %}
-  <a href="{{ sponsor.permalink }}"> 
-  <img src="{{ sponsor.image }}" style="height:64px;">
-  </a>
-{% endfor %}
-</ul>
+<div id="sponsors" align="center">
+  <h1>Sponsors</h1>
+  <ul>
+    {% for sponsor in site.data.sponsors %}
+      <a href="{{ sponsor.permalink }}"><img src="{{ sponsor.image }}" style="height:64px;"></a>
+    {% endfor %}
+  </ul>
 </div>
-
-</footer>
