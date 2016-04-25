@@ -3,7 +3,25 @@
 ---
 @charset "utf-8";
 
+/* Contains formatting for edit on github pages. 
+ * Example taken from Facebook React. */
+ 
+.edit-page-link {
+  float: right;
+  padding-right: 200px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-top: 13px;
+}
 
+.view-page-link {
+  float: bottom;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  margin-top: 13px;
+}
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

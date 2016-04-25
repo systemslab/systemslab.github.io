@@ -1,5 +1,5 @@
 ---
-layout: intro
+layout: default
 title: About Us
 permalink: /about/
 ---
