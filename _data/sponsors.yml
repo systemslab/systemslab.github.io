@@ -3,7 +3,7 @@
   permalink: http://citris-uc.org/
 
 - name: Department of Energy
-  image: /images/Sponsors/doe-office-of-science-logo.png
+  image: /images/Sponsors/DOE.png
   permalink: http://science.energy.gov/
 
 - name: Google
@@ -15,11 +15,11 @@
   permalink: http://intel.com/
 
 - name: Lawrence Livermore National Lab
-  image: /images/Sponsors/LLNL.gif
+  image: /images/Sponsors/LLNL.png
   permalink: http://llnl.gov/
 
 - name: Los Alamos National Laboratory
-  image: /images/Sponsors/ylanlbanner_www_1.jpg
+  image: /images/Sponsors/LANL.png
   permalink: http://lanl.gov/
 
 - name: Microsoft
@@ -31,21 +31,21 @@
   permalink: http://netapp.com/
 
 - name: National Science Foundation
-  image: /images/Sponsors/nsf1.gif/
+  image: /images/Sponsors/nsf.png/
   permalink: http://nsf.gov/
 
 - name: Oracle
-  image: /images/Sponsors/logo-oracle.png
+  image: /images/Sponsors/oracle.png
   permalink: http://oracle.com/
 
 - name: Oak Ridge National Laboratory
-  image: /images/Sponsors/ORNL-logo.jpg
+  image: /images/Sponsors/ORNL.png
   permalink: http://ornl.gov/
 
 - name: University of California
-  image: /images/Sponsors/UCOP.jpg/
+  image: /images/Sponsors/uc.png/
   permalink: http://universityofcalifornia.edu/
 
 - name: Yahoo!
-  image: /images/Sponsors/yahoo-logo.jpg
+  image: /images/Sponsors/yahoo.png
   permalink: http://yahoo.com/
