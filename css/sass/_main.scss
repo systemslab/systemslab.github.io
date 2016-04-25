@@ -91,20 +91,6 @@
   left: 15%;
 }
 
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
-}
-
-.portfolio-blog-card-full-bg {
-  background: url('../../../images/example-blog03.jpg') center / cover;
-}
-
-
-
-.portfolio-blog-card-strip-bg {
-  background: url('../../../images/example-blog06.jpg') center / cover;
-}
-
 .portfolio-blog-card-compact .mdl-card__title {
   padding-bottom: 0;
 }
@@ -149,16 +135,6 @@ img.article-image {
   position: relative;
   float: right;
   top: -4px;
-}
-
-.demo-card-event > .mdl-card__actions {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    box-sizing: border-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
 }
 
 .portfolio-contact .mdl-textfield {

@@ -1,32 +1,36 @@
-- name: Google
-  image: /images/Sponsors/Google-logo.png
-  permalink: http://google.com/
-
 - name: CITRIS
-  image: /images/Sponsors/citris_logo_.png
+  image: /images/Sponsors/citris.png
   permalink: http://citris-uc.org/
 
 - name: Department of Energy
   image: /images/Sponsors/doe-office-of-science-logo.png
   permalink: http://science.energy.gov/
 
+- name: Google
+  image: /images/Sponsors/google.png
+  permalink: http://google.com/
+
 - name: Intel
-  image: /images/Sponsors/intel-xxl.png/
+  image: /images/Sponsors/intel.png/
   permalink: http://intel.com/
 
 - name: Lawrence Livermore National Lab
   image: /images/Sponsors/LLNL.gif
   permalink: http://llnl.gov/
 
+- name: Los Alamos National Laboratory
+  image: /images/Sponsors/ylanlbanner_www_1.jpg
+  permalink: http://lanl.gov/
+
 - name: Microsoft
-  image: /images/Sponsors/Microsoft_logo_alt.png
+  image: /images/Sponsors/microsoft.png
   permalink: http://microsoft.com/
 
 - name: NetApp
-  image: /images/Sponsors/netapp.jpg
+  image: /images/Sponsors/netapp.png
   permalink: http://netapp.com/
 
-- name: NSF
+- name: National Science Foundation
   image: /images/Sponsors/nsf1.gif/
   permalink: http://nsf.gov/
 
@@ -45,7 +49,3 @@
 - name: Yahoo!
   image: /images/Sponsors/yahoo-logo.jpg
   permalink: http://yahoo.com/
-
-- name: Los Alamos National Laboratory
-  image: /images/Sponsors/ylanlbanner_www_1.jpg
-  permalink: http://lanl.gov/

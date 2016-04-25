@@ -101,93 +101,67 @@
 }
 
 /* line 94, ../sass/_main.scss */
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
-}
-
-/* line 98, ../sass/_main.scss */
-.portfolio-blog-card-full-bg {
-  background: url("../../../images/example-blog03.jpg") center/cover;
-}
-
-/* line 104, ../sass/_main.scss */
-.portfolio-blog-card-strip-bg {
-  background: url("../../../images/example-blog06.jpg") center/cover;
-}
-
-/* line 108, ../sass/_main.scss */
 .portfolio-blog-card-compact .mdl-card__title {
   padding-bottom: 0;
 }
 
-/* line 112, ../sass/_main.scss */
+/* line 98, ../sass/_main.scss */
 .portfolio-blog-card-bg > .mdl-card__actions {
   height: 52px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 118, ../sass/_main.scss */
+/* line 104, ../sass/_main.scss */
 img.article-image {
   width: 100%;
   height: auto;
 }
 
-/* line 123, ../sass/_main.scss */
+/* line 109, ../sass/_main.scss */
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
 }
 
-/* line 128, ../sass/_main.scss */
+/* line 114, ../sass/_main.scss */
 .portfolio-copy {
   max-width: 700px;
 }
 
-/* line 132, ../sass/_main.scss */
+/* line 118, ../sass/_main.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 136, ../sass/_main.scss */
+/* line 122, ../sass/_main.scss */
 .no-left-padding {
   padding-left: 0;
 }
 
-/* line 140, ../sass/_main.scss */
+/* line 126, ../sass/_main.scss */
 .no-bottom-padding {
   padding-bottom: 0;
 }
 
-/* line 144, ../sass/_main.scss */
+/* line 130, ../sass/_main.scss */
 .padding-top {
   padding: 10px 0 0;
 }
 
-/* line 148, ../sass/_main.scss */
+/* line 134, ../sass/_main.scss */
 .portfolio-share-btn {
   position: relative;
   float: right;
   top: -4px;
 }
 
-/* line 154, ../sass/_main.scss */
-.demo-card-event > .mdl-card__actions {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* line 164, ../sass/_main.scss */
+/* line 140, ../sass/_main.scss */
 .portfolio-contact .mdl-textfield {
   width: 100%;
 }
 
-/* line 168, ../sass/_main.scss */
+/* line 144, ../sass/_main.scss */
 .portfolio-contact form {
   max-width: 550px;
   margin: auto;
@@ -591,6 +565,32 @@ html, body {
   font-size: 20px;
 }
 
+/* line 12, ../sass/_card.scss */
+.demo-card-event > .mdl-card__actions {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 22, ../sass/_card.scss */
+.portfolio-card .mdl-card__title {
+  padding-bottom: 0;
+}
+
+/* line 26, ../sass/_card.scss */
+.portfolio-blog-card-full-bg {
+  background: url("../../../images/example-blog03.jpg") center/cover;
+}
+
+/* line 31, ../sass/_card.scss */
+.portfolio-blog-card-strip-bg {
+  background: url("../../../images/example-blog06.jpg") center/cover;
+}
+
 /* line 1, ../sass/_post.scss */
 .demo-ribbon {
   width: 100%;
@@ -639,11 +639,9 @@ html, body {
   font-size: 13px;
 }
 
-/* line 1, ../sass/_footer.scss */
-.mdl-mega-footer {
-  /* https://github.com/google/material-design-lite/issues/913 */
-  position: absolute !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-}
+ /*.mdl-mega-footer {
+https://github.com/google/material-design-lite/issues/913
+ position: absolute !important;
+ bottom: 0 !important;
+ left: 0 !important;
+ right: 0 !important; }*/

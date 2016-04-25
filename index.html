@@ -30,30 +30,11 @@ layout: frontpage
                 {{ event.date | date: "%b %-d, %Y" }}<br>
               </h4>
           </div>
-          <div class="mdl-card__actions mdl-card--border">
+          <div class="mdl-card__actions mdl-card--border" align="left">
               <div class="mdl-layout-spacer"></div>
               <i class="material-icons ">event</i>
-              <div title="Add to Calendar" class="addeventatc">
-              	    Add to Calendar
-              	    <span class="start">06/18/2015 09:00 AM</span>
-              	    <span class="end">06/18/2015 11:00 AM</span>
-              	    <span class="timezone">Europe/Paris</span>
-              	    <span class="title">Summary of the event</span>
-              	    <span class="description">Description of the event</span>
-              	    <span class="location">Location of the event</span>
-              	    <span class="organizer">Organizer</span>
-              	    <span class="organizer_email">Organizer e-mail</span>
-              	    <span class="all_day_event">false</span>
-              	    <span class="date_format">MM/DD/YYYY</span>
-              	</div>
-              
+              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" href="{{ event.url }}">Event Info</a>
           </div>
       </div>
     {% endfor %}
 </div>
-<script type="text/javascript">
-		addeventatc.settings({
-			license    : "replace-with-your-licensekey",
-			css        : false
-		});
-</script>
