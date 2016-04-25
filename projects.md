@@ -1,6 +1,6 @@
 ---
-layout: intro
-title: Research
+layout: default
+title: Projects
 permalink: /projects/
 ---
 <style>
@@ -12,7 +12,7 @@ permalink: /projects/
 <div class="research-wrapper">
   {% for project in site.projects %}
      <h4> <a href="#" class="toggle"> {{ project.name }} </a> by {{ project.participants }}</h4>
-        <div class="contents"> 
+        <div class="contents">
         <p class="background">
            {{ project.category }} <br><br>
            {{ project.blurb }} <br><br>
@@ -22,4 +22,3 @@ permalink: /projects/
         </div>
   {% endfor %}
 </div>
-

@@ -7,7 +7,7 @@ layout: frontpage
     {% for item in site.news %}
       <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
           <div class="mdl-card__media">
-              <img class="article-image" src="images/example-work01.jpg" border="0" alt="">
+              <img class="article-image" src="{{ item.picture }}" border="0" alt="">
           </div>
           <div class="mdl-card__title">
               <h2 class="mdl-card__title-text">{{item.title}}</h2>
@@ -37,4 +37,11 @@ layout: frontpage
           </div>
       </div>
     {% endfor %}
+</div>
+<div class="sponsorlist mdl-color-text--grey-800">
+  <ul align="center"><br>
+    {% for sponsor in site.data.sponsors %}
+      <a href="{{ sponsor.permalink }}"><img src="{{ sponsor.image }}" style="height:36px;"></a>&nbsp;&nbsp;&nbsp;
+    {% endfor %}
+  </ul>
 </div>

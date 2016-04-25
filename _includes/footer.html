@@ -3,11 +3,11 @@
 
     <div class="mdl-mega-footer__drop-down-section">
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <!-- TODO: Automate director list with a for loop -->
       <h1 class="mdl-mega-footer__heading">Directors</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">Professor Carlos Maltzahn</a></li>
-        <li><a href="#">Professor Scott Brandt (on leave)</a></li>
+        {% for person in site.data.faculty %}
+          <li><a href="mailto:{{ person.email }}">{{ person.name }}</a></li>
+        {% endfor %}
       </ul>
     </div>
 
@@ -16,20 +16,21 @@
       <h1 class="mdl-mega-footer__heading">Details</h1>
       <ul class="mdl-mega-footer__link-list">
         <li>{{ site.title }}</li>
-        <li>1156 High Street, Santa Cruz, CA 95064, USA</li>
-        <li>Phone: {{ site.phone }}</li>
+        <li>1156 High Street, Santa Cruz, CA 95064</li>
+        <li>Engineering 2 Building Room 375</li>
+        <li>Phone: +1 (831) 459-1627</li>
       </ul>
     </div>
 
     <div class="mdl-mega-footer__drop-down-section">
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <h1 class="mdl-mega-footer__heading">Pages</h1>
       <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Patterns</a></li>
-        <li><a href="#">Usage</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contracts</a></li>
+        {% for my_page in site.pages %}
+           {% if my_page.title %}
+              <li><a href="{{ my_page.url | prepend: site.baseurl }}"></a>{{ my_page.title }}</li>
+           {% endif %}
+        {% endfor %}
       </ul>
     </div>
 
@@ -42,7 +43,6 @@
         <li><a href="#">Contact us</a></li>
       </ul>
     </div>
-
   </div>
 
   <div class="mdl-mega-footer__bottom-section">
@@ -53,5 +53,4 @@
       <li><a href="http://issdm.ucsc.edu">ISSDM Home</a></li>
     </ul>
   </div>
-
 </footer>

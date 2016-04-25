@@ -156,6 +156,13 @@ img.article-image {
   top: -4px;
 }
 
+/* line 140, ../sass/_main.scss */
+.article-image .mdl-card__media {
+  width: 250px;
+  /* you can use % */
+  height: auto;
+}
+
 /* line 1, ../sass/_people.scss */
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;

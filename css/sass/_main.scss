@@ -136,3 +136,8 @@ img.article-image {
   float: right;
   top: -4px;
 }
+
+.article-image .mdl-card__media{
+  width:250px; /* you can use % */
+  height: auto;
+}
