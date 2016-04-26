@@ -24,24 +24,25 @@ permalink: /people/
                 <h3> <a href="#" class="toggle"> Faculty </a> </h3> 
   				<div class="contents"> 
 				<div class="background">
-
-  					{% for person in site.data.faculty %}
+				     {% assign people = site.people | where: "category", "faculty" %}
+					 {% for person in people %}
+  					
               		<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                     <div class="section__circle-container__circle mdl-color--blue"> </a>
                   	</div>
                 	</div>
        				<h4> {{ person.name }} </h4>
         				{{ person.email }} <br><br>
-       					{{ person.titles }} <br><br>
+        				{% for t in person.titles %}
+       					  {{ t }} <br>
+       					{% endfor %}
+       					<br>
        					{{ person.blurb }} <br><br>
-       					Read more about <a href="{{ person.permalink }}">{{ person.name}}</a>. 
+       					Read more about <a href="{{ person.permalink }}">{{ person.name | truncatewords: 1 | remove: '...'}}</a>. 
        
        					{% unless person.offsite %}
-       					{% assign filename = person.permalink | replace_first: '/', '' | replace: 'people/', '' | append: '.md' %}
-       					
-       					<div class="mdl-card__actions">
-                    	<a href="https://github.com/systemslab/systemslab.github.io/edit/master/_people/{{filename}}" class="mdl-button" target="_blank"> Edit {{person.name}}</a>
-                    	</div>
+       					{% assign filename= person.relative_path %}
+
        					{% endunless %}
   					{% endfor %}
   					<br>
@@ -55,24 +56,25 @@ permalink: /people/
                 <h3> <a href="#" class="toggle"> PhD Students </a> </h3> 
   				<div class="contents"> 
 				<div class="background">
-
-  					{% for person in site.data.phd %}
+				    {% assign people = site.people | where: "category", "phd" %}
+  					{% for person in people %}
               		<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   	<div class="section__circle-container__circle mdl-color--blue">
                   	</div>
                 	</div>
        				<h4> {{ person.name }} </h4>
         				{{ person.email }} <br><br>
+        			    {% for t in person.titles %}
+       					  {{ t }} <br>
+       					{% endfor %}
+       					<br>
        					{{ person.titles }} <br><br>
        					{{ person.blurb }} <br><br>
-       					Read more about <a href="{{ person.permalink }}">{{ person.name}}</a>. 
+       					Read more about <a href="{{ person.permalink }}">{{ person.name | truncatewords: 1 | remove: '...'}}</a>. 
        
        					{% unless person.offsite %}
-       					{% assign filename = person.permalink | replace_first: '/', '' | replace: 'people/', '' | append: '.md' %}
-       					
-       					<div class="mdl-card__actions">
-                    	<a href="https://github.com/systemslab/systemslab.github.io/edit/master/_people/{{filename}}" class="mdl-button" target="_blank"> Edit {{person.name}}</a>
-                    	</div>
+       					{% assign filename = person.relative_path %}
+
        					{% endunless %}
   					{% endfor %}
   					<br>
@@ -84,22 +86,25 @@ permalink: /people/
   				<h3> <a href="#" class="toggle"> SRL Staff </a> </h3>
   				<div class="contents">
   				<div class="background">
-  				{% for person in site.data.staff %}
+  				{% assign people = site.people | where: "category", "staff" %}
+
+  				{% for person in people %}
                 	<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   	<div class="section__circle-container__circle mdl-color--blue">
                   	</div>
                 	</div>
        				<h4> {{ person.name }} </h4>
        				{{ person.email }} <br><br>
+       			    {% for t in person.titles %}
+       				{{ t }} <br>
+       				{% endfor %}
+       				<br>
        				{{ person.blurb }} <br><br>
-       				Read more about <a href="{{ person.permalink }}">{{ person.name}}</a>. </small>
+       				Read more about <a href="{{ person.permalink }}">{{ person.name | truncatewords: 1 | remove: '...'}}</a>. </small>
 
        					{% unless person.offsite %}
-       					{% assign filename = person.permalink | replace_first: '/', '' | replace: 'people/', '' | append: '.md' %}
-       					
-       					<div class="mdl-card__actions">
-                    	<a href="https://github.com/systemslab/systemslab.github.io/edit/master/_people/{{filename}}" class="mdl-button" target="_blank"> Edit {{person.name}}</a>
-                    	</div>
+       					{% assign filename = person.relative_path %}
+ 
        					{% endunless %}
   					{% endfor %}
   					<br>
@@ -109,22 +114,25 @@ permalink: /people/
   				<h3> <a href="#" class="toggle"> Alumni </a> </h3>
   				<div class="contents">
   				<div class="background">
-  				{% for person in site.data.alumni %}
+  				{% assign people = site.people | where: "category", "alumni" %}
+  				{% for person in people %}
                 	<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
                   	<div class="section__circle-container__circle mdl-color--blue">
                   	</div>
                 	</div>
        				<h4> {{ person.name }} </h4>
        				{{ person.email }} <br><br>
+       				{% for t in person.titles %}
+       					{{ t }} <br>
+       				{% endfor %}
+       				<br>
        				{{ person.blurb }} <br><br>
-       				Read more about <a href="{{ person.permalink }}">{{ person.name}}</a>. </small>
+       				Read more about <a href="{{ person.permalink }}">{{ person.name | truncatewords: 1 | remove: '...'}}</a>. </small>
 
        					{% unless person.offsite %}
-       					{% assign filename = person.permalink | replace_first: '/', '' | replace: 'people/', '' | append: '.md' %}
+       					{% assign filename = person.relative_path %}
        					
-       					<div class="mdl-card__actions">
-                    	<a href="https://github.com/systemslab/systemslab.github.io/edit/master/_people/{{filename}}" class="mdl-button" target="_blank"> Edit {{person.name}}</a>
-                    	</div>
+
        					{% endunless %}
   					{% endfor %}
   					<br>

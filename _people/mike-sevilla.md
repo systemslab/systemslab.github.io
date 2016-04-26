@@ -1,6 +1,8 @@
 ---
 name: Mike Sevilla
 age: 20
+category: phd
+permalink: /people/mike-sevilla
 ---
 
-Biography: alive in soup kitchens
+alive in soup kitchens
