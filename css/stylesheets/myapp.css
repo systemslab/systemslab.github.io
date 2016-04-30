@@ -447,7 +447,7 @@ html, body {
 
 /* line 17, ../sass/_post.scss */
 .demo-container {
-  position: relative;
+  position: 200px;
   max-width: 1600px;
   width: calc(100% + 16px);
   margin: 0 auto;
@@ -455,8 +455,9 @@ html, body {
 
 /* line 23, ../sass/_post.scss */
 .demo-content {
-  border-radius: 2px;
-  padding: 80px 56px;
+  text-align: center;
+  border-radius: 1px;
+  padding: 20px 36px;
   margin-bottom: 80px;
 }
 
