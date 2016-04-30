@@ -448,7 +448,7 @@ html, body {
 /* line 17, ../sass/_post.scss */
 .demo-container {
   max-width: 1600px;
-  width: calc(100% - 16px);
+  width: calc(100% + 16px);
   margin: 0 auto;
 }
 
