@@ -451,6 +451,14 @@ html, body {
   max-width: 1600px;
   width: calc(100% + 16px);
   margin: 0 auto;
+  margin-top: -5px;
+}
+
+.demo-title {
+  text-align: center;
+  padding: 25px 40px;
+  margin-top: -40px;
+  
 }
 
 /* line 23, ../sass/_post.scss */
@@ -458,7 +466,8 @@ html, body {
   text-align: center;
   border-radius: 1px;
   padding: 20px 36px;
-  margin-bottom: 80px;
+  margin-top: -30px;
+  margin-bottom: 5px;
 }
 
 /* line 29, ../sass/_post.scss */
