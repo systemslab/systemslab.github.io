@@ -9,6 +9,20 @@ permalink: /people/
     background: gainsboro;
 }
 
+.circular-frame, .circular-frame img{
+	text-align:center;
+	width: 85px;
+	height: 85px;
+	-webkit-border-radius: 40px; /* Saf3+, Chrome */
+	border-radius: 40px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
+
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+	
+
+}
+
 </style>
 </head>
 <div class="people-wrapper">
@@ -17,7 +31,10 @@ permalink: /people/
 <div class="background">
 	 {% assign people = site.people | where: "category", "faculty" %}
 	 {% for person in people %}
-	
+	 <br>
+	    {% if person.icon %}
+	     <center><div class="circular-frame"><img src="{{ person.icon }}"></div></center>
+	    {% endif %}
 	<h4> {{ person.name }} </h4>
 		{{ person.email }} <br><br>
 		{% for t in person.titles %}
@@ -45,6 +62,10 @@ permalink: /people/
 <div class="background">
 	{% assign people = site.people | where: "category", "phd" %}
 	{% for person in people %}
+	 <br>
+	    {% if person.icon %}
+	     <center><div class="circular-frame"><img src="{{ person.icon }}"></div></center>
+	    {% endif %}
 	<h4> {{ person.name }} </h4>
 		{{ person.email }} <br><br>
 		{% for t in person.titles %}
@@ -72,7 +93,10 @@ permalink: /people/
 {% assign people = site.people | where: "category", "staff" %}
 
 {% for person in people %}
-
+	 <br>
+	    {% if person.icon %}
+	     <center><div class="circular-frame"><img src="{{ person.icon }}"></div></center>
+	    {% endif %}
 	<h4> {{ person.name }} </h4>
 	{{ person.email }} <br><br>
 	{% for t in person.titles %}
@@ -96,7 +120,10 @@ permalink: /people/
 <div class="background">
 {% assign people = site.people | where: "category", "alumni" %}
 {% for person in people %}
-
+	 <br>
+	    {% if person.icon %}
+	     <center><div class="circular-frame"><img src="{{ person.icon }}"></div></center>
+	    {% endif %}
 	<h4> {{ person.name }} </h4>
 	{{ person.email }} <br><br>
 	{% for t in person.titles %}

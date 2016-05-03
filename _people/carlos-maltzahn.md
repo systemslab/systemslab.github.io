@@ -1,5 +1,7 @@
 ---
+layout: person
 name: Carlos Maltzahn
+icon: /images/logos/carlos-maltzahn.jpeg
 category: faculty
 titles: 
         - Adjunct Professor, Computer Science 

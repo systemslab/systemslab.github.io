@@ -1,4 +1,5 @@
 ---
+layout: page
 name: SSDs in Storage Systems
 sponsors: ISSDM
 mentors: John Bent and James Nunez

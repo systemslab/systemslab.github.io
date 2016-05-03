@@ -1,14 +1,55 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<head>
+<style>
+.background {
+    background: gainsboro;
+}
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-  </header>
+.circular-frame, .circular-frame img{
+	text-align:center;
+	width: 85px;
+	height: 85px;
+	-webkit-border-radius: 40px; /* Saf3+, Chrome */
+	border-radius: 40px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 30px;  Disabled for FF1+ */
 
-  <div class="post-content" itemprop="articleBody">
-    {{ page.content }} 
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+	
+
+}
+
+</style>
+</head>
+
+<article class="post">
+
+  <div class="post-content">
+    <div class="demo-title">
+       <h2> {{ page.title }} 
+        
+        </h2>
+       
+    </div><div class="demo-container mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+    <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+    	{% if page.icon %}
+	     <center><div class="circular-frame"><img src="{{ page.icon }}"></div></center>
+	    {% endif %}<br>
+	    {% if page.email %}
+	     {{page.email}}
+	    {% endif %}<br>
+	    {% if page.titles %}
+	       {% for t in page.titles %}
+	          {{t}}<br>
+	       {% endfor %}<br>
+	    {% endif %}
+    {{ content }}
+    </div>
+    </div>
+    
   </div>
 
 </article>
