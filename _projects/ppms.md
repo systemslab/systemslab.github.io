@@ -1,9 +1,17 @@
 ---
-layout: page
+layout: project
 name: Predictable Performance Management and Simulation
-category: Disk Simulation
-participants: Adam Crume, Andrew Shewmaker, and Ivo Jimenez
+participants: 
+          - Adam Crume 
+          - Andrew Shewmaker 
+          - Ivo Jimenez
+sponsors:
+          - ISSDM/LANL
+          - Google
+          - NMO/Cisco
+          
 permalink: /projects/ppms
+picture: 
 blurb: Hard disk drive latency models
 ---
 
@@ -15,4 +23,4 @@ Hard disk drive latency models are needed as components of storage system simula
 
 Other black-box models have not been able to predict per-request latencies.  We recognized that a key reason for this inability is the existence of periodicity with high, unknown frequencies, which many machine learning algorithms do not handle well.  To account for this, FLAMBES generates neural net models that use request data augmented with periodicity information to predict individual request latencies.
 
-~              
+         

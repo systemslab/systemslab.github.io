@@ -4,37 +4,23 @@ layout: default
 <head>
 <style>
 
-.circular-frame, .circular-frame img{
-	width: 85px;
-	height: 85px;
-	-webkit-border-radius: 40px; /* Saf3+, Chrome */
-	border-radius: 40px; /* Opera 10.5, IE 9 */
-	/*-moz-border-radius: 30px;  Disabled for FF1+ */
-
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-}
-
-.contact {
+.info {
 	width: 10%;
 	min-width: 140px;
 	padding: 3px;
 	border: solid 1px #D1D0CE;
 	border-radius: 4px;
 }
-.contact img{
+.info img{
 	width: 200px;
 	margin-bottom: 15px;
 }
-
-
 .text{
 	text-align: left;
 	float: left;
 	padding-right: 30px;
 	width: 100%;
 }
-
 
 </style>
 </head>
@@ -52,23 +38,30 @@ layout: default
         <td style='
         padding-top: 0px;
         width: 200px'>
-        <div class="contact">
-    	{% if page.icon %}
-	    <img src="{{ page.icon }}">
+        <div class="info">
+        {% if page.picture %}
+	       <img src="{{ page.picture }}">
 	    {% endif %}
-	   {% if page.email %}
-	     <small>{{page.email}}</small>
-	    {% endif %}<br>
-	    {% if page.titles %}
-	       {% for t in page.titles %}
-	          <font size="2">{{t}}</font><br>
+
+	   {% if page.mentors %}
+	      <h3> Mentors </h3>
+	      {% for mentor in page.mentors %}
+	          {{ mentor }}<br>
+	      {% endfor %}
+	    {% endif %} <br>
+	    {% if page.sponsors %}
+	       <h3> Sponsors </h3>
+	       {% for sponsor in page.sponsors %}
+	          {{ sponsor }} <br>
 	       {% endfor %}
 	    {% endif %}
+
 	    </div>
+
 	    </td>
 	    <td>
 	  <div class="text">
-	        <h2> {{ page.title }} </h2>
+	        <h2> {{ page.name }} </h2>
 	    <div class="mdl-card__actions mdl-card--border"></div>
         {{ content }}
         </div>

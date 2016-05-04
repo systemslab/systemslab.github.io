@@ -1,10 +1,13 @@
 ---
-layout: page
+layout: project
 name: SSDs in Storage Systems
+mentors: 
+     - John Bent
+     - James Nunez
 sponsors: ISSDM
-mentors: John Bent and James Nunez
 participants: Rosie Wacha
 permalink: /projects/ssd
+picture:
 blurb: 
 ---
 

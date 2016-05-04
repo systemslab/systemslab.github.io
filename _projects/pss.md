@@ -1,9 +1,11 @@
 ---
-layout: page
+layout: project
 name: Programmable Storage Systems
-category: test
-participants: Noah Watkins and Michael Sevilla
+participants: 
+      - Noah Watkins
+      - Michael Sevilla
 permalink: /projects/pss
+picture:
 blurb: 
 ---
 
