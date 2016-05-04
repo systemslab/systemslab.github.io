@@ -1,15 +1,15 @@
 ---
 layout: person
 name: Carlos Maltzahn
-icon: /images/logos/carlos-maltzahn.jpeg
+icon: /images/avatars/carlos-maltzahn.jpeg
 category: faculty
 titles: 
-        - Adjunct Professor, Computer Science 
-        - Director, Systems Research Lab (SRL) 
-        - Director, Center for Research in Open Source Software (CROSS) 
-        - Director, Institute for Scalable Scientific Data 
-        - Management (ISSDM)
+        - Adjunct Professor, CS 
+        - Director, SRL 
+        - Director, CROSS 
+        - Director, ISSDM
 email: carlosm@ucsc.edu
+office:
 permalink: /people/carlos-maltzahn
 blurb: Blurb goes here. Please write in 3rd person =)
 ---

@@ -3,11 +3,6 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-<style>
-.background {
-    background: gainsboro;
-}
-</style>
 <div class="research-wrapper">
   {% for project in site.projects %}
      <h4> <a href="#" class="toggle"> {{ project.name }} </a> by {{ project.participants }}</h4>

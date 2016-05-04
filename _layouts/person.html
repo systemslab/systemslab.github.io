@@ -8,7 +8,6 @@ layout: default
 }
 
 .circular-frame, .circular-frame img{
-	text-align:center;
 	width: 85px;
 	height: 85px;
 	-webkit-border-radius: 40px; /* Saf3+, Chrome */
@@ -17,9 +16,28 @@ layout: default
 
 	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-	
-
 }
+
+.contact {
+	width: 10%;
+	min-width: 140px;
+	padding: 3px;
+	border: solid 1px #D1D0CE;
+	border-radius: 4px;
+}
+.contact img{
+	width: 200px;
+	margin-bottom: 15px;
+}
+
+
+.text{
+	text-align: left;
+	float: left;
+	padding-right: 30px;
+	width: 100%;
+}
+
 
 </style>
 </head>
@@ -28,25 +46,39 @@ layout: default
 
   <div class="post-content">
     <div class="demo-title">
-       <h2> {{ page.title }} 
-        
-        </h2>
-       
     </div><div class="demo-container mdl-grid">
     <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+    
+    <table style="width:100%"><tbody>
+        <tr>
+        <td style='
+        padding-top: 0px;
+        width: 200px'>
+        <div class="contact">
     	{% if page.icon %}
-	     <center><div class="circular-frame"><img src="{{ page.icon }}"></div></center>
-	    {% endif %}<br>
-	    {% if page.email %}
-	     {{page.email}}
+	    <img src="{{ page.icon }}">
+	    {% endif %}
+	   {% if page.email %}
+	     <small>{{page.email}}</small>
 	    {% endif %}<br>
 	    {% if page.titles %}
 	       {% for t in page.titles %}
-	          {{t}}<br>
-	       {% endfor %}<br>
+	          <font size="2">{{t}}</font><br>
+	       {% endfor %}
 	    {% endif %}
-    {{ content }}
+	    </div>
+	    </td>
+	    <td>
+	  <div class="text">
+	        <h2> {{ page.title }} </h2>
+	    <div class="mdl-card__actions mdl-card--border"></div>
+        {{ content }}
+        </div>
+        </td>
+        </tr>
+    </tbody></table>
+    
     </div>
     </div>
     

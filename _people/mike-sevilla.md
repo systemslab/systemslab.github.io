@@ -1,8 +1,7 @@
 ---
 layout: person
 name: Mike Sevilla
-age: 20
-category: phd
+category: student
 permalink: /people/mike-sevilla
 ---
 
