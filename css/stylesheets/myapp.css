@@ -30,7 +30,7 @@
 
 /* line 32, ../sass/_main.scss */
 .portfolio-logo-row {
-  min-height: 200px;
+  min-height: 45px;
 }
 
 /* line 36, ../sass/_main.scss */
@@ -40,8 +40,8 @@
 
 /* line 40, ../sass/_main.scss */
 .portfolio-logo {
-  background: url("../../../images/Baskin_logo2.png") 50% no-repeat;
-  background-size: 60%;
+  background: url("/images/Baskin_logo2.png") 50% no-repeat;
+  background-size: 30%;
   height: 150px;
   width: 1100px;
   margin: auto auto 10px;
@@ -119,8 +119,8 @@ img.article-image {
 }
 
 /* line 109, ../sass/_main.scss */
-.portfolio-max-width {
-  max-width: 900px;
+.portfolio-max-width { 
+  max-width: 1000px; /* tweak this value for frontpage layout */
   margin: auto;
 }
 
@@ -447,8 +447,7 @@ html, body {
 
 /* line 17, ../sass/_post.scss */
 .demo-container {
-  position: 200px;
-  max-width: 1600px;
+  max-width: 1900px;
   width: calc(100% + 16px);
   margin: 0 auto;
   margin-top: -5px;
