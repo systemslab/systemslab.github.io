@@ -11,18 +11,18 @@ permalink: /projects/
 		<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
 	  
 			<div class="mdl-card__title">
-				<h4 class="mdl-card__title-text">{{ project.name }}</h4>
+				<a class="mdl-button mdl-button--colored " href="{{ project.permalink }}"> {{ project.name }} </a>
 			</div>
+			{% for p in project.participants %}
+				<i>{{ p }} </i>
+			{% endfor %}<br>
+			<div class="thin-border"></div>
+
+			<div class="project-blurb"> {{ project.blurb }} </div>
 			<div class="mdl-card__supporting-text">
-			    
-				{% for p in project.participants %}
-				    <i>{{ p }} </i><br>
-				{% endfor %}
+
 			</div>
 			
-			<div class="mdl-card__actions mdl-card--border">
-				<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ project.permalink }}">Read more</a>
-			</div>
 		</div>
 	   {% endfor %}
 	</div>

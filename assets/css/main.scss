@@ -15,11 +15,41 @@
   margin-top: -20px;
 }
 
-.right-oblique {
+.right {
   float: right;
   text-align: right;
   margin-top: -20px;
 }
+
+.project-blurb {
+  padding: 12px;
+}
+
+.thin-border {
+  margin-top: -15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.blurb {
+  margin-top: right;
+}
+
+.people {
+   justify-content: flex-start;
+}
+
+.flex-container {
+   display: flex;
+   flex-flow: row wrap;
+   align-items: flex-start;
+}
+
+
+.contact {
+  float: left;
+}
+
+
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

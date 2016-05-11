@@ -1,6 +1,6 @@
 ---
 layout: project
-name: DAMASC (Data Management in Scientific Computing)
+name: Data Management in Scientific Computing
 mentors:
       - Gary Grider
       - John Bent
