@@ -11,13 +11,6 @@
 }
 
 /* line 17, ../sass/_main.scss */
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 23, ../sass/_main.scss */
 .portfolio-header .mdl-layout__header-row {
   padding: 0;
   -webkit-justify-content: center;
@@ -25,29 +18,29 @@ html, body {
   justify-content: center;
 }
 
-/* line 30, ../sass/_main.scss */
+/* line 24, ../sass/_main.scss */
 .mdl-layout__title {
   font-size: 14px;
   text-align: center;
   font-weight: 300;
 }
 
-/* line 36, ../sass/_main.scss */
+/* line 30, ../sass/_main.scss */
 .is-compact .mdl-layout__title span {
   display: none;
 }
 
-/* line 40, ../sass/_main.scss */
+/* line 34, ../sass/_main.scss */
 .portfolio-logo-row {
   min-height: 200px;
 }
 
-/* line 44, ../sass/_main.scss */
+/* line 38, ../sass/_main.scss */
 .is-compact .portfolio-logo-row {
   min-height: auto;
 }
 
-/* line 48, ../sass/_main.scss */
+/* line 42, ../sass/_main.scss */
 .portfolio-logo {
   background: url("../../assets/images/Baskin_logo2.png") 50% no-repeat;
   background-size: 60%;
@@ -56,28 +49,28 @@ html, body {
   margin: auto auto 10px;
 }
 
-/* line 56, ../sass/_main.scss */
+/* line 50, ../sass/_main.scss */
 .is-compact .portfolio-logo {
   height: 350px;
   width: 350px;
   margin-top: 7px;
 }
 
-/* line 62, ../sass/_main.scss */
+/* line 56, ../sass/_main.scss */
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
   height: 45px;
 }
 
-/* line 68, ../sass/_main.scss */
+/* line 62, ../sass/_main.scss */
 .portfolio-navigation-row .mdl-navigation {
   text-align: center;
   max-width: 900px;
   width: 100%;
 }
 
-/* line 74, ../sass/_main.scss */
+/* line 68, ../sass/_main.scss */
 .portfolio-navigation-row .mdl-navigation__link {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -85,18 +78,18 @@ html, body {
   line-height: 42px;
 }
 
-/* line 81, ../sass/_main.scss */
+/* line 75, ../sass/_main.scss */
 .portfolio-header .mdl-layout__drawer-button {
   background-color: rgba(197, 197, 197, 0.44);
 }
 
-/* line 85, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 .portfolio-navigation-row .is-active {
   position: relative;
   font-weight: bold;
 }
 
-/* line 90, ../sass/_main.scss */
+/* line 84, ../sass/_main.scss */
 .portfolio-navigation-row .is-active:after {
   content: "";
   width: 70%;
@@ -107,12 +100,6 @@ html, body {
   left: 0;
   background-color: #ff4081;
   left: 15%;
-}
-
-/* line 103, ../sass/_main.scss */
-.portfolio-max-width {
-  max-width: 900px;
-  margin: auto;
 }
 
 /* Makes images with the img-circle class into a circle
@@ -128,34 +115,30 @@ html, body {
 /* Align text below an image
  * Source: http://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css
  */
-/* line 13, ../sass/_people.scss */
-div.item {
+/* line 14, ../sass/_people.scss */
+.person div.item {
   vertical-align: top;
   display: inline-block;
   text-align: center;
   width: 120px;
 }
-
-/* line 19, ../sass/_people.scss */
-img {
+/* line 20, ../sass/_people.scss */
+.person img {
   width: 100px;
   height: 100px;
 }
-
-/* line 23, ../sass/_people.scss */
-.caption {
+/* line 24, ../sass/_people.scss */
+.person .caption {
   display: block;
 }
-
-/* line 28, ../sass/_people.scss */
-.section__text {
+/* line 27, ../sass/_people.scss */
+.person .section__text {
   flex-grow: 1;
   flex-shrink: 0;
   padding-top: 8px;
 }
-
-/* line 34, ../sass/_people.scss */
-.section__text a {
+/* line 33, ../sass/_people.scss */
+.person .section__text a {
   text-decoration: none;
 }
 
@@ -163,26 +146,28 @@ img {
 .mdl-grid {
   max-width: 600px;
 }
-
-/* line 6, ../sass/_card.scss */
-.mdl-card__media {
+/* line 5, ../sass/_card.scss */
+.mdl-grid .mdl-card {
+  padding-bottom: 50px;
+}
+/* line 7, ../sass/_card.scss */
+.mdl-grid .mdl-card .mdl-card__media {
   margin: 0;
 }
-
-/* line 9, ../sass/_card.scss */
-.mdl-card__media > img {
+/* line 10, ../sass/_card.scss */
+.mdl-grid .mdl-card .mdl-card__media > img {
   max-width: 100%;
 }
-
-/* line 12, ../sass/_card.scss */
-.mdl-card__actions {
+/* line 13, ../sass/_card.scss */
+.mdl-grid .mdl-card .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
   align-items: center;
+  position: absolute;
+  bottom: 0px;
 }
-
-/* line 17, ../sass/_card.scss */
-.mdl-card__actions > .mdl-button--icon {
+/* line 20, ../sass/_card.scss */
+.mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
 }

@@ -14,12 +14,6 @@
   background: linear-gradient(to left, $clrNavyBlue, $clrLimeGreen);
 }
 
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 .portfolio-header .mdl-layout__header-row {
   padding: 0;
   -webkit-justify-content: center;
@@ -97,10 +91,4 @@ html, body {
   left: 0;
   background-color: $clrBrightPink;
   left: 15%;
-}
-
-
-.portfolio-max-width {
-  max-width: 900px;
-  margin: auto;
 }

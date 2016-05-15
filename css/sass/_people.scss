@@ -10,27 +10,27 @@
 /* Align text below an image
  * Source: http://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css
  */
-div.item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    width: 120px;
-}
-img {
-    width: 100px;
-    height: 100px;
-}
-.caption {
-    display: block;
-}
+.person{
+  div.item {
+      vertical-align: top;
+      display: inline-block;
+      text-align: center;
+      width: 120px;
+  }
+  img {
+      width: 100px;
+      height: 100px;
+  }
+  .caption {
+      display: block;
+  }
+  .section__text {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding-top: 8px;
+  }
 
-
-.section__text {
-  flex-grow: 1;
-  flex-shrink: 0;
-  padding-top: 8px;
-}
-
-.section__text a {
-  text-decoration: none;
+  .section__text a {
+    text-decoration: none;
+  }
 }
