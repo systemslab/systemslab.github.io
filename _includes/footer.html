@@ -1,3 +1,10 @@
+<head>
+<style>
+.updated {
+  float: right;
+}
+</style>
+</head>
 <footer class="mdl-mega-footer">
   <div class="mdl-mega-footer__middle-section">
 
@@ -14,7 +21,7 @@
 
     <div class="mdl-mega-footer__drop-down-section">
       <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <h1 class="mdl-mega-footer__heading">Contact</h1>
       <ul class="mdl-mega-footer__link-list">
         <li>{{ site.title }}</li>
         <li>1156 High Street, Santa Cruz, CA 95064</li>
@@ -22,13 +29,15 @@
         <li>Phone: +1 (831) 459-1627</li>
       </ul>
     </div>
-
+  {% include edit_links.html %}
   <div class="mdl-mega-footer__bottom-section">
     <h1 class="mdl-mega-footer__heading">Other links</h1>
     <ul class="mdl-mega-footer__link-list">
-      <li><a href="http://ucsc.edu">UCSC Home</a></li>
-      <li><a href="http://soe.ucsc.edu">BSOE Home</a></li>
-      <li><a href="http://issdm.ucsc.edu">ISSDM Home</a></li>
+      <li><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://ucsc.edu">UCSC Home</a></li>
+      <li><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://soe.ucsc.edu">BSOE Home</a></li>
+      <li><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="http://issdm.ucsc.edu">ISSDM Home</a></li>
+      <div class="updated"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="/">Systems Research Lab</a> Last updated: <abbr title="last build date {{site.time | date: '%B %d %Y'}}">{{ site.time | date: '%B %Y'}}</abbr></div>
     </ul>
   </div>
+
 </footer>
