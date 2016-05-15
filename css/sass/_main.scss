@@ -1,13 +1,15 @@
+/*
+ * Replace these with background-image: url('../../../images/pic.png')
+ * if you want a picture instead of a gradient in the header.
+ */
 .portfolio-header {
   position: relative;
-
-  /* Replace these with background-image: url('../../../images/pic.png')
-   * if you want a picture instead of a gradient in the header. */
-
   // fallback for old browsers
   background: #134E5E;
+
   // Chrome 10-25, Safari 5.1-6
   background: -webkit-linear-gradient(to left, #134E5E , #71B280);
+
   // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
   background: linear-gradient(to left, #134E5E , #71B280);
 }

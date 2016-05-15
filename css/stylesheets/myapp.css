@@ -1,14 +1,16 @@
-/* line 1, ../sass/_main.scss */
+/*
+ * Replace these with background-image: url('../../../images/pic.png')
+ * if you want a picture instead of a gradient in the header.
+ */
+/* line 5, ../sass/_main.scss */
 .portfolio-header {
   position: relative;
-  /* Replace these with background-image: url('../../../images/pic.png')
-   * if you want a picture instead of a gradient in the header. */
   background: #134E5E;
   background: -webkit-linear-gradient(to left, #134E5E, #71B280);
   background: linear-gradient(to left, #134e5e, #71b280);
 }
 
-/* line 15, ../sass/_main.scss */
+/* line 17, ../sass/_main.scss */
 .portfolio-header .mdl-layout__header-row {
   padding: 0;
   -webkit-justify-content: center;
@@ -16,29 +18,29 @@
   justify-content: center;
 }
 
-/* line 22, ../sass/_main.scss */
+/* line 24, ../sass/_main.scss */
 .mdl-layout__title {
   font-size: 14px;
   text-align: center;
   font-weight: 300;
 }
 
-/* line 28, ../sass/_main.scss */
+/* line 30, ../sass/_main.scss */
 .is-compact .mdl-layout__title span {
   display: none;
 }
 
-/* line 32, ../sass/_main.scss */
+/* line 34, ../sass/_main.scss */
 .portfolio-logo-row {
   min-height: 200px;
 }
 
-/* line 36, ../sass/_main.scss */
+/* line 38, ../sass/_main.scss */
 .is-compact .portfolio-logo-row {
   min-height: auto;
 }
 
-/* line 40, ../sass/_main.scss */
+/* line 42, ../sass/_main.scss */
 .portfolio-logo {
   background: url("../../assets/images/Baskin_logo2.png") 50% no-repeat;
   background-size: 60%;
@@ -47,28 +49,28 @@
   margin: auto auto 10px;
 }
 
-/* line 48, ../sass/_main.scss */
+/* line 50, ../sass/_main.scss */
 .is-compact .portfolio-logo {
   height: 350px;
   width: 350px;
   margin-top: 7px;
 }
 
-/* line 54, ../sass/_main.scss */
+/* line 56, ../sass/_main.scss */
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
   height: 45px;
 }
 
-/* line 60, ../sass/_main.scss */
+/* line 62, ../sass/_main.scss */
 .portfolio-navigation-row .mdl-navigation {
   text-align: center;
   max-width: 900px;
   width: 100%;
 }
 
-/* line 66, ../sass/_main.scss */
+/* line 68, ../sass/_main.scss */
 .portfolio-navigation-row .mdl-navigation__link {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -76,18 +78,18 @@
   line-height: 42px;
 }
 
-/* line 73, ../sass/_main.scss */
+/* line 75, ../sass/_main.scss */
 .portfolio-header .mdl-layout__drawer-button {
   background-color: rgba(197, 197, 197, 0.44);
 }
 
-/* line 77, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 .portfolio-navigation-row .is-active {
   position: relative;
   font-weight: bold;
 }
 
-/* line 82, ../sass/_main.scss */
+/* line 84, ../sass/_main.scss */
 .portfolio-navigation-row .is-active:after {
   content: "";
   width: 70%;
@@ -100,63 +102,63 @@
   left: 15%;
 }
 
-/* line 94, ../sass/_main.scss */
+/* line 96, ../sass/_main.scss */
 .portfolio-blog-card-compact .mdl-card__title {
   padding-bottom: 0;
 }
 
-/* line 98, ../sass/_main.scss */
+/* line 100, ../sass/_main.scss */
 .portfolio-blog-card-bg > .mdl-card__actions {
   height: 52px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 104, ../sass/_main.scss */
+/* line 106, ../sass/_main.scss */
 img.article-image {
   width: 100%;
   height: auto;
 }
 
-/* line 109, ../sass/_main.scss */
+/* line 111, ../sass/_main.scss */
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
 }
 
-/* line 114, ../sass/_main.scss */
+/* line 116, ../sass/_main.scss */
 .portfolio-copy {
   max-width: 700px;
 }
 
-/* line 118, ../sass/_main.scss */
+/* line 120, ../sass/_main.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 122, ../sass/_main.scss */
+/* line 124, ../sass/_main.scss */
 .no-left-padding {
   padding-left: 0;
 }
 
-/* line 126, ../sass/_main.scss */
+/* line 128, ../sass/_main.scss */
 .no-bottom-padding {
   padding-bottom: 0;
 }
 
-/* line 130, ../sass/_main.scss */
+/* line 132, ../sass/_main.scss */
 .padding-top {
   padding: 10px 0 0;
 }
 
-/* line 134, ../sass/_main.scss */
+/* line 136, ../sass/_main.scss */
 .portfolio-share-btn {
   position: relative;
   float: right;
   top: -4px;
 }
 
-/* line 140, ../sass/_main.scss */
+/* line 142, ../sass/_main.scss */
 .article-image .mdl-card__media {
   width: 250px;
   /* you can use % */
