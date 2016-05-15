@@ -11,6 +11,13 @@
 }
 
 /* line 17, ../sass/_main.scss */
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 23, ../sass/_main.scss */
 .portfolio-header .mdl-layout__header-row {
   padding: 0;
   -webkit-justify-content: center;
@@ -18,29 +25,29 @@
   justify-content: center;
 }
 
-/* line 24, ../sass/_main.scss */
+/* line 30, ../sass/_main.scss */
 .mdl-layout__title {
   font-size: 14px;
   text-align: center;
   font-weight: 300;
 }
 
-/* line 30, ../sass/_main.scss */
+/* line 36, ../sass/_main.scss */
 .is-compact .mdl-layout__title span {
   display: none;
 }
 
-/* line 34, ../sass/_main.scss */
+/* line 40, ../sass/_main.scss */
 .portfolio-logo-row {
   min-height: 200px;
 }
 
-/* line 38, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 .is-compact .portfolio-logo-row {
   min-height: auto;
 }
 
-/* line 42, ../sass/_main.scss */
+/* line 48, ../sass/_main.scss */
 .portfolio-logo {
   background: url("../../assets/images/Baskin_logo2.png") 50% no-repeat;
   background-size: 60%;
@@ -49,28 +56,28 @@
   margin: auto auto 10px;
 }
 
-/* line 50, ../sass/_main.scss */
+/* line 56, ../sass/_main.scss */
 .is-compact .portfolio-logo {
   height: 350px;
   width: 350px;
   margin-top: 7px;
 }
 
-/* line 56, ../sass/_main.scss */
+/* line 62, ../sass/_main.scss */
 .portfolio-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
   height: 45px;
 }
 
-/* line 62, ../sass/_main.scss */
+/* line 68, ../sass/_main.scss */
 .portfolio-navigation-row .mdl-navigation {
   text-align: center;
   max-width: 900px;
   width: 100%;
 }
 
-/* line 68, ../sass/_main.scss */
+/* line 74, ../sass/_main.scss */
 .portfolio-navigation-row .mdl-navigation__link {
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -78,18 +85,18 @@
   line-height: 42px;
 }
 
-/* line 75, ../sass/_main.scss */
+/* line 81, ../sass/_main.scss */
 .portfolio-header .mdl-layout__drawer-button {
   background-color: rgba(197, 197, 197, 0.44);
 }
 
-/* line 79, ../sass/_main.scss */
+/* line 85, ../sass/_main.scss */
 .portfolio-navigation-row .is-active {
   position: relative;
   font-weight: bold;
 }
 
-/* line 84, ../sass/_main.scss */
+/* line 90, ../sass/_main.scss */
 .portfolio-navigation-row .is-active:after {
   content: "";
   width: 70%;
@@ -102,81 +109,17 @@
   left: 15%;
 }
 
-/* line 96, ../sass/_main.scss */
-.portfolio-blog-card-compact .mdl-card__title {
-  padding-bottom: 0;
-}
-
-/* line 100, ../sass/_main.scss */
-.portfolio-blog-card-bg > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-/* line 106, ../sass/_main.scss */
-img.article-image {
-  width: 100%;
-  height: auto;
-}
-
-/* line 111, ../sass/_main.scss */
+/* line 103, ../sass/_main.scss */
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
-}
-
-/* line 116, ../sass/_main.scss */
-.portfolio-copy {
-  max-width: 700px;
-}
-
-/* line 120, ../sass/_main.scss */
-.no-padding {
-  padding: 0;
-}
-
-/* line 124, ../sass/_main.scss */
-.no-left-padding {
-  padding-left: 0;
-}
-
-/* line 128, ../sass/_main.scss */
-.no-bottom-padding {
-  padding-bottom: 0;
-}
-
-/* line 132, ../sass/_main.scss */
-.padding-top {
-  padding: 10px 0 0;
-}
-
-/* line 136, ../sass/_main.scss */
-.portfolio-share-btn {
-  position: relative;
-  float: right;
-  top: -4px;
-}
-
-/* line 142, ../sass/_main.scss */
-.article-image .mdl-card__media {
-  width: 250px;
-  /* you can use % */
-  height: auto;
-}
-
-/* line 1, ../sass/_people.scss */
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 /* Makes images with the img-circle class into a circle
  * Also adds a Material Design-esque shadow to each profile picture
  * Source: https://codepen.io/sdthornton/pen/wBZdXq
  */
-/* line 11, ../sass/_people.scss */
+/* line 5, ../sass/_people.scss */
 .img-circle {
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -185,7 +128,7 @@ html, body {
 /* Align text below an image
  * Source: http://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css
  */
-/* line 19, ../sass/_people.scss */
+/* line 13, ../sass/_people.scss */
 div.item {
   vertical-align: top;
   display: inline-block;
@@ -193,72 +136,58 @@ div.item {
   width: 120px;
 }
 
-/* line 25, ../sass/_people.scss */
+/* line 19, ../sass/_people.scss */
 img {
   width: 100px;
   height: 100px;
 }
 
-/* line 29, ../sass/_people.scss */
+/* line 23, ../sass/_people.scss */
 .caption {
   display: block;
 }
 
-/* line 34, ../sass/_people.scss */
+/* line 28, ../sass/_people.scss */
 .section__text {
   flex-grow: 1;
   flex-shrink: 0;
   padding-top: 8px;
 }
 
-/* line 40, ../sass/_people.scss */
+/* line 34, ../sass/_people.scss */
 .section__text a {
   text-decoration: none;
 }
 
-/* http://uigradients.com/ */
-/* line 2, ../sass/_card.scss */
-.portfolio-blog-card-event-bg {
-  background: #005C97;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #005C97, #363795);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #005c97, #363795);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* line 3, ../sass/_card.scss */
+.mdl-grid {
+  max-width: 600px;
 }
 
-/* line 8, ../sass/_card.scss */
-.mdl-card__title-text {
-  font-size: 20px;
+/* line 6, ../sass/_card.scss */
+.mdl-card__media {
+  margin: 0;
+}
+
+/* line 9, ../sass/_card.scss */
+.mdl-card__media > img {
+  max-width: 100%;
 }
 
 /* line 12, ../sass/_card.scss */
-.demo-card-event > .mdl-card__actions {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.mdl-card__actions {
   display: flex;
+  box-sizing: border-box;
+  align-items: center;
 }
 
-/* line 22, ../sass/_card.scss */
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
+/* line 17, ../sass/_card.scss */
+.mdl-card__actions > .mdl-button--icon {
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
-/* line 26, ../sass/_card.scss */
-.portfolio-blog-card-full-bg {
-  background: url("../../../images/example-blog03.jpg") center/cover;
-}
-
-/* line 31, ../sass/_card.scss */
-.portfolio-blog-card-strip-bg {
-  background: url("../../../images/example-blog06.jpg") center/cover;
-}
-
-/* line 1, ../sass/_post.scss */
+/* line 2, ../sass/_post.scss */
 .demo-ribbon {
   width: 100%;
   height: 40vh;
@@ -266,44 +195,34 @@ img {
   flex-shrink: 0;
 }
 
-/* line 8, ../sass/_post.scss */
+/* line 9, ../sass/_post.scss */
 .demo-main {
   margin-top: -35vh;
   flex-shrink: 0;
 }
 
-/* line 13, ../sass/_post.scss */
+/* line 14, ../sass/_post.scss */
 .demo-header .mdl-layout__header-row {
   padding-left: 40px;
 }
 
-/* line 17, ../sass/_post.scss */
+/* line 18, ../sass/_post.scss */
 .demo-container {
   max-width: 1600px;
   width: calc(100% - 16px);
   margin: 0 auto;
 }
 
-/* line 23, ../sass/_post.scss */
+/* line 24, ../sass/_post.scss */
 .demo-content {
   border-radius: 2px;
   padding: 80px 56px;
   margin-bottom: 80px;
 }
 
-/* line 29, ../sass/_post.scss */
+/* line 30, ../sass/_post.scss */
 .demo-layout.is-small-screen .demo-content {
   padding: 40px 28px;
-}
-
-/* line 34, ../sass/_post.scss */
-.demo-footer {
-  padding-left: 40px;
-}
-
-/* line 38, ../sass/_post.scss */
-.demo-footer .mdl-mini-footer--link-list a {
-  font-size: 13px;
 }
 
 /*

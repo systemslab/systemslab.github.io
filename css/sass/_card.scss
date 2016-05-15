@@ -1,33 +1,20 @@
-/* http://uigradients.com/ */
-.portfolio-blog-card-event-bg {
-  background: #005C97; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// http://webdesign.tutsplus.com/tutorials/learning-material-design-lite-cards--cms-24633
+
+.mdl-grid {
+	max-width: 600px;
 }
-
-.mdl-card__title-text{
-  font-size: 20px;
+.mdl-card__media {
+	margin: 0;
 }
-
-.demo-card-event > .mdl-card__actions {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    box-sizing: border-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+.mdl-card__media > img {
+	max-width: 100%;
 }
-
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
+.mdl-card__actions {
+	display: flex;
+	box-sizing:border-box;
+	align-items: center;
 }
-
-.portfolio-blog-card-full-bg {
-  background: url('../../../images/example-blog03.jpg') center / cover;
-}
-
-
-.portfolio-blog-card-strip-bg {
-  background: url('../../../images/example-blog06.jpg') center / cover;
+.mdl-card__actions > .mdl-button--icon {
+	margin-right: 3px;
+	margin-left: 3px;
 }

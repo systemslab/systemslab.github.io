@@ -3,11 +3,9 @@ layout: default
 title: People
 permalink: /people/
 ---
-
 <div align="center">
   <h3>People</h3>
 </div>
-
 
 {% assign people = (site.people | sort: "category") %}
 
