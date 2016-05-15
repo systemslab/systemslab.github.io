@@ -1,92 +1,23 @@
 ---
-layout: page
+layout: default
 title: People
 permalink: /people/
 ---
-<head>
-<style>
-.email {
-  line-height: 40px;
-}
-</style>
-</head>
-<h3>Faculty</h3>
-{% assign people = site.people | where: "category", "faculty" %}
-<div class="people flex-container">
-{% for person in people %}
-  {% if person.icon %}
-   <div class="circular-frame"><img src="{{ person.icon }}"></div>
-  {% endif %}
-  <div class="flex-item">
-  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ person.permalink }}"> {{ person.name }}</a>
-  </div>
-<br>
 
-{% endfor %}
+<div align="center">
+  <h3>People</h3>
 </div>
 
-<br>
 
-<div class="thin-border"></div><br>
+{% assign people = (site.people | sort: "category") %}
 
-<h3>Students</h3>
-
-{% assign people = site.people | where: "category", "student" %}
-<div class="people flex-container">
-{% for person in people %}
-  {% if person.icon %}
-   <div class="circular-frame"><img src="{{ person.icon }}"></div>
-  {% endif %}
-  <div class="flex-item">
-  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ person.permalink }}"> {{ person.name }}</a>
-  </div>
-
-<br>
-
-{% endfor %}
+<div class="content-grid mdl-grid">
+  {% for person in people %}
+    <div class="mdl-cell person" align="center">
+        <a href="{{person.permalink}}"><img class="img-circle" src="{{person.icon}}"></a><br>
+        <span class="caption section__text"><a href="{{person.permalink}}" class="mdl-button">{{person.name}}</a></span>
+        <span class="caption section__text">{{person.category}}</span>
+        <span class="caption section__text">{{person.blurb}}</span>
+    </div>
+  {% endfor %}
 </div>
-
-<br>
-<div class="thin-border"></div><br>
-
-
-<h3>Staff</h3>
-{% assign people = site.people | where: "category", "staff" %}
-<div class="people flex-container">
-{% for person in people %}
-  {% if person.icon %}
-   <div class="circular-frame"><img src="{{ person.icon }}"></div>
-  {% endif %}
-  <div class="flex-item">
-  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ person.permalink }}"> {{ person.name }}</a>
-  </div>
-
-<br>
-
-{% endfor %}
-</div>
-
-<br>
-
-<div class="thin-border"></div><br>
-
-
-<h3>Alumni</h3>
-
-{% assign people = site.people | where: "category", "alumni" %}
-<div class="people flex-container">
-{% for person in people %}
-  {% if person.icon %}
-   <div class="circular-frame"><img src="{{ person.icon }}"></div>
-  {% endif %}
-  <div class="flex-item">
-  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ person.permalink }}"> {{ person.name }}</a>
-  </div>
-
-<br>
-
-{% endfor %}
-</div>
-
-<br>
-     
