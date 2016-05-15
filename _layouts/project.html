@@ -51,22 +51,26 @@ layout: default
 
 	   {% if page.mentors %}
 	      <h3> Mentors </h3>
+	      <ul>
 	      {% for mentor in page.mentors %}
-	          {{ mentor }}<br>
+	          <li> {{ mentor }} </li>
 	      {% endfor %}
+	      </ul>
 	    {% endif %} <br>
 	    {% if page.sponsors %}
 	       <h3> Sponsors </h3>
+	       <ul>
 	       {% for sponsor in page.sponsors %}
-	          {{ sponsor }} <br>
+	          <li> {{ sponsor }} </li> 
 	       {% endfor %}
+	       </ul>
 	    {% endif %}
 
 
 	    </td>
 	    <td class="left-border">
 	    
-	    <h4> Description </h4>
+	    <h3> Description </h3>
         {{ content }}
         </td>
 

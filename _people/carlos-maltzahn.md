@@ -1,7 +1,7 @@
 ---
 layout: person
 name: Carlos Maltzahn
-icon: /images/avatars/carlos-maltzahn.jpeg
+icon: /assets/images/avatars/carlos-maltzahn.jpeg
 category: faculty
 titles: 
         - Adjunct Professor, CS 

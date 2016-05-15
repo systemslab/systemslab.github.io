@@ -23,31 +23,8 @@
       </ul>
     </div>
 
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Pages</h1>
-      <ul class="mdl-mega-footer__link-list">
-        {% for my_page in site.pages %}
-           {% if my_page.title %}
-              <li><a href="{{ my_page.url | prepend: site.baseurl }}"></a>{{ my_page.title }}</li>
-           {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">FAQ</h1>
-      <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">Questions</a></li>
-        <li><a href="#">Answers</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-    </div>
-  </div>
-
   <div class="mdl-mega-footer__bottom-section">
-    <div class="mdl-logo">{{ site.title }}</div>
+    <h1 class="mdl-mega-footer__heading">Other links</h1>
     <ul class="mdl-mega-footer__link-list">
       <li><a href="http://ucsc.edu">UCSC Home</a></li>
       <li><a href="http://soe.ucsc.edu">BSOE Home</a></li>

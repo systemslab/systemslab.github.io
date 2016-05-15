@@ -1,51 +1,51 @@
 - name: CITRIS
-  image: /images/Sponsors/citris.png
+  image: /assets/images/Sponsors/citris.png
   permalink: http://citris-uc.org/
 
 - name: Department of Energy
-  image: /images/Sponsors/DOE.png
+  image: /assets/images/Sponsors/DOE.png
   permalink: http://science.energy.gov/
 
 - name: Google
-  image: /images/Sponsors/google.png
+  image: /assets/images/Sponsors/google.png
   permalink: http://google.com/
 
 - name: Intel
-  image: /images/Sponsors/intel.png/
+  image: /assets/images/Sponsors/intel.png/
   permalink: http://intel.com/
 
 - name: Lawrence Livermore National Lab
-  image: /images/Sponsors/LLNL.png
+  image: /assets/images/Sponsors/LLNL.png
   permalink: http://llnl.gov/
 
 - name: Los Alamos National Laboratory
-  image: /images/Sponsors/LANL.png
+  image: /assets/images/Sponsors/LANL.png
   permalink: http://lanl.gov/
 
 - name: Microsoft
-  image: /images/Sponsors/microsoft.png
+  image: /assets/images/Sponsors/microsoft.png
   permalink: http://microsoft.com/
 
 - name: NetApp
-  image: /images/Sponsors/netapp.png
+  image: /assets/images/Sponsors/netapp.png
   permalink: http://netapp.com/
 
 - name: National Science Foundation
-  image: /images/Sponsors/nsf.png/
+  image: /assets/images/Sponsors/nsf.png/
   permalink: http://nsf.gov/
 
 - name: Oracle
-  image: /images/Sponsors/oracle.png
+  image: /assets/images/Sponsors/oracle.png
   permalink: http://oracle.com/
 
 - name: Oak Ridge National Laboratory
-  image: /images/Sponsors/ORNL.png
+  image: /assets/images/Sponsors/ORNL.png
   permalink: http://ornl.gov/
 
 - name: University of California
-  image: /images/Sponsors/uc.png/
+  image: /assets/images/Sponsors/uc.png/
   permalink: http://universityofcalifornia.edu/
 
 - name: Yahoo!
-  image: /images/Sponsors/yahoo.png
+  image: /assets/images/Sponsors/yahoo.png
   permalink: http://yahoo.com/

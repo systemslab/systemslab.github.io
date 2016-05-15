@@ -1,7 +1,7 @@
 ---
 layout: person
 name: Scott Brandt
-icon: /images/avatars/scott-brandt.jpg
+icon: /assets/images/avatars/scott-brandt.jpg
 category: faculty
 titles: 
         - Vice Chancellor for Research
