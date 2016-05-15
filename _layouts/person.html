@@ -27,15 +27,12 @@ layout: default
 	margin-bottom: 15px;
 }
 
-
 .text{
 	text-align: left;
 	float: left;
 	padding-right: 30px;
 	width: 100%;
 }
-
-
 </style>
 </head>
 
@@ -70,12 +67,28 @@ layout: default
 	  <div class="text">
 	        <h2> {{ page.title }} </h2>
 	    <div class="mdl-card__actions mdl-card--border"></div>
+	    <h3> Overview </h3>
         {{ content }}
         </div>
         </td>
         </tr>
-    </tbody></table>
+    </tbody></table><br>
+    <h3> Publications </h3>
+    {% assign years = '2015|2014|2013|2012' | split: '|' %}
+    {% assign name = page.name | split: ' ' %}
+    {% assign lastname = name[1] %}
     
+    {% for year_ in years %}
+    {% assign year = year_ | plus: 0 %}
+      <h4> {{ year }} </h4>
+      {% bibliography --query @*[author ~= {{ lastname }} && year={{year}}] %}
+
+   
+    {% endfor %}
+
+
+
+
     </div>
     </div>
     

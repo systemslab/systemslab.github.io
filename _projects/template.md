@@ -9,7 +9,7 @@ participants:
       
 picture:
 permalink: /projects/{projectname}
-blurb: 
+overview: 
 published: false
 ---
 

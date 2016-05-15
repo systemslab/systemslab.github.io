@@ -1,6 +1,6 @@
 ---
 layout: person
-name: Mike Sevilla
+name: Michael Sevilla
 category: student
 permalink: /people/mike-sevilla
 ---

@@ -20,8 +20,6 @@ permalink: /people/
 
 <br>
 
-
-
 <div class="thin-border"></div><br>
 
 <h3>Students</h3>

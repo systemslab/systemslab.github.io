@@ -6,7 +6,7 @@ participants:
       - Michael Sevilla
 permalink: /projects/pss
 picture:
-blurb: 
+overview: 
 ---
 
 ~              

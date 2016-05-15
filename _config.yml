@@ -75,14 +75,11 @@ defaults:
       layout: "default"
 
 scholar:
-  style: apa
+  style: assets/bibliography/ieee-with-url.csl
   locale: en
 
-  sort_by: none
+  sort_by: year
   order: descending
-
-  group_by: none
-  group_order: ascending
 
   source: ./_bibliography
   bibliography: references.bib
@@ -90,14 +87,11 @@ scholar:
 
   replace_strings: true
   join_strings:    true
-
+  bibliography_list_tag: ul
   use_raw_bibtex_entry: false
   bibtex_filters:
   - superscript
   - latex
 
-  details_dir:    bibliography
-  details_layout: bibtex.html
-  details_link:   Details
 
   query: "@*"

@@ -12,7 +12,7 @@ sponsors:
           
 permalink: /projects/ppms
 picture: 
-blurb: Hard disk drive latency models
+overview: Hard disk drive latency models
 ---
 
 <b>FLAMBES</b>

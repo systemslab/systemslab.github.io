@@ -8,7 +8,7 @@ sponsors: ISSDM
 participants: Rosie Wacha
 permalink: /projects/ssd
 picture:
-blurb: 
+overview: 
 ---
 
 RAID4S Hardware Performance with a Linux Software RAID
