@@ -1,18 +1,17 @@
-<header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+<!-- Always shows a header, even in smaller screens. -->
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
     <!-- Title -->
-    <div class="mdl-layout__header-row portfolio-logo-row">
-        <span class="mdl-layout__title">
-            <div class="portfolio-logo" href="{{ site.url }}"></div>
-        </span>
-    </div>
-    <!-- Tabs -->
-    <div class="mdl-layout__header-row portfolio-navigation-row">
-        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-            {% for my_page in site.pages %}
-               {% if my_page.title %}
-                  <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-               {% endif %}
-            {% endfor %}
-        </nav>
-    </div>
+    <span class="mdl-layout-title">Systems Research Lab</span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      {% for my_page in site.pages %}
+         {% if my_page.title %}
+            <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+         {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
 </header>
