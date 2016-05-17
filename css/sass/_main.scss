@@ -2,3 +2,10 @@
  * Replace these with background-image: url('../../../images/pic.png')
  * if you want a picture instead of a gradient in the header.
  */
+.mdl-layout__drawer-button{
+  display: none;
+}
+
+.mdl-layout__header-row{
+  float: left;
+}

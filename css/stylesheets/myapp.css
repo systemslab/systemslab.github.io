@@ -2,6 +2,16 @@
  * Replace these with background-image: url('../../../images/pic.png')
  * if you want a picture instead of a gradient in the header.
  */
+/* line 5, ../sass/_main.scss */
+.mdl-layout__drawer-button {
+  display: none;
+}
+
+/* line 9, ../sass/_main.scss */
+.mdl-layout__header-row {
+  float: left;
+}
+
 /* Makes images with the img-circle class into a circle
  * Also adds a Material Design-esque shadow to each profile picture
  * Source: https://codepen.io/sdthornton/pen/wBZdXq
