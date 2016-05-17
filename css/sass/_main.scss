@@ -2,10 +2,23 @@
  * Replace these with background-image: url('../../../images/pic.png')
  * if you want a picture instead of a gradient in the header.
  */
-.mdl-layout__drawer-button{
-  display: none;
+
+/* Resizes logo to fit in the navbar */
+.site-logo {
+  width: 230px;
+  height: 36px;
 }
 
-.mdl-layout__header-row{
-  float: left;
+/* Adds a gradient to this */
+.mdl-layout__header{
+  /* fallback for old browsers */
+  background: #136a8a;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left, #136a8a , #267871);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #136a8a , #267871);
+}
+
+.spacer {
+  flex-grow: 1;
 }
