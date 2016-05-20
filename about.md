@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Us
+icon: business
 permalink: /about/
 ---
 <div class="demo-title" align="center">

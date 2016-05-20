@@ -1,9 +1,11 @@
-<div class="mdl-layout__drawer">
-  <span class="mdl-layout-title">Title</span>
-  <nav class="mdl-navigation">
-    {% for my_page in site.pages %}
-       {% if my_page.title %}
-          <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+<div class="drawer mdl-layout__drawer">
+  <span class="mdl-layout-title"><img class="logo-image" src=""></span>
+  <nav class="navigation mdl-navigation">
+    {% for page in site.pages %}
+       {% if page.title %}
+          <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">
+            <i class="material-icons" role="presentation">{{page.icon}}</i>{{page.title}}
+          </a>
        {% endif %}
     {% endfor %}
   </nav>

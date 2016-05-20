@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Projects
+icon: code
 permalink: /projects/
 ---
 <div class="mdl-grid portfolio-max-width">

@@ -20,7 +20,14 @@
   background: linear-gradient(to left, #136a8a, #267871);
 }
 
-/* line 22, ../sass/_main.scss */
+/* line 23, ../sass/_main.scss */
+.is-small-screen .mdl-layout-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 30, ../sass/_main.scss */
 .spacer {
   flex-grow: 1;
 }
@@ -93,6 +100,41 @@
 .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
+}
+
+/* Defines size of Material icons in the drawer */
+/* line 2, ../sass/_sidebar.scss */
+.navigation .mdl-navigation__link .material-icons {
+  font-size: 24px;
+  margin-right: 32px;
+}
+
+/* CSS for MDL drawer's insides (once opened) */
+/* line 8, ../sass/_sidebar.scss */
+.drawer .mdl-layout-title {
+  position: relative;
+  background: #607D8B;
+  height: 160px;
+}
+
+/* Resizes the logo in the MDL sidebar to fit properly */
+/* line 15, ../sass/_sidebar.scss */
+.drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
+}
+
+/* line 21, ../sass/_sidebar.scss */
+.navigation {
+  flex-grow: 1;
+}
+
+/* Ditto */
+/* line 26, ../sass/_sidebar.scss */
+.drawer .logo-image {
+  position: absolute;
+  bottom: 16px;
 }
 
 /*

@@ -1,0 +1,29 @@
+/* Defines size of Material icons in the drawer */
+.navigation .mdl-navigation__link .material-icons {
+  font-size: 24px;
+  margin-right: 32px;
+}
+
+/* CSS for MDL drawer's insides (once opened) */
+.drawer .mdl-layout-title {
+  position: relative;
+  background: #607D8B;
+  height: 160px;
+}
+
+/* Resizes the logo in the MDL sidebar to fit properly */
+.drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
+}
+
+.navigation {
+  flex-grow: 1;
+}
+
+/* Ditto */
+.drawer .logo-image{
+  position: absolute;
+  bottom: 16px;
+}

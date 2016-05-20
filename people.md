@@ -1,6 +1,7 @@
 ---
 layout: default
 title: People
+icon: people
 permalink: /people/
 ---
 <h3 align="center">People</h3>

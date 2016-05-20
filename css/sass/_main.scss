@@ -19,6 +19,14 @@
   background: linear-gradient(to left, #136a8a , #267871);
 }
 
+.is-small-screen{
+  .mdl-layout-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .spacer {
   flex-grow: 1;
 }
