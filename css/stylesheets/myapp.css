@@ -102,39 +102,38 @@
   margin-left: 3px;
 }
 
-/* Defines size of Material icons in the drawer */
-/* line 2, ../sass/_sidebar.scss */
-.navigation .mdl-navigation__link .material-icons {
-  font-size: 24px;
-  margin-right: 32px;
+/* line 1, ../sass/_sidebar.scss */
+.drawer {
+  border-right: none;
 }
-
-/* CSS for MDL drawer's insides (once opened) */
+/* line 4, ../sass/_sidebar.scss */
+.drawer span.mdl-navigation__link.mdl-navigation__link {
+  color: #8bc34a;
+}
 /* line 8, ../sass/_sidebar.scss */
+.drawer .mdl-navigation__link.mdl-navigation__link {
+  font-size: 14px;
+  color: #757575;
+}
+/* line 13, ../sass/_sidebar.scss */
 .drawer .mdl-layout-title {
   position: relative;
-  background: #607D8B;
+  background: #136a8a;
   height: 160px;
 }
+/* line 19, ../sass/_sidebar.scss */
+.drawer .logo-image {
+  position: absolute;
+  bottom: 16px;
+  width: 210px;
+  height: 36px;
+}
 
-/* Resizes the logo in the MDL sidebar to fit properly */
-/* line 15, ../sass/_sidebar.scss */
+/* line 28, ../sass/_sidebar.scss */
 .drawer-separator {
   height: 1px;
   background-color: #dcdcdc;
   margin: 8px 0;
-}
-
-/* line 21, ../sass/_sidebar.scss */
-.navigation {
-  flex-grow: 1;
-}
-
-/* Ditto */
-/* line 26, ../sass/_sidebar.scss */
-.drawer .logo-image {
-  position: absolute;
-  bottom: 16px;
 }
 
 /*
