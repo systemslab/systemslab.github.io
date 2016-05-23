@@ -16,22 +16,19 @@ layout: default
 }
 
 .contact {
-	width: 10%;
-	min-width: 140px;
-	padding: 3px;
-	border: solid 1px #D1D0CE;
-	border-radius: 4px;
-}
-.contact img{
-	width: 200px;
-	margin-bottom: 15px;
+	width: 8%;
+	min-width: 150px;
+	padding: 10px;
+	border-bottom: solid 1px #D1D0CE;
+	border-radius: 2px;
+	float: left;
 }
 
+
 .text{
-	text-align: left;
-	float: left;
-	padding-right: 30px;
-	width: 100%;
+    text-align: left;
+    
+	width: 90%;
 }
 </style>
 </head>
@@ -39,19 +36,16 @@ layout: default
 <article class="post">
 
   <div class="post-content">
-    <div class="demo-title">
-    </div><div class="demo-container mdl-grid">
+   <div class="demo-container mdl-grid">
     <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
     <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-    
-    <table style="width:100%"><tbody>
-        <tr>
-        <td style='
-        padding-top: 0px;
-        width: 200px'>
+    <h3> {{ page.title }} </h3>
+	<div class="mdl-card__actions mdl-card--border"></div>
+	
+
         <div class="contact">
     	{% if page.icon %}
-	    <img src="{{ page.icon }}">
+	    <img class="img-small img-circle" src="{{ page.icon }}"></a>
 	    {% endif %}
 	   {% if page.email %}
 	     <small>{{page.email}}</small>
@@ -62,17 +56,21 @@ layout: default
 	       {% endfor %}
 	    {% endif %}
 	    </div>
-	    </td>
-	    <td>
+
 	  <div class="text">
-	        <h2> {{ page.title }} </h2>
-	    <div class="mdl-card__actions mdl-card--border"></div>
 	    <h3> Overview </h3>
         {{ content }}
         </div>
-        </td>
-        </tr>
-    </tbody></table><br>
+    {% if page.interests %}
+      <h3> Research Interests </h3>
+       {% capture interests %}
+        {% for interest in page.interests %}
+          {{ interest }}, 
+        {% endfor %}
+       {% endcapture %}
+       {{ interests | strip | append: '@' | remove: ',@' | capitalize | append: '.'}}
+    {% endif %}
+
     <h3> Publications </h3>
     {% assign years = '2015|2014|2013|2012' | split: '|' %}
     {% assign name = page.name | split: ' ' %}
@@ -80,15 +78,13 @@ layout: default
     
     {% for year_ in years %}
     {% assign year = year_ | plus: 0 %}
-      <h4> {{ year }} </h4>
-      {% bibliography --query @*[author ~= {{ lastname }} && year={{year}}] %}
-
-   
+      <div class="dated-entry"> 
+        <div class="date"> {{ year }} </div>
+        <div class="dated-event">
+        {% bibliography --query @*[author ~= {{ lastname }} && year={{year}}] %}<br>
+        </div>
+      </div>
     {% endfor %}
-
-
-
-
     </div>
     </div>
     

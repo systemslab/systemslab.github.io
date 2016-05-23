@@ -1,21 +1,23 @@
 ---
 layout: default
 ---
-<div class="mdl-grid">
-  {% for item in site.news %}
-  <div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
-    <figure class="mdl-card__media">
-      <img src="{{item.picture}}" alt="" />
-    </figure>
-    <div class="mdl-card__title">
-      <h1 class="mdl-card__title-text">{{item.title}}</h1>
-    </div>
-    <div class="mdl-card__supporting-text">
-      <p>{{item.blurb}}</p>
-    </div>
-    <div class="mdl-card__actions mdl-card--border">
-      <a href="{{item.url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
-    </div>
-  </div>
-  {% endfor %}
+
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+<div class="mdl-tabs__tab-bar">
+  <a href="#news-panel" class="mdl-tabs__tab is-active"> News </a>
+  <a href="#events-panel" class="mdl-tabs__tab"> Events </a>
 </div>
+
+<div class="mdl-tabs__panel is-active" id="news-panel">
+<div class="mdl-grid max-width">
+	{% include news.html %}
+</div>
+</div>
+
+<div class="mdl-tabs__panel" id="events-panel">
+   <center>
+   {% include events.html %}
+</center>
+</div>
+
+{% include sponsors.html %}

@@ -1,3 +1,20 @@
+/* material icons fonts */
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.thin-border {
+  margin-top: -15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.vertical-line {
+	border-left: rgba(0,0,0,0.12) 1px solid;
+	padding-right: 20px;
+}
+
 /*
  * Replace these with background-image: url('../../../images/pic.png')
  * if you want a picture instead of a gradient in the header.
@@ -29,4 +46,23 @@
 
 .spacer {
   flex-grow: 1;
+}
+
+.description {
+  font-size: 12px;
+  text-indent:10px;
+  color: grey;
+
+}
+
+.descrip-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* highlight navbar on hover */
+.highlight:hover {
+  color: #E0E0E0;
 }

@@ -1,16 +1,54 @@
+/* material icons fonts */
+/* line 2, ../sass/_main.scss */
+.material-icons.md-12 {
+  font-size: 12px;
+}
+
+/* line 3, ../sass/_main.scss */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+/* line 4, ../sass/_main.scss */
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+/* line 5, ../sass/_main.scss */
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+/* line 6, ../sass/_main.scss */
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* line 8, ../sass/_main.scss */
+.thin-border {
+  margin-top: -15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* line 13, ../sass/_main.scss */
+.vertical-line {
+  border-left: rgba(0, 0, 0, 0.12) 1px solid;
+  padding-right: 20px;
+}
+
 /*
  * Replace these with background-image: url('../../../images/pic.png')
  * if you want a picture instead of a gradient in the header.
  */
 /* Resizes logo to fit in the navbar */
-/* line 7, ../sass/_main.scss */
+/* line 24, ../sass/_main.scss */
 .site-logo {
   width: 230px;
   height: 36px;
 }
 
 /* Adds a gradient to this */
-/* line 13, ../sass/_main.scss */
+/* line 30, ../sass/_main.scss */
 .mdl-layout__header {
   /* fallback for old browsers */
   background: #136a8a;
@@ -20,16 +58,36 @@
   background: linear-gradient(to left, #136a8a, #267871);
 }
 
-/* line 23, ../sass/_main.scss */
+/* line 40, ../sass/_main.scss */
 .is-small-screen .mdl-layout-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 30, ../sass/_main.scss */
+/* line 47, ../sass/_main.scss */
 .spacer {
   flex-grow: 1;
+}
+
+/* line 51, ../sass/_main.scss */
+.description {
+  font-size: 12px;
+  text-indent: 10px;
+  color: grey;
+}
+
+/* line 58, ../sass/_main.scss */
+.descrip-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* highlight navbar on hover */
+/* line 66, ../sass/_main.scss */
+.highlight:hover {
+  color: #E0E0E0;
 }
 
 /* Makes images with the img-circle class into a circle
@@ -74,11 +132,11 @@
 
 /* line 3, ../sass/_card.scss */
 .mdl-grid {
-  max-width: 600px;
+  max-width: 70%;
 }
 /* line 5, ../sass/_card.scss */
 .mdl-grid .mdl-card {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 /* line 7, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__media {
@@ -100,6 +158,20 @@
 .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
+}
+/* line 25, ../sass/_card.scss */
+.mdl-grid .demo-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* line 32, ../sass/_card.scss */
+.mdl-grid .portfolio-card {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: -50px;
+  /* to undo padding for project description */
 }
 
 /* line 1, ../sass/_sidebar.scss */
@@ -146,4 +218,42 @@
   display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
+}
+
+/* Contains formatting for edit on github pages. 
+ * Example taken from Facebook React. */
+/* line 15, ../sass/_footer.scss */
+.edit-page-link {
+  float: right;
+  font-size: 16px;
+}
+
+/* line 20, ../sass/_footer.scss */
+.right {
+  float: right;
+  text-align: right;
+}
+
+/* line 1, ../sass/_publications.scss */
+.dated-entry {
+  margin-bottom: 30px;
+}
+
+/* line 5, ../sass/_publications.scss */
+.dated-entry .date {
+  color: #989898;
+  font-size: 85%;
+  letter-spacing: 1px;
+  float: left;
+  width: 10px;
+  margin: 0 auto 0 0;
+  line-height: 15px;
+}
+
+/* line 15, ../sass/_publications.scss */
+.dated-entry .dated-event {
+  width: 90%;
+  margin: 0 0 0 auto;
+  padding-left: 15px;
+  border-left: rgba(0, 0, 0, 0.12) 1px solid;
 }

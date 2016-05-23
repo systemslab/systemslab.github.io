@@ -9,7 +9,11 @@
     <nav class="mdl-navigation mdl-layout--large-screen-only">
       {% for my_page in site.pages %}
          {% if my_page.title %}
-            <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+         {% unless my_page.show_in_nav == false %}
+            <a class="mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
+            <i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i> {{ my_page.title }}
+            </a>
+         {% endunless %}
          {% endif %}
       {% endfor %}
     </nav>

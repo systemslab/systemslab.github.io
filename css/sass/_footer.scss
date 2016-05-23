@@ -4,7 +4,20 @@
  */
 .mdl-layout__content {
   display: -webkit-flex;
-	display: flex;
+  display: flex;
   -webkit-flex-direction: column;
   flex-direction: column;
+}
+
+/* Contains formatting for edit on github pages. 
+ * Example taken from Facebook React. */
+
+.edit-page-link {
+  float: right;
+  font-size: 16px;
+}
+
+.right {
+  float: right;
+  text-align: right;
 }

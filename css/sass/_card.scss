@@ -1,9 +1,9 @@
 // http://webdesign.tutsplus.com/tutorials/learning-material-design-lite-cards--cms-24633
 
 .mdl-grid {
-	max-width: 600px;
+	max-width: 70%;
 	.mdl-card {
-	  padding-bottom: 50px;
+	  padding-bottom: 30px;
 		.mdl-card__media {
 			margin: 0;
 		}
@@ -22,4 +22,18 @@
 			margin-left: 3px;
 		}
 	}
+	.demo-content {
+	   padding-top: 10px;
+	   padding-bottom: 10px;
+	   padding-right:10px;
+	   padding-left: 10px;
+	}
+	
+	.portfolio-card {
+	   padding-right:10px;
+	   padding-left: 10px;
+	   padding-bottom: -50px; /* to undo padding for project description */
+	}
+
+	
 }
