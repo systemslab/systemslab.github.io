@@ -1,57 +1,65 @@
-// http://webdesign.tutsplus.com/tutorials/learning-material-design-lite-cards--cms-24633
+.home{
+	.mdl-grid {
+		max-width: 100%;
+		margin: auto;
+		.mdl-cell{
+			max-width: 40%;
+		}
 
-.mdl-grid {
-	max-width: 100%;
-<<<<<<< HEAD
-	margin: auto;
+		.mdl-card {
+		  padding-bottom: 30px;
 
-=======
->>>>>>> a63d6c83b9d9b5c65b4fac15c32aa26107d61d0c
-	.mdl-cell{
-		max-width: 40%;
+			.foo {
+				color: #FFFFFF;
+	    	text-decoration: none;
+			}
+
+			.mdl-card__media {
+				margin: 0;
+			}
+
+			.mdl-card__media > img {
+				max-width: 100%;
+			}
+
+			.mdl-card__actions {
+				display: flex;
+				box-sizing:border-box;
+				align-items: center;
+				position: absolute;
+			  bottom: 0px;
+			}
+
+			.mdl-card__actions > .mdl-button--icon {
+				margin-right: 3px;
+				margin-left: 3px;
+			}
+		}
+
+		.demo-content {
+		   padding-top: 10px;
+		   padding-bottom: 10px;
+		   padding-right:10px;
+		   padding-left: 10px;
+		}
+
+		.portfolio-card {
+		   padding-right:10px;
+		   padding-left: 10px;
+		   padding-bottom: -50px; /* to undo padding for project description */
+		}
 	}
+}
 
-	.mdl-card {
-	  padding-bottom: 30px;
 
-		.foo {
-			color: #FFFFFF;
-    	text-decoration: none;
-		}
-
-		.mdl-card__media {
-			margin: 0;
-		}
-
-		.mdl-card__media > img {
-			max-width: 100%;
-		}
-
-		.mdl-card__actions {
-			display: flex;
-			box-sizing:border-box;
-			align-items: center;
-			position: absolute;
-		  bottom: 0px;
-		}
-
-		.mdl-card__actions > .mdl-button--icon {
-			margin-right: 3px;
-			margin-left: 3px;
-		}
-	}
-
-	.demo-content {
-	   padding-top: 10px;
-	   padding-bottom: 10px;
-	   padding-right:10px;
-	   padding-left: 10px;
-	}
-
-	.portfolio-card {
-	   padding-right:10px;
-	   padding-left: 10px;
-	   padding-bottom: -50px; /* to undo padding for project description */
-	}
-
+// For cards on the project page
+.demo-card-square .mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+	height: auto;
+  background:
+    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
 }

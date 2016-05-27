@@ -1,12 +1,11 @@
 ---
 layout: project
-name: Programmable Storage Systems
+name: Parallel File Systems
 participants:
       - Noah Watkins
       - Michael Sevilla
-permalink: /projects/pss
-picture:
-overview: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eleifend tellus eget hendrerit rhoncus. Mauris ornare elit eu sollicitudin bibendum. Nulla scelerisque ex faucibus, hendrerit diam id, maximus erat. Curabitur a justo dolor. Integer iaculis mauris accumsan, efficitur dui nec, porta nulla. Praesent molestie ut ex at vulputate.
+permalink: /projects/pfs
+overview: With FLAMBES we try to improve upon that situation...we would like to be able to simulate very large parallel file systems on a laptop (well, maybe more than one). In Gocfs we explore lockless designs. And finally, we explored ways to scalably monitor and display the state of very large scale file system
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis suscipit justo, a elementum velit faucibus sed. Vestibulum convallis arcu id lectus luctus cursus. Nulla efficitur ante id dignissim pellentesque. Praesent laoreet sem in ante consequat accumsan sed nec augue. Nunc consectetur sem magna, sed efficitur ante congue eget. Fusce facilisis massa dui. Curabitur aliquam nisl eget turpis varius, vel hendrerit lacus tempus. Nam tempus mi id felis vestibulum tempor. Praesent interdum mauris sodales nibh efficitur consequat. Proin pharetra sem non lectus hendrerit, quis dictum dui tempus. Quisque lorem mauris, dignissim id mattis non, elementum at quam. Proin elementum massa eu consequat auctor. Vivamus sed tincidunt sapien.
