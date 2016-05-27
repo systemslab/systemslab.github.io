@@ -1,58 +1,8 @@
 ---
 layout: page
 ---
-<head>
-<style>
-
-.circular-frame, .circular-frame img{
-	width: 85px;
-	height: 85px;
-	-webkit-border-radius: 40px; /* Saf3+, Chrome */
-	border-radius: 40px; /* Opera 10.5, IE 9 */
-	/*-moz-border-radius: 30px;  Disabled for FF1+ */
-
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-}
-
-.contact {
-	width: 8%;
-	min-width: 150px;
-	padding: 10px;
-	border-bottom: solid 1px #D1D0CE;
-	border-radius: 2px;
-	float: left;
-}
 
 
-.text{
-    text-align: left;
-    
-	width: 90%;
-}
-.custom-img {
-    max-width: 175px;
-    max-height: 175px;
-}
-
-.right {
-    float: right;
-}
-
-
-
-.center {
-   float: right;
-}
-
-.left {
-   vertical-align: left;
-}
-
-
-
-</style>
-</head>
 
 <article class="post">
 
@@ -60,10 +10,10 @@ layout: page
     <h3> {{ page.title }} </h3>
 	<div class="mdl-card__actions mdl-card--border"></div>
     	{% if page.icon %}
-    	<div class="person center">
+    	<div class="person right">
     	   <div class="contact-border"> 
     	     <div style="text-align: center;">
-		       <p><img class="custom-img img-circle img-small" src="{{ page.icon }}" /> <br></p>
+		       <p><img class="img-circle img-small" src="{{ page.icon }}" /> <br></p>
 		     </div>
 		    <div style="display: inline-block; text-align: left">
 		      {% if page.titles %}

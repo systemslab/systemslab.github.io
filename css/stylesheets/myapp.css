@@ -154,6 +154,11 @@
   border: #fff 0.5em solid;
 }
 
+/* line 54, ../sass/_people.scss */
+.right {
+  float: right;
+}
+
 /* line 2, ../sass/_card.scss */
 .home .mdl-grid {
   max-width: 100%;

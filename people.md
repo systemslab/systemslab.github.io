@@ -15,7 +15,6 @@ permalink: /people/
         <a href="{{person.permalink}}"><img class="img-circle img-small" src="{{person.icon}}"></a><br>
         <span class="caption section__text"><a href="{{person.permalink}}" class="mdl-button">{{person.name}}</a></span>
         <span class="caption section__text">{{person.category | capitalize}}</span>
-        <span class="caption section__text">{{person.blurb}}</span>
     </div>
   {% endfor %}
      <div class="mdl-layout-spacer"></div>
