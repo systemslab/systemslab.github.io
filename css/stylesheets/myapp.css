@@ -32,6 +32,11 @@
 }
 
 /* line 13, ../sass/_main.scss */
+a {
+  width: auto !important;
+}
+
+/* line 17, ../sass/_main.scss */
 .vertical-line {
   border-left: rgba(0, 0, 0, 0.12) 1px solid;
   padding-right: 20px;
@@ -42,14 +47,14 @@
  * if you want a picture instead of a gradient in the header.
  */
 /* Resizes logo to fit in the navbar */
-/* line 24, ../sass/_main.scss */
+/* line 28, ../sass/_main.scss */
 .site-logo {
   width: 230px;
   height: 36px;
 }
 
 /* Adds a gradient to this */
-/* line 30, ../sass/_main.scss */
+/* line 34, ../sass/_main.scss */
 .mdl-layout__header {
   /* fallback for old browsers */
   background: #136a8a;
@@ -59,30 +64,30 @@
   background: linear-gradient(to left, #136a8a, #267871);
 }
 
-/* line 40, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 .is-small-screen .mdl-layout-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 45, ../sass/_main.scss */
+/* line 49, ../sass/_main.scss */
 .is-small-screen .edit_desktop {
   display: none;
 }
 
-/* line 50, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 .spacer {
   flex-grow: 1;
 }
 
-/* line 54, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 .description {
   font-size: 12px;
   text-indent: 10px;
   color: grey;
 }
 
-/* line 61, ../sass/_main.scss */
+/* line 65, ../sass/_main.scss */
 .descrip-title {
   font-size: 12px;
   text-transform: uppercase;
@@ -90,7 +95,7 @@
 }
 
 /* highlight navbar on hover */
-/* line 69, ../sass/_main.scss */
+/* line 73, ../sass/_main.scss */
 .highlight:hover {
   color: #E0E0E0;
 }
