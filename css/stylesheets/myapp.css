@@ -107,6 +107,10 @@
 /* Align text below an image
  * Source: http://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css
  */
+/* line 13, ../sass/_people.scss */
+.person {
+  /* for borders */
+}
 /* line 14, ../sass/_people.scss */
 .person div.item {
   vertical-align: top;
@@ -133,6 +137,21 @@
 .person .section__text a {
   text-decoration: none;
 }
+/* line 38, ../sass/_people.scss */
+.person .contact-border {
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: #fff 0.5em solid;
+}
 
 /* line 3, ../sass/_card.scss */
 .mdl-grid {
@@ -140,7 +159,7 @@
 }
 /* line 5, ../sass/_card.scss */
 .mdl-grid .mdl-cell {
-  max-width: 40%;
+  max-width: 20%;
 }
 /* line 8, ../sass/_card.scss */
 .mdl-grid .mdl-card {
