@@ -39,7 +39,7 @@ layout: page
     float: right;
 }
 
-.img-border {
+.contact-border {
 	-webkit-border-radius: 0.3em;
 	-moz-border-radius: 0.3em;
 	-ms-border-radius: 0.3em;
@@ -54,6 +54,16 @@ layout: page
 	border: #fff 0.5em solid
 }
 
+.center {
+   float: right;
+}
+
+.left {
+   vertical-align: left;
+}
+
+
+
 </style>
 </head>
 
@@ -63,26 +73,29 @@ layout: page
     <h3> {{ page.title }} </h3>
 	<div class="mdl-card__actions mdl-card--border"></div>
     	{% if page.icon %}
-    	<div class="right">
-		    <p><img class="custom-img img-border" src="{{ page.icon }}" /> <br>	
-			{% if page.email %}
-	     	 <b>Email: </b> {{ page.email }}
-	     	 
-	        {% endif %}
-	        </p>
-	        </div>
+    	<div class="person center">
+    	   <div class="contact-border"> 
+    	     <div style="text-align: center;">
+		       <p><img class="custom-img img-circle img-small" src="{{ page.icon }}" /> <br></p>
+		     </div>
+		    <div style="display: inline-block; text-align: left">
+		      {% if page.titles %}
+			   {% for t in page.titles %}
+			    	{{t}}<br>
+			   {% endfor %}
+			  {% endif %} 	
+	     	  <b>Office: </b> {{ page.office }}<br>
+	     	  <b>Email: </b> {{ page.email }}
+	     	</div>
+	     	</div>
+	    </div> 
 	    {% endif %}
+	    
+	    
+	    <div class="pad-right"> {{ content }} </div>
 
-	  <div class="text">
-        	{{ content }}
-        	{% if page.titles %}
-	    	    <ul>
-	       		{% for t in page.titles %}
-	         		<li> {{t}} </li>
-	       		{% endfor %}
-	            </ul>
-	    	{% endif %} 
-        </div>
+
+
     {% if page.interests %}
       <h4> Research Interests </h4>
        {% capture interests %}

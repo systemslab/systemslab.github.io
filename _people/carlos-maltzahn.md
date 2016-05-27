@@ -4,12 +4,12 @@ name: Carlos Maltzahn
 icon: /assets/images/avatars/carlos-maltzahn.jpeg
 category: faculty
 titles: 
-        - Adjunct Professor, CS 
+        - Adjunct Professor, CS
         - Director, SRL 
         - Director, CROSS 
         - Director, ISSDM
 email: carlosm@ucsc.edu
-office:
+office: E2-369
 permalink: /people/carlos-maltzahn
 interests: 
   - scalable file system data and metadata management
