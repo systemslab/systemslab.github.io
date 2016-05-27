@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* material icons fonts */
 /* line 2, ../sass/_main.scss */
 .material-icons.md-12 {
@@ -139,23 +140,28 @@
   max-width: 100%;
   margin: auto;
 }
-/* line 6, ../sass/_card.scss */
+/* line 7, ../sass/_card.scss */
 .mdl-grid .mdl-cell {
   max-width: 20%;
 }
-/* line 9, ../sass/_card.scss */
+/* line 11, ../sass/_card.scss */
 .mdl-grid .mdl-card {
   padding-bottom: 30px;
 }
-/* line 11, ../sass/_card.scss */
+/* line 14, ../sass/_card.scss */
+.mdl-grid .mdl-card .foo {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 19, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__media {
   margin: 0;
 }
-/* line 14, ../sass/_card.scss */
+/* line 23, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__media > img {
   max-width: 100%;
 }
-/* line 17, ../sass/_card.scss */
+/* line 27, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
@@ -163,19 +169,19 @@
   position: absolute;
   bottom: 0px;
 }
-/* line 24, ../sass/_card.scss */
+/* line 35, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
 }
-/* line 29, ../sass/_card.scss */
+/* line 41, ../sass/_card.scss */
 .mdl-grid .demo-content {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 36, ../sass/_card.scss */
+/* line 48, ../sass/_card.scss */
 .mdl-grid .portfolio-card {
   padding-right: 10px;
   padding-left: 10px;
@@ -229,7 +235,7 @@
   flex-direction: column;
 }
 
-/* Contains formatting for edit on github pages. 
+/* Contains formatting for edit on github pages.
  * Example taken from Facebook React. */
 /* line 15, ../sass/_footer.scss */
 .edit-page-link {
@@ -241,6 +247,21 @@
 .right {
   float: right;
   text-align: right;
+}
+
+/* line 25, ../sass/_footer.scss */
+.sponsor-img {
+  -webkit-transform: scale(0.5);
+  /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.5);
+  /* FF3.5+ */
+  -ms-transform: scale(0.5);
+  /* IE9 */
+  -o-transform: scale(0.5);
+  /* Opera 10.5+ */
+  transform: scale(0.5);
+  /* IE6–IE */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
 }
 
 /* line 1, ../sass/_publications.scss */

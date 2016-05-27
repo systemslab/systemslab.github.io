@@ -1,16 +1,16 @@
 {% for item in site.news %}
-<div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
-<figure class="mdl-card__media">
-  <img src="{{item.picture}}" alt="" />
-</figure>
-<div class="mdl-card__title">
-  <h1 class="mdl-card__title-text">{{item.title}}</h1>
-</div>
-<div class="mdl-card__supporting-text">
-  <p>{{item.blurb}}</p>
-</div>
-<div class="mdl-card__actions mdl-card--border">
-  <a href="{{item.url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
-</div>
-</div>
+  <div class="mdl-card mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-shadow--2dp">
+    <figure class="mdl-card__media">
+      <img src="{{item.picture}}" alt=""/>
+    </figure>
+    <div class="mdl-card__title foo">
+      <a href="{{item.url}}"><h1 class="mdl-card__title-text">{{item.title}}</h1></a>
+    </div>
+    <div class="mdl-card__supporting-text">
+      <p>{{item.blurb}}</p>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a href="{{item.url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
+    </div>
+  </div>
 {% endfor %}
