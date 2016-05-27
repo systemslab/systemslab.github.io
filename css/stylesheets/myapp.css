@@ -154,58 +154,66 @@
   border: #fff 0.5em solid;
 }
 
-/* line 3, ../sass/_card.scss */
-.mdl-grid {
+/* line 2, ../sass/_card.scss */
+.home .mdl-grid {
   max-width: 100%;
   margin: auto;
 }
-/* line 8, ../sass/_card.scss */
-.mdl-grid .mdl-cell {
-  max-width: 20%;
+/* line 5, ../sass/_card.scss */
+.home .mdl-grid .mdl-cell {
+  max-width: 40%;
 }
-/* line 12, ../sass/_card.scss */
-.mdl-grid .mdl-card {
+/* line 10, ../sass/_card.scss */
+.home .mdl-grid .mdl-card {
   padding-bottom: 30px;
 }
-/* line 15, ../sass/_card.scss */
-.mdl-grid .mdl-card .foo {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-/* line 20, ../sass/_card.scss */
-.mdl-grid .mdl-card .mdl-card__media {
+/* line 13, ../sass/_card.scss */
+.home .mdl-grid .mdl-card .mdl-card__media {
   margin: 0;
 }
-/* line 24, ../sass/_card.scss */
-.mdl-grid .mdl-card .mdl-card__media > img {
+/* line 17, ../sass/_card.scss */
+.home .mdl-grid .mdl-card .mdl-card__media > img {
   max-width: 100%;
 }
-/* line 28, ../sass/_card.scss */
-.mdl-grid .mdl-card .mdl-card__actions {
+/* line 21, ../sass/_card.scss */
+.home .mdl-grid .mdl-card .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
   align-items: center;
   position: absolute;
   bottom: 0px;
 }
-/* line 36, ../sass/_card.scss */
-.mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
+/* line 29, ../sass/_card.scss */
+.home .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
 }
-/* line 42, ../sass/_card.scss */
-.mdl-grid .demo-content {
+/* line 35, ../sass/_card.scss */
+.home .mdl-grid .demo-content {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 49, ../sass/_card.scss */
-.mdl-grid .portfolio-card {
+/* line 42, ../sass/_card.scss */
+.home .mdl-grid .portfolio-card {
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: -50px;
   /* to undo padding for project description */
+}
+
+/* line 52, ../sass/_card.scss */
+.demo-card-square .mdl-card {
+  width: 320px;
+  height: 320px;
+}
+
+/* line 56, ../sass/_card.scss */
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  height: auto;
+  background: url("../assets/demos/dog.png") bottom right 15% no-repeat #46B6AC;
 }
 
 /* line 1, ../sass/_sidebar.scss */
