@@ -19,7 +19,6 @@ interests:
   - information retrieval
   - cooperation dynamics
   
-blurb: Blurb goes here. Please write in 3rd person =)
 ---
 
 Carlos Maltzahn is Director of the UCSC Systems Research Lab, Director of the Center for 

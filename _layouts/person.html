@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 ---
 <head>
 <style>
@@ -30,39 +30,61 @@ layout: default
     
 	width: 90%;
 }
+.custom-img {
+    max-width: 175px;
+    max-height: 175px;
+}
+
+.right {
+    float: right;
+}
+
+.img-border {
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-ms-border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	border-radius: 0.3em;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: #fff 0.5em solid
+}
+
 </style>
 </head>
 
 <article class="post">
 
   <div class="post-content">
-   <div class="demo-container mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-    <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
     <h3> {{ page.title }} </h3>
 	<div class="mdl-card__actions mdl-card--border"></div>
-	
-
-        <div class="contact">
     	{% if page.icon %}
-	    <img class="img-small img-circle" src="{{ page.icon }}"></a>
+    	<div class="right">
+		    <p><img class="custom-img img-border" src="{{ page.icon }}" /> <br>	
+			{% if page.email %}
+	     	 <b>Email: </b> {{ page.email }}
+	     	 
+	        {% endif %}
+	        </p>
+	        </div>
 	    {% endif %}
-	   {% if page.email %}
-	     <small>{{page.email}}</small>
-	    {% endif %}<br>
-	    {% if page.titles %}
-	       {% for t in page.titles %}
-	          <font size="2">{{t}}</font><br>
-	       {% endfor %}
-	    {% endif %}
-	    </div>
 
 	  <div class="text">
-	    <h3> Overview </h3>
-        {{ content }}
+        	{{ content }}
+        	{% if page.titles %}
+	    	    <ul>
+	       		{% for t in page.titles %}
+	         		<li> {{t}} </li>
+	       		{% endfor %}
+	            </ul>
+	    	{% endif %} 
         </div>
     {% if page.interests %}
-      <h3> Research Interests </h3>
+      <h4> Research Interests </h4>
        {% capture interests %}
         {% for interest in page.interests %}
           {{ interest }}, 
@@ -71,7 +93,7 @@ layout: default
        {{ interests | strip | append: '@' | remove: ',@' | capitalize | append: '.'}}
     {% endif %}
 
-    <h3> Publications </h3>
+    <h4> Publications </h4>
     {% assign years = '2015|2014|2013|2012' | split: '|' %}
     {% assign name = page.name | split: ' ' %}
     {% assign lastname = name[1] %}
@@ -86,8 +108,6 @@ layout: default
       </div>
     {% endfor %}
     </div>
-    </div>
-    
-  </div>
+
 
 </article>

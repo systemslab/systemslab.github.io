@@ -137,25 +137,24 @@
 /* line 3, ../sass/_card.scss */
 .mdl-grid {
   max-width: 100%;
-  margin: auto;
 }
-/* line 6, ../sass/_card.scss */
+/* line 5, ../sass/_card.scss */
 .mdl-grid .mdl-cell {
-  max-width: 20%;
+  max-width: 40%;
 }
-/* line 9, ../sass/_card.scss */
+/* line 8, ../sass/_card.scss */
 .mdl-grid .mdl-card {
   padding-bottom: 30px;
 }
-/* line 11, ../sass/_card.scss */
+/* line 10, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__media {
   margin: 0;
 }
-/* line 14, ../sass/_card.scss */
+/* line 13, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__media > img {
   max-width: 100%;
 }
-/* line 17, ../sass/_card.scss */
+/* line 16, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
@@ -163,19 +162,19 @@
   position: absolute;
   bottom: 0px;
 }
-/* line 24, ../sass/_card.scss */
+/* line 23, ../sass/_card.scss */
 .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
 }
-/* line 29, ../sass/_card.scss */
+/* line 28, ../sass/_card.scss */
 .mdl-grid .demo-content {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-/* line 36, ../sass/_card.scss */
+/* line 35, ../sass/_card.scss */
 .mdl-grid .portfolio-card {
   padding-right: 10px;
   padding-left: 10px;
