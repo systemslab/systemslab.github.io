@@ -1,85 +1,50 @@
 ---
-layout: default
+layout: page
 ---
-<head>
-<style>
-
-.info {
-	width: 10%;
-	min-width: 140px;
-	padding: 3px;
-	border: solid 1px #D1D0CE;
-	border-radius: 4px;
-}
-.info img{
-	width: 200px;
-	margin-bottom: 15px;
-}
-.text{
-	text-align: left;
-	float: left;
-	padding-right: 30px;
-	width: 100%;
-}
-
-.left-border {
-    border-left: 1px solid rgba(0,0,0,0.12);
-    padding-left: 35px;
-}
-
-</style>
-</head>
-
-<article class="post">
-
-  <div class="post-content">
-    <div class="demo-title">
-    </div><div class="demo-container mdl-grid">
-    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-    <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-    	<h2> {{ page.name }} </h2>
-	    <div class="thin-border"></div><br>
-    <table style="width:100%"><tbody>
-        <tr>
-        <td style="padding-right:20px;
-                   vertical-align:-10px;
-                   ">
-
-        {% if page.picture %}
-	       <img src="{{ page.picture }}">
-	    {% endif %}
-
-	   {% if page.mentors %}
-	      <h3> Mentors </h3>
-	      <ul>
-	      {% for mentor in page.mentors %}
-	          <li> {{ mentor }} </li>
-	      {% endfor %}
-	      </ul>
-	    {% endif %} <br>
-	    {% if page.sponsors %}
-	       <h3> Sponsors </h3>
-	       <ul>
-	       {% for sponsor in page.sponsors %}
-	          <li> {{ sponsor }} </li> 
-	       {% endfor %}
-	       </ul>
-	    {% endif %}
-
-
-	    </td>
-	    <td class="left-border">
-	    
-	    <h3> Description </h3>
-        {{ content }}
-        </td>
-
-        </tr>
-    </tbody></table>
-    
-    </div>
-    </div>
-    
+<h4 align="center"> {{ page.name }} </h4>
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect home">
+  <div class="mdl-tabs__tab-bar">
+    <a href="#overview-panel" class="mdl-tabs__tab is-active"> Project </a>
+    <a href="#people-panel" class="mdl-tabs__tab"> People Involved </a>
+    <a href="#ack-panel" class="mdl-tabs__tab"> Acknowledgments </a>
   </div>
 
-</article>
+  <div class="mdl-tabs__panel is-active" id="overview-panel">
+    <div class="mdl-grid max-width">
+      	<div class="mdl-layout-spacer"></div>
+    	{{ content }}
+    	<div class="mdl-layout-spacer"></div>
+    </div>
+  </div>
+
+  <div class="mdl-tabs__panel" id="people-panel">
+    <div class="mdl-grid max-width">
+        <div class="mdl-layout-spacer"></div>
+     	   <h4> Participants </h4><br>
+        <ul>
+        {% for person in page.participants %}
+     	   <li>{{ person }}</li>
+     	  {% endfor %}
+     	 </ul>
+        <div class="mdl-layout-spacer"></div>
+    </div>
+  </div>
+  
+   <div class="mdl-tabs__panel" id="ack-panel">
+    <div class="mdl-grid max-width">
+        <h4> Mentors </h4><br>
+        <ul>
+        {% for mentor in page.mentors %}
+     	   <li>{{ mentor }}</li>
+     	  {% endfor %}
+     	 </ul>
+        <h4> Sponsors </h4><br>
+        <ul>
+        {% for sponsor in page.sponsors %}
+     	   <li>{{ sponsor }}</li>
+     	  {% endfor %}
+     	 </ul>
+        
+    </div>
+  </div>
+</div>
