@@ -2,7 +2,7 @@
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
     <!-- Title -->
-    <span class="mdl-layout-title"><a href="http://127.0.0.1:4000"><img class="site-logo" src="/assets/images/Baskin_logo2.png"</img></a></span>
+    <span class="mdl-layout-title"><a href="/"><img class="site-logo" src="/assets/images/Baskin_logo2.png"</img></a></span>
     <!-- Add spacer, to align navigation to the right -->
     <div class="mdl-layout-spacer"></div>
     <!-- Navigation. We hide it in small screens. -->
@@ -10,9 +10,15 @@
       {% for my_page in site.pages %}
          {% if my_page.title %}
          {% unless my_page.show_in_nav == false %}
-            <a class="mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
-            <i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i> {{ my_page.title }}
+            {% if page.url == my_page.url %}
+            <a class="active mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
+             <div class="text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i> {{ my_page.title }}</div>
             </a>
+            {% else %}
+            <a class="mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i> {{ my_page.title }} </div>
+            </a>
+            {% endif %}
          {% endunless %}
          {% endif %}
       {% endfor %}

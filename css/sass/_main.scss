@@ -32,6 +32,8 @@
   background: #136a8a;
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to left, #136a8a , #267871);
+
+  background: -webkit-linear-gradient(to left, #136a8a , #267871); 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to left, #136a8a , #267871);
 }
@@ -68,4 +70,17 @@
 /* highlight navbar on hover */
 .highlight:hover {
   color: #E0E0E0;
+}
+
+.active {    
+    border-bottom : 4px solid #E0E0E0;
+    .text {
+        color: #E0E0E0;
+        letter-spacing: -0.5px;
+    }
+}
+
+.inactive-text {
+   letter-spacing: -0.5px;
+
 }

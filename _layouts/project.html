@@ -10,41 +10,34 @@ layout: page
   </div>
 
   <div class="mdl-tabs__panel is-active" id="overview-panel">
-    <div class="mdl-grid max-width">
-      	<div class="mdl-layout-spacer"></div>
     	{{ content }}
-    	<div class="mdl-layout-spacer"></div>
-    </div>
   </div>
 
   <div class="mdl-tabs__panel" id="people-panel">
-    <div class="mdl-grid max-width">
-        <div class="mdl-layout-spacer"></div>
-     	   <h4> Participants </h4><br>
+     	<h4> Participants </h4>
         <ul>
         {% for person in page.participants %}
      	   <li>{{ person }}</li>
      	  {% endfor %}
      	 </ul>
-        <div class="mdl-layout-spacer"></div>
-    </div>
   </div>
   
    <div class="mdl-tabs__panel" id="ack-panel">
-    <div class="mdl-grid max-width">
-        <h4> Mentors </h4><br>
+     {% if page.mentors %}
+        <h4> Mentors </h4>
         <ul>
         {% for mentor in page.mentors %}
      	   <li>{{ mentor }}</li>
      	  {% endfor %}
      	 </ul>
-        <h4> Sponsors </h4><br>
+     {% endif %}
+     {% if page.sponsors %}
+        <h4> Sponsors </h4>
         <ul>
         {% for sponsor in page.sponsors %}
      	   <li>{{ sponsor }}</li>
      	  {% endfor %}
-     	 </ul>
-        
-    </div>
+     	</ul>
+     {% endif %}
   </div>
 </div>
