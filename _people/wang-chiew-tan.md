@@ -6,8 +6,8 @@ category: faculty
 titles:
         - Professor, Computer Science
 email: tan@soe.ucsc.edu
-office: E2-343B
-phone: 831-459-3709
+office: E2-353
+phone: 831-459-1304
 permalink: /people/wang-chiew-tan
 website: https://www.soe.ucsc.edu/people/tan
 ---
