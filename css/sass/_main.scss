@@ -77,14 +77,15 @@ a{
 }
 
 .active {    
-    border-bottom : 4px solid #E0E0E0;
+    border-bottom : 4px solid white;
     .text {
-        color: #E0E0E0;
+        color: white;
         letter-spacing: -0.5px;
     }
 }
 
 .inactive-text {
+   color: dark-grey;
    letter-spacing: -0.5px;
 
 }

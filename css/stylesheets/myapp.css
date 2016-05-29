@@ -65,29 +65,30 @@ a {
   background: linear-gradient(to left, #136a8a, #267871);
 }
 
-
+/* line 46, ../sass/_main.scss */
 .is-small-screen .mdl-layout-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
+/* line 51, ../sass/_main.scss */
 .is-small-screen .edit_desktop {
   display: none;
 }
 
-
+/* line 56, ../sass/_main.scss */
 .spacer {
   flex-grow: 1;
 }
 
-
+/* line 60, ../sass/_main.scss */
 .description {
   font-size: 12px;
   text-indent: 10px;
   color: grey;
 }
 
+/* line 67, ../sass/_main.scss */
 .descrip-title {
   font-size: 12px;
   text-transform: uppercase;
@@ -95,22 +96,24 @@ a {
 }
 
 /* highlight navbar on hover */
+/* line 75, ../sass/_main.scss */
 .highlight:hover {
   color: #E0E0E0;
 }
 
-/* line 75, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 .active {
-  border-bottom: 4px solid #E0E0E0;
+  border-bottom: 4px solid white;
 }
-/* line 77, ../sass/_main.scss */
+/* line 81, ../sass/_main.scss */
 .active .text {
-  color: #E0E0E0;
+  color: white;
   letter-spacing: -0.5px;
 }
 
-/* line 83, ../sass/_main.scss */
+/* line 87, ../sass/_main.scss */
 .inactive-text {
+  color: dark-grey;
   letter-spacing: -0.5px;
 }
 
@@ -219,7 +222,7 @@ a {
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 42, ../sass/_card.scss */
+/* line 44, ../sass/_card.scss */
 .home .mdl-grid .portfolio-card {
   padding-right: 20px;
   padding-left: 20px;
@@ -228,13 +231,13 @@ a {
 }
 
 /* For cards on the project page */
-/* line 52, ../sass/_card.scss */
+/* line 55, ../sass/_card.scss */
 .demo-card-square .mdl-card {
   width: 320px;
   height: 320px;
 }
 
-/* line 56, ../sass/_card.scss */
+/* line 60, ../sass/_card.scss */
 .demo-card-square > .mdl-card__title {
   color: #fff;
   height: auto;

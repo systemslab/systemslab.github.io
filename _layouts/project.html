@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+
 <h4 align="center"> {{ page.name }} </h4>
 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect home">
   <div class="mdl-tabs__tab-bar">
@@ -17,8 +18,21 @@ layout: page
      	<h4> Participants </h4>
         <ul>
         {% for person in page.participants %}
-     	   <li>{{ person }}</li>
-     	  {% endfor %}
+          {% assign exists = false %}
+          {% for p in site.people %}
+              {% if p.name == person %}
+                  {% assign exists = true %}
+                  {% assign link = p.permalink %}
+              {% endif %}
+          {% endfor %}
+          {% if exists %}
+               <li> <a href="{{ link }}">{{ person }}</a></li>
+          {% else %}
+              <li> {{ person }} </li>
+          {% endif %}
+          
+
+     	 {% endfor %}
      	 </ul>
   </div>
   
