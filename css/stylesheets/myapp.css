@@ -63,7 +63,7 @@ a {
   background: -webkit-linear-gradient(to left, #136a8a, #267871);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to left, #136a8a, #267871);
-  background: linear-gradient(to left, #37474f, #333333);
+  background: linear-gradient(to left, #778899, #b0c4de);
 }
 
 /* line 47, ../sass/_main.scss */
@@ -99,23 +99,21 @@ a {
 /* highlight navbar on hover */
 /* line 76, ../sass/_main.scss */
 .highlight:hover {
-  color: #019688;
-  text-decoration: underline;
+  color: #37474f;
 }
 
-/* line 84, ../sass/_main.scss */
+/* line 81, ../sass/_main.scss */
 .active .text {
-  text-decoration: underline;
-  color: #019688;
+  color: #37474f;
 }
 
-/* line 92, ../sass/_main.scss */
+/* line 86, ../sass/_main.scss */
 .inactive-text {
   color: dark-grey;
 }
 
 /* slick carousel css */
-/* line 98, ../sass/_main.scss */
+/* line 92, ../sass/_main.scss */
 .banner-background {
   background-color: #f3f3f3;
   -webkit-box-shadow: 0px 2px 2px #c3c3c3;
@@ -123,27 +121,27 @@ a {
   box-shadow: 0px 2px 2px #c3c3c3;
 }
 
-/* line 105, ../sass/_main.scss */
+/* line 99, ../sass/_main.scss */
 .inner-content {
-  padding-right: 100px;
+  padding-right: 60px;
 }
 
-/* line 109, ../sass/_main.scss */
+/* line 104, ../sass/_main.scss */
 .inner-content img {
-  width: 600px;
-  height: 300px;
+  width: 720px;
+  height: 340px;
   float: left;
-  padding: 5px;
+  padding-top: 5px;
   padding-right: 10px;
 }
 
 /* arrow keys  */
-/* line 118, ../sass/_main.scss */
+/* line 113, ../sass/_main.scss */
 .slick-prev:before, .slick-next:before {
   color: grey !important;
 }
 
-/* line 122, ../sass/_main.scss */
+/* line 117, ../sass/_main.scss */
 .slick-next {
   margin-left: 10%;
   margin-right: 5%;
@@ -222,19 +220,19 @@ a {
 .home .mdl-grid .mdl-cell {
   max-width: 40%;
 }
-/* line 10, ../sass/_card.scss */
+/* line 8, ../sass/_card.scss */
 .home .mdl-grid .mdl-card {
   padding-bottom: 30px;
 }
-/* line 13, ../sass/_card.scss */
+/* line 10, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__media {
   margin: 0;
 }
-/* line 17, ../sass/_card.scss */
+/* line 13, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__media > img {
   max-width: 100%;
 }
-/* line 21, ../sass/_card.scss */
+/* line 16, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
@@ -242,19 +240,19 @@ a {
   position: absolute;
   bottom: 0px;
 }
-/* line 29, ../sass/_card.scss */
+/* line 24, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
 }
-/* line 35, ../sass/_card.scss */
+/* line 30, ../sass/_card.scss */
 .home .mdl-grid .demo-content {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 44, ../sass/_card.scss */
+/* line 38, ../sass/_card.scss */
 .home .mdl-grid .portfolio-card {
   padding-right: 20px;
   padding-left: 20px;
@@ -263,13 +261,13 @@ a {
 }
 
 /* For cards on the project page */
-/* line 55, ../sass/_card.scss */
+/* line 49, ../sass/_card.scss */
 .demo-card-square .mdl-card {
   width: 320px;
   height: 320px;
 }
 
-/* line 60, ../sass/_card.scss */
+/* line 54, ../sass/_card.scss */
 .demo-card-square > .mdl-card__title {
   color: #fff;
   height: auto;

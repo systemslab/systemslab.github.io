@@ -2,8 +2,10 @@
 $(function () {
       // Init the slick
     $('#dashboard').slick({
-        dots: true,
         arrows: true,
+        prevArrow: null,
+        dots: true,
+        fade: true,
     });
 
 });

@@ -40,7 +40,7 @@ a{
   background: -webkit-linear-gradient(to left, #136a8a , #267871); 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to left, #136a8a , #267871);
-  background: linear-gradient(to left, #37474f , #333333);
+  background: linear-gradient(to left, #778899 , #B0C4DE);
 }
 
 .is-small-screen{
@@ -74,19 +74,13 @@ a{
 
 /* highlight navbar on hover */
 .highlight:hover {
-  color: #019688;
-  text-decoration : underline;
-  
-
+  color: #37474f;
 }
 
 .active {    
    .text {
-  		text-decoration : underline;
-  		color: #019688;
-
+  		color: #37474f;
     }
-
 }
 
 .inactive-text {
@@ -103,14 +97,15 @@ a{
 }
 
 .inner-content {
-	padding-right: 100px;
+	padding-right: 60px;
+
 }
 
 .inner-content img {
-   width: 600px; 
-   height: 300px;
+   width: 720px; 
+   height: 340px;
    float: left;
-   padding: 5px;
+   padding-top: 5px;
    padding-right: 10px;
 }
 
@@ -123,3 +118,4 @@ a{
    margin-left:10%;
    margin-right:5%;
 }
+
