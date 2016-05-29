@@ -63,32 +63,33 @@ a {
   background: -webkit-linear-gradient(to left, #136a8a, #267871);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(to left, #136a8a, #267871);
+  background: linear-gradient(to left, #37474f, #333333);
 }
 
-/* line 46, ../sass/_main.scss */
+/* line 47, ../sass/_main.scss */
 .is-small-screen .mdl-layout-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 51, ../sass/_main.scss */
+/* line 52, ../sass/_main.scss */
 .is-small-screen .edit_desktop {
   display: none;
 }
 
-/* line 56, ../sass/_main.scss */
+/* line 57, ../sass/_main.scss */
 .spacer {
   flex-grow: 1;
 }
 
-/* line 60, ../sass/_main.scss */
+/* line 61, ../sass/_main.scss */
 .description {
   font-size: 12px;
   text-indent: 10px;
   color: grey;
 }
 
-/* line 67, ../sass/_main.scss */
+/* line 68, ../sass/_main.scss */
 .descrip-title {
   font-size: 12px;
   text-transform: uppercase;
@@ -96,25 +97,56 @@ a {
 }
 
 /* highlight navbar on hover */
-/* line 75, ../sass/_main.scss */
+/* line 76, ../sass/_main.scss */
 .highlight:hover {
-  color: #E0E0E0;
+  color: #019688;
+  text-decoration: underline;
 }
 
-/* line 79, ../sass/_main.scss */
-.active {
-  border-bottom: 4px solid white;
-}
-/* line 81, ../sass/_main.scss */
+/* line 84, ../sass/_main.scss */
 .active .text {
-  color: white;
-  letter-spacing: -0.5px;
+  text-decoration: underline;
+  color: #019688;
 }
 
-/* line 87, ../sass/_main.scss */
+/* line 92, ../sass/_main.scss */
 .inactive-text {
   color: dark-grey;
-  letter-spacing: -0.5px;
+}
+
+/* slick carousel css */
+/* line 98, ../sass/_main.scss */
+.banner-background {
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0px 2px 2px #c3c3c3;
+  -moz-box-shadow: 0px 2px 2px #c3c3c3;
+  box-shadow: 0px 2px 2px #c3c3c3;
+}
+
+/* line 105, ../sass/_main.scss */
+.inner-content {
+  padding-right: 100px;
+}
+
+/* line 109, ../sass/_main.scss */
+.inner-content img {
+  width: 600px;
+  height: 300px;
+  float: left;
+  padding: 5px;
+  padding-right: 10px;
+}
+
+/* arrow keys  */
+/* line 118, ../sass/_main.scss */
+.slick-prev:before, .slick-next:before {
+  color: grey !important;
+}
+
+/* line 122, ../sass/_main.scss */
+.slick-next {
+  margin-left: 10%;
+  margin-right: 5%;
 }
 
 /* Makes images with the img-circle class into a circle

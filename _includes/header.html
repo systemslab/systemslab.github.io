@@ -2,21 +2,27 @@
 <header class="mdl-layout__header">
   <div class="mdl-layout__header-row">
     <!-- Title -->
-    <span class="mdl-layout-title"><a href="/"><img class="site-logo" src="/assets/images/Baskin_logo2.png"</img></a></span>
+    <span class="mdl-layout-title"><a href="/"><img class="site-logo" src="/assets/images/Logos/Baskin_logo2.png"</img></a></span>
     <!-- Add spacer, to align navigation to the right -->
     <div class="mdl-layout-spacer"></div>
     <!-- Navigation. We hide it in small screens. -->
     <nav class="mdl-navigation mdl-layout--large-screen-only">
+       {% if page.url == '/' %}
+         <a class="active mdl-navigation__link highlight" href="/"><i class="material-icons md-18" role="presentation">home</i>Home</a>
+        {% else %}
+         <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>Home </a>
+       {% endif %}
+
       {% for my_page in site.pages %}
          {% if my_page.title %}
          {% unless my_page.show_in_nav == false %}
             {% if page.url contains my_page.url %}
             <a class="active mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
-             <div class="text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i> {{ my_page.title }}</div>
+             <span class="text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>{{ my_page.title }}</span>
             </a>
             {% else %}
             <a class="mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
-            <div class="inactive-text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i> {{ my_page.title }} </div>
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>{{ my_page.title }} </div>
             </a>
             {% endif %}
          {% endunless %}
