@@ -57,39 +57,37 @@ a {
 /* line 34, ../sass/_main.scss */
 .mdl-layout__header {
   /* fallback for old browsers */
-  background: #136a8a;
+  background: #3D7EAA;
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to left, #136a8a, #267871);
-  background: -webkit-linear-gradient(to left, #136a8a, #267871);
+  background: -webkit-linear-gradient(to left, #F9A825, #3D7EAA);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to left, #136a8a, #267871);
-  background: linear-gradient(to left, #778899, #b0c4de);
+  background: linear-gradient(to left, #f9a825, #3d7eaa);
 }
 
-/* line 47, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 .is-small-screen .mdl-layout-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 52, ../sass/_main.scss */
+/* line 49, ../sass/_main.scss */
 .is-small-screen .edit_desktop {
   display: none;
 }
 
-/* line 57, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 .spacer {
   flex-grow: 1;
 }
 
-/* line 61, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 .description {
   font-size: 12px;
   text-indent: 10px;
   color: grey;
 }
 
-/* line 68, ../sass/_main.scss */
+/* line 65, ../sass/_main.scss */
 .descrip-title {
   font-size: 12px;
   text-transform: uppercase;
@@ -97,23 +95,23 @@ a {
 }
 
 /* highlight navbar on hover */
-/* line 76, ../sass/_main.scss */
+/* line 73, ../sass/_main.scss */
 .highlight:hover {
   color: #37474f;
 }
 
-/* line 81, ../sass/_main.scss */
+/* line 78, ../sass/_main.scss */
 .active .text {
   color: #37474f;
 }
 
-/* line 86, ../sass/_main.scss */
+/* line 83, ../sass/_main.scss */
 .inactive-text {
   color: dark-grey;
 }
 
 /* slick carousel css */
-/* line 92, ../sass/_main.scss */
+/* line 89, ../sass/_main.scss */
 .banner-background {
   background-color: #f3f3f3;
   -webkit-box-shadow: 0px 2px 2px #c3c3c3;
@@ -121,7 +119,7 @@ a {
   box-shadow: 0px 2px 2px #c3c3c3;
 }
 
-/* line 99, ../sass/_main.scss */
+/* line 96, ../sass/_main.scss */
 .inner-content {
   padding-right: 60px;
 }
@@ -131,7 +129,7 @@ a {
   margin-bottom: 15px;
 }
 
-/* line 109, ../sass/_main.scss */
+
 .inner-content img {
   width: 720px;
   height: 340px;
@@ -140,13 +138,11 @@ a {
   padding-right: 10px;
 }
 
-/* arrow keys  */
-/* line 118, ../sass/_main.scss */
+
 .slick-prev:before, .slick-next:before {
   color: grey !important;
 }
 
-/* line 122, ../sass/_main.scss */
 .slick-next {
   margin-left: 10%;
   margin-right: 5%;
@@ -276,7 +272,7 @@ a {
 .demo-card-square > .mdl-card__title {
   color: #fff;
   height: auto;
-  background: url("../assets/demos/dog.png") bottom right 15% no-repeat #46B6AC;
+  background: url("../assets/demos/dog.png") bottom right 15% no-repeat #134E5E;
 }
 
 /* line 1, ../sass/_sidebar.scss */
