@@ -14,11 +14,15 @@ layout: page
 		    <div style="display: inline-block; text-align: left; max-width: 250px;">
 		      {% if page.titles %}
 			   {% for t in page.titles %}
-			    	- {{t}}<br>
+			    	<li>{{t}}</li>
 			   {% endfor %}
-			  {% endif %} 	
+			  {% endif %} 
+			  {% if page.office %}	
 	     	  <b>Office: </b> {{ page.office }}<br>
+	     	  {% endif %}
+	     	  {% if page.email %}
 	     	  <b>Email: </b> {{ page.email }}
+	     	  {% endif %}
 	     	</div>
 	     	</div>
 	    </div> 
