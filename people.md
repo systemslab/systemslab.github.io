@@ -13,7 +13,7 @@ permalink: /people/
     <a href="#staff" class="mdl-tabs__tab"> Staff </a>
     <a href="#alumni" class="mdl-tabs__tab"> Alumni </a>
   </div>
-  
+
 {% assign faculty = (site.people | where:"category","faculty" %}
 
 <div class="mdl-tabs__panel is-active" id="faculty">
@@ -70,7 +70,7 @@ permalink: /people/
 <div class="content-grid mdl-grid">
    <div class="mdl-layout-spacer"></div>
    {% for person in alumni %}
-     <div class="mdl-cell person" align="center">
+     <div class="mdl-cell mdl-cell--2-col person" align="center">
         <a href="{{person.permalink}}"><img class="img-circle img-small" src="{{person.icon}}"></a><br>
         <span class="caption section__text"><a href="{{person.permalink}}" class="mdl-button">{{person.name}}</a></span>
      </div>
@@ -79,5 +79,3 @@ permalink: /people/
 </div>
 
 </div>
-
-
