@@ -3,6 +3,7 @@ layout: default
 title: Projects
 icon: code
 permalink: /projects/
+group: navbar
 ---
 <div class="mdl-grid max-width">
 	{% for project in site.projects %}

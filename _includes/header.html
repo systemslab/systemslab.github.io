@@ -14,8 +14,7 @@
        {% endif %}
 
       {% for my_page in site.pages %}
-         {% if my_page.title %}
-         {% unless my_page.show_in_nav == false %}
+         {% if my_page.group contains "navbar" %}
             {% if page.url contains my_page.url %}
             <a class="active mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
              <span class="text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>{{ my_page.title }}</span>
@@ -25,7 +24,6 @@
             <div class="inactive-text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>{{ my_page.title }} </div>
             </a>
             {% endif %}
-         {% endunless %}
          {% endif %}
       {% endfor %}
     </nav>

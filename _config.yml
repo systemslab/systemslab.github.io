@@ -69,24 +69,20 @@ defaults:
    values:
       layout: "default"
 
+# Jekyll-scholar
 scholar:
-  style: assets/bibliography/ieee-with-url.csl
+  style:  assets/bibliography/ieee-with-url.csl
   locale: en
-
   sort_by: year
   order: descending
-
   source: ./_bibliography
   bibliography: references.bib
-  bibliography_template: "{{reference}}"
-
+  bibliography_template: bibtemplate
+  bibliography_list_tag: ul
+  details_link: "[details]"
+  details_layout: bibtex
   replace_strings: true
   join_strings:    true
-  bibliography_list_tag: ul
-  use_raw_bibtex_entry: false
-  bibtex_filters:
-  - superscript
-  - latex
-
 
   query: "@*"
+  

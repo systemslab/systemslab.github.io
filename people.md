@@ -3,8 +3,8 @@ layout: default
 title: People
 icon: people
 permalink: /people/
+group: navbar
 ---
-<h4 style="text-align: center; letter-spacing: -1px;">People</h4>
 
 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect home">
   <div class="mdl-tabs__tab-bar">

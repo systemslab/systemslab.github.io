@@ -123,13 +123,13 @@ a {
 .inner-content {
   padding-right: 60px;
 }
-/* line 101, ../sass/_main.scss */
+/* line 98, ../sass/_main.scss */
 .inner-content .format-content {
   padding-top: 15px;
   margin-bottom: 15px;
 }
 
-
+/* line 106, ../sass/_main.scss */
 .inner-content img {
   width: 720px;
   height: 340px;
@@ -138,11 +138,13 @@ a {
   padding-right: 10px;
 }
 
-
+/* arrow keys  */
+/* line 115, ../sass/_main.scss */
 .slick-prev:before, .slick-next:before {
   color: grey !important;
 }
 
+/* line 119, ../sass/_main.scss */
 .slick-next {
   margin-left: 10%;
   margin-right: 5%;
@@ -207,7 +209,7 @@ a {
   border: #fff 0.5em solid;
 }
 
-/* line 54, ../sass/_people.scss */
+/* line 58, ../sass/_people.scss */
 .right {
   float: right;
 }
