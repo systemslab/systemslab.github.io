@@ -1,11 +1,8 @@
 ---
 title: New version of Linux OS includes Ceph file system developed at UC Santa Cruz
-date: May 20, 2010
 author: Tim Stephens
-picture: https://pbs.twimg.com/profile_images/2186796358/cephglyph_copy.png
-blurb: Ceph, a file system developed at UC Santa Cruz, got included in Linux 2.6.34.
+date:   2010-05-20 00:00:00 -0800
 ---
-
 New version of Linux OS includes Ceph file system developed at UC Santa Cruz
 
 Efficient, reliable storage of electronic data is a growing challenge of the
@@ -18,9 +15,9 @@ provides access to them on a data storage device such as a hard disk (or on an
 array of devices in a large storage system). Ceph is a distributed network
 file system, the type that allows multiple clients to access files stored on
 remote servers. It is designed to manage vast amounts of data with ease,
-meeting the growing demand for data storage on the scale of petabytes.
-(A petabyte is one quadrillion bytes, or a million gigabytes--enough data to
-  fill 223,000 DVDs.)
+meeting the growing demand for data storage on the scale of petabytes. (A
+petabyte is one quadrillion bytes, or a million gigabytes--enough data to
+fill 223,000 DVDs.)
 
 According to a recent study, the amount of digital data created in a year grew
 by 62 percent from 2008 to 2009, and will increase 44-fold by 2020 (IDC "Digital
@@ -28,8 +25,8 @@ Universe Study). The study also reported a growing gap between the amount of
 digital data being created (nearly 800,000 petabytes in 2009) and the amount of
 available storage.
 
-"Everybody needs a solution to the problem of how to handle all this data.
-Our goal with Ceph was to build a scalable system that would allow storage of
+"Everybody needs a solution to the problem of how to handle all this data. Our
+goal with Ceph was to build a scalable system that would allow storage of
 petabytes and beyond," said Scott Brandt, professor of computer science at UC
 Santa Cruz and director of the UCSC / Los Alamos Institute for Scalable
 Scientific Data Management at UCSC's Baskin School of Engineering.
@@ -51,17 +48,17 @@ deal with that. With Ceph, any node can fail and the system heals itself," Weil
 said.
 
 A Ceph file system can be seamlessly expanded simply by adding new servers to
-the system. Ceph automatically distributes data across the new servers. All data
-are replicated across multiple storage devices, and if any device fails, the
-data are automatically re-replicated to other devices.
+the system. Ceph automatically distributes data across the new servers. All
+data are replicated across multiple storage devices, and if any device fails,
+the data are automatically re-replicated to other devices.
 
 Ceph is also designed to dynamically adapt to changing workloads. It can handle
 scenarios in which thousands of clients suddenly access the same file or write
 to the same directory.
 
-"A Ceph storage system can be both big and fast, because all the operations are
-parallelized," Brandt said. "We made it open-source, so the source code is out
-there, and people are starting to be interested."
+"A Ceph storage system can be both big and fast, because all the operations
+are parallelized," Brandt said. "We made it open-source, so the source code is
+out there, and people are starting to be interested."
 
 Brandt, Weil, and others in UCSC's Computer Science Department have been working
 on Ceph for about 8 years. The project was primarily funded by a Department of

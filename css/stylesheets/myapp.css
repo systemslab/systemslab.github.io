@@ -56,12 +56,12 @@ a {
 /* Adds a gradient to this */
 /* line 34, ../sass/_main.scss */
 .mdl-layout__header {
+  background: #525252;
   /* fallback for old browsers */
-  background: #3D7EAA;
+  background: -webkit-linear-gradient(to left, #525252, #3d72b4);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to left, #F9A825, #3D7EAA);
+  background: linear-gradient(to left, #525252, #3d72b4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to left, #f9a825, #3d7eaa);
 }
 
 /* line 44, ../sass/_main.scss */
@@ -220,22 +220,18 @@ a {
   margin: auto;
 }
 /* line 5, ../sass/_card.scss */
-.home .mdl-grid .mdl-cell {
-  max-width: 40%;
-}
-/* line 8, ../sass/_card.scss */
 .home .mdl-grid .mdl-card {
   padding-bottom: 30px;
 }
-/* line 10, ../sass/_card.scss */
+/* line 7, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__media {
   margin: 0;
 }
-/* line 13, ../sass/_card.scss */
+/* line 10, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__media > img {
   max-width: 100%;
 }
-/* line 16, ../sass/_card.scss */
+/* line 13, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
@@ -243,19 +239,19 @@ a {
   position: absolute;
   bottom: 0px;
 }
-/* line 24, ../sass/_card.scss */
+/* line 21, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
 }
-/* line 30, ../sass/_card.scss */
+/* line 27, ../sass/_card.scss */
 .home .mdl-grid .demo-content {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 38, ../sass/_card.scss */
+/* line 35, ../sass/_card.scss */
 .home .mdl-grid .portfolio-card {
   padding-right: 20px;
   padding-left: 20px;
@@ -264,13 +260,13 @@ a {
 }
 
 /* For cards on the project page */
-/* line 49, ../sass/_card.scss */
+/* line 46, ../sass/_card.scss */
 .demo-card-square .mdl-card {
   width: 320px;
   height: 320px;
 }
 
-/* line 54, ../sass/_card.scss */
+/* line 51, ../sass/_card.scss */
 .demo-card-square > .mdl-card__title {
   color: #fff;
   height: auto;
@@ -309,6 +305,469 @@ a {
   height: 1px;
   background-color: #dcdcdc;
   margin: 8px 0;
+}
+
+/* line 2, ../sass/_posts.scss */
+body::before {
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  will-change: transform;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
+}
+
+@media (max-width: 512px) and (min-resolution: 1.5dppx), (max-width: 1024px) and (max-resolution: 1.5dppx) {
+  /* line 16, ../sass/_posts.scss */
+  body::before {
+    background-image: url("images/bg_1024.jpg");
+  }
+}
+@media (min-width: 513px) and (max-width: 1024px) and (min-resolution: 1.5dppx), (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx) {
+  /* line 22, ../sass/_posts.scss */
+  body::before {
+    background-image: url("images/bg_2048.jpg");
+  }
+}
+@media (min-width: 1025px) and (min-resolution: 1.5dppx), (min-width: 2049px) and (max-resolution: 1.5dppx) {
+  /* line 28, ../sass/_posts.scss */
+  body::before {
+    background-image: url("images/bg_2880.jpg");
+  }
+}
+/* line 32, ../sass/_posts.scss */
+body .demo-blog {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+/* line 36, ../sass/_posts.scss */
+.demo-blog .demo-blog__posts {
+  max-width: 900px;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+/* line 45, ../sass/_posts.scss */
+.demo-blog.mdl-layout .mdl-layout__content {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 49, ../sass/_posts.scss */
+.demo-blog .mdl-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 360px;
+}
+
+/* line 55, ../sass/_posts.scss */
+.demo-blog .mdl-card__title {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+/* line 59, ../sass/_posts.scss */
+.demo-blog .mdl-card__media {
+  box-sizing: border-box;
+  background-size: cover;
+  padding: 24px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+/* line 69, ../sass/_posts.scss */
+.demo-blog .mdl-card__media a,
+.demo-blog .mdl-card__title a {
+  color: inherit;
+}
+
+/* line 73, ../sass/_posts.scss */
+.demo-blog .mdl-card__supporting-text {
+  width: 100%;
+  padding: 16px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 80, ../sass/_posts.scss */
+.demo-blog .mdl-card__supporting-text strong {
+  font-weight: 400;
+}
+
+/* line 83, ../sass/_posts.scss */
+.demo-blog .mdl-card__media ~ .mdl-card__supporting-text {
+  min-height: 64px;
+}
+
+/* line 86, ../sass/_posts.scss */
+.demo-blog .mdl-card__supporting-text:not(:last-child) {
+  box-sizing: border-box;
+  min-height: 76px;
+}
+
+/* line 90, ../sass/_posts.scss */
+.demo-blog:not(.demo-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 94, ../sass/_posts.scss */
+.demo-blog .mdl-card__actions:first-child {
+  margin-left: 0;
+}
+
+/* line 97, ../sass/_posts.scss */
+.demo-blog .meta {
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+
+/* line 106, ../sass/_posts.scss */
+.demo-blog .meta > .meta__favorites {
+  flex-direction: row;
+  margin: 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* line 112, ../sass/_posts.scss */
+.demo-blog .meta > .meta__favorites .material-icons {
+  font-size: 2em;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+/* line 117, ../sass/_posts.scss */
+.demo-blog .mdl-card .meta.meta--fill {
+  justify-content: space-between;
+}
+
+/* line 120, ../sass/_posts.scss */
+.demo-blog .meta > *:first-child {
+  margin-right: 16px;
+}
+
+/* line 123, ../sass/_posts.scss */
+.demo-blog .meta > * {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 127, ../sass/_posts.scss */
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.coffee-pic {
+  order: 0;
+}
+
+/* line 130, ../sass/_posts.scss */
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.something-else {
+  order: -1;
+}
+
+/* line 133, ../sass/_posts.scss */
+.demo-blog .coffee-pic .mdl-card__media {
+  background-image: url("images/coffee.jpg");
+}
+
+/* line 136, ../sass/_posts.scss */
+.demo-blog .something-else .mdl-card__media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 142, ../sass/_posts.scss */
+.demo-blog .something-else > button {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  transform: translate(0px, -28px);
+}
+
+/* line 148, ../sass/_posts.scss */
+.demo-blog .something-else .mdl-card__media {
+  font-size: 13px;
+  font-weight: 500;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* line 154, ../sass/_posts.scss */
+.demo-blog .something-else .mdl-card__media img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+/* line 159, ../sass/_posts.scss */
+.demo-blog .something-else .mdl-card__supporting-text {
+  background-color: #F5F5F5;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* line 164, ../sass/_posts.scss */
+.demo-blog .demo-blog__posts > .demo-nav {
+  margin: 12px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+
+/* line 173, ../sass/_posts.scss */
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 177, ../sass/_posts.scss */
+.demo-blog .demo-blog__posts > .demo-nav .mdl-button {
+  color: rgba(0, 0, 0, 0.54);
+  background-color: white;
+}
+
+/* line 181, ../sass/_posts.scss */
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:first-child .mdl-button {
+  margin-right: 16px;
+}
+
+/* line 184, ../sass/_posts.scss */
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:last-child .mdl-button {
+  margin-left: 16px;
+}
+
+/* line 187, ../sass/_posts.scss */
+.demo-blog .mdl-card > a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+/* line 192, ../sass/_posts.scss */
+.demo-blog .mdl-card h3 {
+  margin: 0;
+}
+
+/* line 195, ../sass/_posts.scss */
+.demo-blog .mdl-card h3 a {
+  text-decoration: none;
+}
+
+/* line 198, ../sass/_posts.scss */
+.demo-blog .mdl-card h3.quote:before, .demo-blog .mdl-card h3.quote:after {
+  display: block;
+  font-size: 3em;
+  margin-top: 0.5em;
+}
+
+/* line 203, ../sass/_posts.scss */
+.demo-blog .mdl-card h3.quote:before {
+  content: '“';
+}
+
+/* line 206, ../sass/_posts.scss */
+.demo-blog .mdl-card h3.quote:after {
+  content: '”';
+}
+
+/* line 209, ../sass/_posts.scss */
+.demo-blog--blogpost .custom-header {
+  background-color: transparent;
+}
+
+/* line 212, ../sass/_posts.scss */
+.demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
+  background-image: url("images/road_big.jpg");
+  height: 280px;
+}
+
+/* line 216, ../sass/_posts.scss */
+.demo-blog--blogpost .comments {
+  background-color: #EEE;
+}
+
+/* line 219, ../sass/_posts.scss */
+.demo-blog--blogpost .meta > * {
+  align-items: center;
+}
+
+/* line 222, ../sass/_posts.scss */
+.demo-blog--blogpost .meta + .mdl-card__supporting-text {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 227, ../sass/_posts.scss */
+.demo-blog--blogpost .meta + .mdl-card__supporting-text p {
+  max-width: 512px;
+  margin: 16px auto;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/* line 234, ../sass/_posts.scss */
+.demo-blog--blogpost .comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+/* line 242, ../sass/_posts.scss */
+.demo-blog--blogpost .comments > form {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+/* line 247, ../sass/_posts.scss */
+.demo-blog--blogpost .comments > form .mdl-textfield {
+  flex-grow: 1;
+  margin-right: 16px;
+  color: #616161;
+}
+
+/* Workaround for Firefox.
+ * User agent stylesheet kept overwriting the font in FF only.
+ */
+/* line 255, ../sass/_posts.scss */
+.demo-blog--blogpost .comments > form .mdl-textfield .mdl-textfield__input {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+/* line 258, ../sass/_posts.scss */
+.demo-blog--blogpost .comments > form .mdl-textfield input,
+.demo-blog--blogpost .comments > form .mdl-textfield textarea {
+  resize: none;
+}
+
+/* line 262, ../sass/_posts.scss */
+.demo-blog--blogpost .comments > form button {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.24);
+  color: white;
+}
+
+/* line 267, ../sass/_posts.scss */
+.demo-blog--blogpost .comments .comment {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* line 272, ../sass/_posts.scss */
+.demo-blog--blogpost .comments .comment > .comment__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* line 278, ../sass/_posts.scss */
+.demo-blog--blogpost .comments .comment > .comment__header > .comment__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  margin-right: 16px;
+}
+
+/* line 284, ../sass/_posts.scss */
+.demo-blog--blogpost .comments .comment > .comment__header > .comment__author {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 289, ../sass/_posts.scss */
+.demo-blog--blogpost .comments .comment > .comment__text {
+  line-height: 1.5em;
+}
+
+/* line 292, ../sass/_posts.scss */
+.demo-blog--blogpost .comments .comment > .comment__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.8em;
+  margin-top: 16px;
+}
+
+/* line 300, ../sass/_posts.scss */
+.demo-blog--blogpost .comments .comment > .comment__actions button {
+  margin-right: 16px;
+  color: rgba(0, 0, 0, 0.24);
+}
+
+/* line 304, ../sass/_posts.scss */
+.demo-blog--blogpost .comments .comment > .comment__answers {
+  padding-top: 32px;
+  padding-left: 48px;
+}
+
+/* line 309, ../sass/_posts.scss */
+.demo-blog--blogpost .demo-back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: white;
+  z-index: 9999;
+}
+
+/* line 316, ../sass/_posts.scss */
+.demo-blog .section-spacer {
+  flex-grow: 1;
+}
+
+/* line 319, ../sass/_posts.scss */
+.demo-blog .something-else {
+  overflow: visible;
+  z-index: 10;
+}
+
+/* line 323, ../sass/_posts.scss */
+.demo-blog .amazing .mdl-card__title {
+  background-color: #263238;
+}
+
+/* line 326, ../sass/_posts.scss */
+.demo-blog .minilogo {
+  width: 44px;
+  height: 44px;
+  background-image: url("../../../assets/images/avatars/anon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 22px;
+  background-color: #F5F5F5;
+}
+
+/* Fixes for IE 10 */
+/* line 338, ../sass/_posts.scss */
+.mdl-grid {
+  display: flex !important;
 }
 
 /*

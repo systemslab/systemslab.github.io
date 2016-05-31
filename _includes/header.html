@@ -7,21 +7,21 @@
     <div class="mdl-layout-spacer"></div>
     <!-- Navigation. We hide it in small screens. -->
     <nav class="mdl-navigation mdl-layout--large-screen-only">
-       {% if page.url == '/' %}
-         <a class="active mdl-navigation__link highlight" href="/"><i class="material-icons md-18" role="presentation">home</i>Home</a>
-        {% else %}
-         <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>Home </a>
-       {% endif %}
+      {% if page.url == '/' %}
+        <a class="mdl-navigation__link highlight" href="/"><i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      {% else %}
+        <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      {% endif %}
 
       {% for my_page in site.pages %}
          {% if my_page.group contains "navbar" %}
             {% if page.url contains my_page.url %}
             <a class="active mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
-             <span class="text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>{{ my_page.title }}</span>
+             <span class="text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>&nbsp;{{ my_page.title }}</span>
             </a>
             {% else %}
             <a class="mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
-            <div class="inactive-text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>{{ my_page.title }} </div>
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>&nbsp;{{ my_page.title }} </div>
             </a>
             {% endif %}
          {% endif %}
