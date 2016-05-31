@@ -7,11 +7,11 @@
     <div class="mdl-layout-spacer"></div>
     <!-- Navigation. We hide it in small screens. -->
     <nav class="mdl-navigation mdl-layout--large-screen-only">
-       {% if page.url == '/' %}
-         <a class="active mdl-navigation__link highlight" href="/"><i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
-        {% else %}
-         <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
-       {% endif %}
+      {% if page.url == '/' %}
+        <a class="mdl-navigation__link highlight" href="/"><i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      {% else %}
+        <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      {% endif %}
 
       {% for my_page in site.pages %}
          {% if my_page.group contains "navbar" %}

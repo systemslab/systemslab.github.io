@@ -1,20 +1,22 @@
 {% assign sorted_news = site.news | sort: 'date' | reverse %}
 {% for item in sorted_news %}
-  <div class="demo-card-event mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp portfolio-blog-card-event-bg mdl-color-text--grey">
-    <figure class="mdl-card__media">
-      <img src="{{item.picture}}" alt="" />
-    </figure>
-
-    <div class="mdl-card__title">
-      <h1 class="mdl-card__title-text">{{item.title}}</h1>
+  <div class="mdl-card mdl-cell mdl-cell--6-col">
+    <div class="mdl-card__media mdl-color-text--grey-50">
+      <h3><a href="{{item.url}}">{{item.title}}</a></h3>
     </div>
-
-    <div class="mdl-card__supporting-text">
-      <p>{{item.blurb}}</p>
+    <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+      {{item.blurb}}
     </div>
-
-    <div class="mdl-card__actions mdl-card--border">
-      <a href="{{item.url}}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Read More</a>
+    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+      <div class="minilogo"></div>
+      <div>
+        {% if page.author %}
+          <strong>The Newist</strong>
+        {% else %}
+          <strong>SRL Team</strong>
+        {% endif %}
+        <span><time datetime="{{ item.date | date_to_xmlschema }}" itemprop="datePublished">{{ item.date | date: "%b %-d, %Y" }}</time></span>
+      </div>
     </div>
   </div>
 {% endfor %}
