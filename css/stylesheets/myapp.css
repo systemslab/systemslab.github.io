@@ -134,17 +134,16 @@ a {
   width: 720px;
   height: 340px;
   float: left;
-  padding-top: 5px;
   padding-right: 10px;
 }
 
 /* arrow keys  */
-/* line 115, ../sass/_main.scss */
+/* line 114, ../sass/_main.scss */
 .slick-prev:before, .slick-next:before {
   color: grey !important;
 }
 
-/* line 119, ../sass/_main.scss */
+/* line 118, ../sass/_main.scss */
 .slick-next {
   margin-left: 10%;
   margin-right: 5%;

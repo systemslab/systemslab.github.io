@@ -1,6 +1,6 @@
 {% assign sorted_news = site.news | sort: 'date' | reverse %}
 {% for item in sorted_news %}
-  <div class="mdl-card mdl-cell mdl-cell--4-col">
+  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--4dp">
     <div class="mdl-card__media mdl-color-text--grey-50">
       <h3><a href="{{item.url}}">{{item.title}}</a></h3>
     </div>
