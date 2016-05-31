@@ -4,14 +4,14 @@ This is just a set of instructions to make it easy to update the site.
 ### To add a page to the navbar (ideas: SRL Courses, Seminars, Contact Us, Blog):
 1. cd ~ and create pagename.md.
 2. In the front YAML,
-   a. set layout to page (or default, if you want to include your customizable layout. 
+   - set layout to page (or default, if you want to include your customizable layout. 
       See other pages for example of this. people.md and projects.md do this).
-   b. set title category.
-   c. Go to https://design.google.com/icons/ and find an icon that best represents the new page! 
+   - set title category.
+   - Go to https://design.google.com/icons/ and find an icon that best represents the new page! 
       Set the name of the icon to the icon category. For example, the "projects" page has the 
       MDL icon called "code".
-   d. Set permalink to: /page_name/ (important!)
-   e. Set group to: navbar.
+   - Set permalink to: /page_name/ (important!)
+   - Set group to: navbar.
 3. Set content as desired. If you chose to customize the layout of the page by setting the 
    layout to default, see examples of how to do this by studying people.md and projects.md.
 
@@ -51,7 +51,6 @@ all the publications you've submitted under your tenure ship at the SRL.
 2. Edit ~/_includes/banner.html:
      Add the following to the end, right before the last `</div>. `
      
-		  ```
 		  <div>
 			<div class="inner-content">
 				<img src="/assets/images/Banner/your-banner-picture.jpg"></img>
@@ -63,7 +62,6 @@ all the publications you've submitted under your tenure ship at the SRL.
 
 			</div>
 		  </div>
-		  ```
 3. git add ~/assets/images/Banner/your-banner-picture.jpg, commit, push, and refresh the 
 homescreen. There should now be an additional "dot" and you should be able to see your banner.
 
@@ -72,21 +70,21 @@ homescreen. There should now be an additional "dot" and you should be able to se
 1. cd ~/_news.
 2. edit news-item.md (call it whatever you want)
 3. There are three YAML categories. 
-	a. title refers to the news' headline.
-	b. date refers to the date posted. This can be left blank, and will take on the 
+	- title refers to the news' headline.
+	- date refers to the date posted. This can be left blank, and will take on the 
 	file modification date automatically.
-	c. blurb refers to a quick overview of the news to be shared.
-	d. Content (everything after the front YAML) will be displayed when you click on the 
+	- blurb refers to a quick overview of the news to be shared.
+	- Content (everything after the front YAML) will be displayed when you click on the 
 	news link for more detail.
 	
 ### To add events:
 1. cd ~/_news
 2. edit event-item.md
 3. There are three YAML categories.
-	a. Name: event title to display
-	b. Location: Location of event.
-	c. Date: Can be left blank to take on file modification date automatically.
-	d. Content (everything after the front YAML) will be displayed when you click
+	- Name: event title to display
+	- Location: Location of event.
+	- Date: Can be left blank to take on file modification date automatically.
+	- Content (everything after the front YAML) will be displayed when you click
 	on the events link for more detail. Can be styled any way you want.
 
 ### Design Stuff:
