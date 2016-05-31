@@ -1,4 +1,3 @@
-//g gggg
 body::before {
     background-size: cover;
     background-attachment: fixed;
@@ -140,12 +139,6 @@ body .demo-blog {
   justify-content: center;
   align-items: center;
 }
-.demo-blog .something-else > button {
-  position: absolute;
-  top: 0;
-  right: 28px;
-  transform: translate(0px, -28px);
-}
 .demo-blog .something-else .mdl-card__media {
   font-size: 13px;
   font-weight: 500;
@@ -161,29 +154,6 @@ body .demo-blog {
   background-color: #F5F5F5;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-}
-.demo-blog .demo-blog__posts > .demo-nav {
-  margin: 12px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-weight: 500;
-}
-.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button {
-  color: white;
-  text-decoration: none;
-}
-.demo-blog .demo-blog__posts > .demo-nav .mdl-button {
-  color: rgba(0,0,0,0.54);
-  background-color: white;
-}
-.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:first-child .mdl-button {
-  margin-right: 16px;
-}
-.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:last-child .mdl-button {
-  margin-left: 16px;
 }
 .demo-blog .mdl-card > a {
   color: inherit;
