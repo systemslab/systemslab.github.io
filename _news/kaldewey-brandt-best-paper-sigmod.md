@@ -1,10 +1,8 @@
 ---
 title: Computer Science Ph.D. Student Tim Kaldewey and Scott Brandt to win Best Paper Award at SIGMOD 2010
 date:   2010-06-01 00:00:00 -0800
+blurb: The ACM Special Interest Group on Management of Data will award its 2010 Best Paper Award to Tim Kaldewey, Computer Science Professor Scott Brandt, and their collaborators at Intel and Oracle for their paper, "FAST Fast Architecture Sensitive Tree Search on Modern CPUs and GPUs," at its annual SIGMOD conference, June 6-11 in Indianapolis, Indiana.
 ---
-Computer Science Ph.D. Student Tim Kaldewey and Scott Brandt to win Best Paper
-Award at SIGMOD 2010
-
 The ACM Special Interest Group on Management of Data will award its 2010 Best
 Paper Award to Tim Kaldewey, Computer Science Professor Scott Brandt, and their
 collaborators at Intel and Oracle for their paper, "FAST: Fast Architecture

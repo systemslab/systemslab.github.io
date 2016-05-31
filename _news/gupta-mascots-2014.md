@@ -2,6 +2,7 @@
 title: ISSDM student Preeti Gupta lead author of MASCOTS 2014 paper
 author: Carlos Maltzahn
 date:   2014-09-10 00:00:00 -0800
+blurb: ISSDM student Preeti Gupta lead author of MASCOTS 2014 paper on "An Economic Perspective of Disk vs. Flash Media in Archival Storage". Congratulations to Preeti Gupta and her co-authors!
 ---
 ISSDM student Preeti Gupta lead author of MASCOTS 2014 paper on "An Economic
 Perspective of Disk vs. Flash Media in Archival Storage".

@@ -1,6 +1,7 @@
 ---
 title: Computer Scientists Greg Levin, Caitlin Sadowski, Ian Pye and Scott Brandt win Best Paper at ECRTS 2010
 date:   2010-07-14 00:00:00 -0800
+blurb:  The Euromicro Conference on Real-Time Systems (ECRTS) presented its 2010 Best Paper award to Computer Science Ph.D. Students Greg Levin, Caitlin Sadowski and Ian Pye, CS Professor Scott Brandt, and their collaborator Shelby Funk (University of Georgia) for their work "DP-FAIR A Simple Model for Understanding Optimal Multiprocessor Scheduilng.
 ---
 The Euromicro Conference on Real-Time Systems (ECRTS) presented its 2010 Best
 Paper award to Computer Science Ph.D. Students Greg Levin, Caitlin Sadowski and

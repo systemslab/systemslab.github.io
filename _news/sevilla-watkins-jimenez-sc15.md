@@ -2,9 +2,8 @@
 title: Michael Sevilla, Noah Watkins, and Ivo Jimenez to present at Supercomputing 2015
 author: Michael Sevilla
 date:   2015-10-13 00:00:00 -0800
+blurb: PhD student Michael Sevilla will present the paper "Mantle A Programmable Metadata Load Balancer for the Ceph File System" at the Supercomputing Conference (SC'15) in Austin, TX on Tuesday, Nov 17th.
 ---
-Michael Sevilla, Noah Watkins, and Ivo Jimenez to present at Supercomputing 2015
-
 PhD student Michael Sevilla will present the paper "Mantle: A Programmable
 Metadata Load Balancer for the Ceph File System" at the Supercomputing Conference
 (SC'15) in Austin, TX on Tuesday, Nov 17th.

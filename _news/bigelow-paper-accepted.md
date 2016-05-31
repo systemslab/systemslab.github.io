@@ -1,10 +1,8 @@
 ---
 title: Computer Science Ph.D. student David Bigelow and Scott Brandt paper is accepted for IEEE Symposium 2010
 date:   2010-03-19 00:00:00 -0800
+blurb: The 26th IEEE Symposium on Massive Storage Systems and Technologies Research Track (MSST2010) program committee informed David Bigelow that his paper has been accepted to appear as a long paper in the  conference.
 ---
-Computer Science Ph.D. student David Bigelow and Scott Brandt paper is accepted
-for IEEE Symposium 2010.
-
 The 26th IEEE Symposium on Massive Storage Systems and Technologies: Research
 Track (MSST2010) program committee informed David Bigelow that his paper has
 been accepted to appear as a long paper in the  conference.

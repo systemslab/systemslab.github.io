@@ -1,6 +1,7 @@
 ---
 title: Fifth Annual SRL/ISSDM Research Symposium
 date:   2013-09-25 00:00:00 -0800
+blurb: This one-day symposium will provide an opportunity to learn about the research of the SRL and ISSDM, interact with SRL and ISSDM faculty, graduate students, and affiliated researchers at Los Alamos National Laboratory (LANL), and discuss future directions and collaborative research projects at UCSC and LANL.
 ---
 The Fifth Annual SRL/ISSDM Research Symposium is on Tuesday, October 22.
 
