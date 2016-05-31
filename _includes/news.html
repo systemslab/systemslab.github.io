@@ -8,7 +8,12 @@
       {{item.blurb}}
     </div>
     <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-      <div class="minilogo"></div>
+      {% assign filename = item.author | downcase | replace: " ", "-" %}
+      {% if item.author %}
+      <div class="minilogo" style="background-image: url('/assets/images/avatars/{{ filename }}.jpg')"></div>
+      {% else %}
+      <div class="minilogo" style="background-image: url('/assets/images/avatars/anon.png')"></div>
+      {% endif %}
       <div>
         {% if item.author %}
           <strong>{{item.author}}</strong>
