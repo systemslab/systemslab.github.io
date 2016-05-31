@@ -32,12 +32,12 @@ a{
 
 /* Adds a gradient to this */
 .mdl-layout__header{
-  /* fallback for old browsers */
-  background: #3D7EAA;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to left, #F9A825, #3D7EAA);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to left, #F9A825, #3D7EAA);
+
+
+  background: #525252; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #525252 , #3d72b4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #525252 , #3d72b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          
 }
 
 .is-small-screen{
@@ -96,9 +96,9 @@ a{
 .inner-content {
 	padding-right: 60px;
 	.format-content {
-	    padding-top:15px; 
+	    padding-top:15px;
 	    margin-bottom:15px;
-	    
+
 	}
 
 }

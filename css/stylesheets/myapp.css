@@ -56,12 +56,12 @@ a {
 /* Adds a gradient to this */
 /* line 34, ../sass/_main.scss */
 .mdl-layout__header {
+  background: #525252;
   /* fallback for old browsers */
-  background: #3D7EAA;
+  background: -webkit-linear-gradient(to left, #525252, #3d72b4);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to left, #F9A825, #3D7EAA);
+  background: linear-gradient(to left, #525252, #3d72b4);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to left, #f9a825, #3d7eaa);
 }
 
 /* line 44, ../sass/_main.scss */
