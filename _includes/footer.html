@@ -1,56 +1,15 @@
-<footer class="mdl-mega-footer">
-  <div class="mdl-mega-footer__middle-section">
-
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Directors</h1>
-      <ul class="mdl-mega-footer__link-list">
-        {% for person in site.data.faculty %}
-          <li><a href="mailto:{{ person.email }}">{{ person.name }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Details</h1>
-      <ul class="mdl-mega-footer__link-list">
-        <li>{{ site.title }}</li>
-        <li>1156 High Street, Santa Cruz, CA 95064</li>
-        <li>Engineering 2 Building Room 375</li>
-        <li>Phone: +1 (831) 459-1627</li>
-      </ul>
-    </div>
-
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">Pages</h1>
-      <ul class="mdl-mega-footer__link-list">
-        {% for my_page in site.pages %}
-           {% if my_page.title %}
-              <li><a href="{{ my_page.url | prepend: site.baseurl }}"></a>{{ my_page.title }}</li>
-           {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-
-    <div class="mdl-mega-footer__drop-down-section">
-      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer__heading">FAQ</h1>
-      <ul class="mdl-mega-footer__link-list">
-        <li><a href="#">Questions</a></li>
-        <li><a href="#">Answers</a></li>
-        <li><a href="#">Contact us</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="mdl-mega-footer__bottom-section">
-    <div class="mdl-logo">{{ site.title }}</div>
-    <ul class="mdl-mega-footer__link-list">
-      <li><a href="http://ucsc.edu">UCSC Home</a></li>
-      <li><a href="http://soe.ucsc.edu">BSOE Home</a></li>
-      <li><a href="http://issdm.ucsc.edu">ISSDM Home</a></li>
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">{{site.title}}</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a class="highlight" href="http://ucsc.edu/">UCSC Home</a></li>
+      <li><a class="highlight" href="http://soe.ucsc.edu/">BSOE Home</a></li>
+      <li><a class="highlight" href="http://issdm.soe.ucsc.edu/">ISSDM Home</a></li>
+      <div class="edit_desktop">
+        <li><a class="highlight" href="https://github.com/systemslab/systemslab.github.io/edit/master/{{page.path}}">Edit on GitHub</a></li>
+      </div>
     </ul>
+
   </div>
+
 </footer>

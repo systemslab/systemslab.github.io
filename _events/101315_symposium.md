@@ -1,7 +1,7 @@
 ---
 name: Seventh Annual SRL/ISSDM Research Symposium
-location: Lower Courtyard BSOE and Simularium (E2.180)
-date:   2016-04-06 15:02:17 -0700
+location: Court Yard and Simularium (E2-180)
+date:   2015-10-13 08:15:00 -0800
 ---
 This one-day symposium will provide an opportunity to learn about the research
 of the SRL and ISSDM, interact with SRL and ISSDM faculty, graduate students,

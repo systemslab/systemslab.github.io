@@ -1,143 +1,122 @@
-.portfolio-header {
-  position: relative;
 
-  /* Replace these with background-image: url('../../../images/pic.png')
-   * if you want a picture instead of a gradient in the header. */
+/* material icons fonts */
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
-  // fallback for old browsers
-  background: #134E5E;
-  // Chrome 10-25, Safari 5.1-6
-  background: -webkit-linear-gradient(to left, #134E5E , #71B280);
-  // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-  background: linear-gradient(to left, #134E5E , #71B280);
+.thin-border {
+  margin-top: -15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-header .mdl-layout__header-row {
-  padding: 0;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+a{
+  width: auto !important;
 }
 
-.mdl-layout__title {
-  font-size: 14px;
-  text-align: center;
-  font-weight: 300;
+.vertical-line {
+	border-left: rgba(0,0,0,0.12) 1px solid;
+	padding-right: 20px;
 }
 
-.is-compact .mdl-layout__title span {
-  display: none;
+/*
+ * Replace these with background-image: url('../../../images/pic.png')
+ * if you want a picture instead of a gradient in the header.
+ */
+
+/* Resizes logo to fit in the navbar */
+.site-logo {
+  width: 230px;
+  height: 36px;
 }
 
-.portfolio-logo-row {
-  min-height: 200px;
+/* Adds a gradient to this */
+.mdl-layout__header{
+
+
+  background: #525252; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #525252 , #3d72b4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #525252 , #3d72b4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.is-compact .portfolio-logo-row {
-  min-height: auto;
+.is-small-screen{
+  .mdl-layout-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .edit_desktop{
+    display: none;
+  }
 }
 
-.portfolio-logo {
-  background: url('../../../images/Baskin_logo2.png') 50% no-repeat;
-  background-size: 60%;
-  height: 150px;
-  width: 1100px;
-  margin: auto auto 10px;
+.spacer {
+  flex-grow: 1;
 }
 
-.is-compact .portfolio-logo {
-  height: 350px;
-  width: 350px;
-  margin-top: 7px;
+.description {
+  font-size: 12px;
+  text-indent:10px;
+  color: grey;
+
 }
 
-.portfolio-navigation-row {
-  background-color: rgba(0, 0, 0, 0.08);
+.descrip-title {
+  font-size: 12px;
   text-transform: uppercase;
-  height: 45px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.portfolio-navigation-row  .mdl-navigation {
-  text-align: center;
-  max-width: 900px;
-  width: 100%;
+
+/* highlight navbar on hover */
+.highlight:hover {
+  color: #37474f;
 }
 
-.portfolio-navigation-row .mdl-navigation__link {
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  line-height: 42px;
+.active {
+   .text {
+  		color: #37474f;
+    }
 }
 
-.portfolio-header .mdl-layout__drawer-button {
-    background-color: rgba(197, 197, 197, 0.44);
+.inactive-text {
+   color: dark-grey;
+
 }
 
-.portfolio-navigation-row .is-active {
-  position: relative;
-  font-weight: bold;
+/* slick carousel css */
+.banner-background {
+    background-color: #f3f3f3;
+    -webkit-box-shadow:0px 2px 2px #c3c3c3;
+    -moz-box-shadow:0px 2px 2px #c3c3c3;
+ 	box-shadow:0px 2px 2px #c3c3c3;
 }
 
-.portfolio-navigation-row .is-active:after {
-  content: "";
-  width: 70%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(255,64,129);
-  left: 15%;
+.inner-content {
+	padding-right: 60px;
+	.format-content {
+	    padding-top:15px;
+	    margin-bottom:15px;
+
+	}
+
 }
 
-.portfolio-blog-card-compact .mdl-card__title {
-  padding-bottom: 0;
+.inner-content img {
+   width: 720px;
+   height: 340px;
+   float: left;
+   padding-right: 10px;
 }
 
-.portfolio-blog-card-bg > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
+/* arrow keys  */
+.slick-prev:before, .slick-next:before {
+    color:grey !important;
 }
 
-img.article-image {
-  width: 100%;
-  height: auto;
-}
-
-.portfolio-max-width {
-  max-width: 900px;
-  margin: auto;
-}
-
-.portfolio-copy {
-  max-width: 700px;
-}
-
-.no-padding {
-  padding: 0;
-}
-
-.no-left-padding{
-  padding-left: 0;
-}
-
-.no-bottom-padding {
-  padding-bottom: 0;
-}
-
-.padding-top {
-  padding: 10px 0 0;
-}
-
-.portfolio-share-btn {
-  position: relative;
-  float: right;
-  top: -4px;
-}
-
-.article-image .mdl-card__media{
-  width:250px; /* you can use % */
-  height: auto;
+.slick-next {
+   margin-left:10%;
+   margin-right:5%;
 }

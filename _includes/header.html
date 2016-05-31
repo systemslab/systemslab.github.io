@@ -1,18 +1,31 @@
-<header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+<!-- Always shows a header, even in smaller screens. -->
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
     <!-- Title -->
-    <div class="mdl-layout__header-row portfolio-logo-row">
-        <span class="mdl-layout__title">
-            <div class="portfolio-logo" href="{{ site.baseurl }}"></div>
-        </span>
-    </div>
-    <!-- Tabs -->
-    <div class="mdl-layout__header-row portfolio-navigation-row">
-        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-            {% for my_page in site.pages %}
-               {% if my_page.title %}
-                  <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-               {% endif %}
-            {% endfor %}
-        </nav>
-    </div>
+    <span class="mdl-layout-title"><a href="/"><img class="site-logo" src="/assets/images/Logos/Baskin_logo2.png"</img></a></span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      {% if page.url == '/' %}
+        <a class="mdl-navigation__link highlight" href="/"><i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      {% else %}
+        <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      {% endif %}
+
+      {% for my_page in site.pages %}
+         {% if my_page.group contains "navbar" %}
+            {% if page.url contains my_page.url %}
+            <a class="active mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
+             <span class="text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>&nbsp;{{ my_page.title }}</span>
+            </a>
+            {% else %}
+            <a class="mdl-navigation__link highlight" href="{{ my_page.url | prepend: site.baseurl }}">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">{{ my_page.icon }}</i>&nbsp;{{ my_page.title }} </div>
+            </a>
+            {% endif %}
+         {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
 </header>

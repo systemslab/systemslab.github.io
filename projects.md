@@ -1,27 +1,20 @@
 ---
-layout: page
+layout: default
 title: Projects
+icon: code
 permalink: /projects/
+group: navbar
 ---
-<style>
-.background {
-    background: gainsboro;
-}
-</style>
-
-<div class="research-wrapper">
-  {% for project in site.projects %}
-     <h4> <a href="#" class="toggle"> {{ project.name }} </a> by {{ project.participants }}</h4>
-
-        <div class="contents">
-        {% comment %}
-        <a class="edit-page-link" href="https://github.com/systemslab/systemslab.github.io/edit/master/{{project.path}}" target="_blank"> Edit {{project.name}}</a>
-        {% endcomment %}
-        <p class="background">
-           {{ project.category }} <br><br>
-           {{ project.blurb }} <br><br>
-       <small>Read more about <a href="{{ project.permalink }}">{{ project.name}}</a>. </small><br><br>
-        </p>
-        </div>
-  {% endfor %}
+<div class="mdl-grid max-width">
+	{% for project in site.projects %}
+			<div class="mdl-cell mdl-cell--3-col demo-card-square mdl-card mdl-shadow--2dp">
+			  <div class="mdl-card__title mdl-card--expand">
+			    <h2 class="mdl-card__title-text">{{ project.name }}</h2>
+			  </div>
+			  <div class="mdl-card__supporting-text">{{ project.overview }}</div>
+			  <div class="mdl-card__actions mdl-card--border">
+			    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{project.permalink }}">Read More</a>
+			  </div>
+			</div>
+	{% endfor %}
 </div>

@@ -1,47 +1,31 @@
 ---
-layout: frontpage
+layout: default
 ---
 
-<!-- MDL grid -->
-<div class="mdl-grid portfolio-max-width">
-    {% for item in site.news %}
-      <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-          <div class="mdl-card__media">
-              <img class="article-image" src="{{ item.picture }}" border="0" alt="">
-          </div>
-          <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">{{item.title}}</h2>
-          </div>
-          <div class="mdl-card__supporting-text">
-              {{ post.excerpt }}
-          </div>
-          <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="{{ item.url }}">Read more</a>
-          </div>
-      </div>
-    {% endfor %}
+<span class="mdl-layout--large-screen-only">
+{% include banner.js %}
+{% include banner.html %}
+</span>
 
-    <!-- Event card -->
-    {% for event in site.events %}
-      <div class="demo-card-event mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp portfolio-blog-card-event-bg mdl-color-text--white">
-          <div class="mdl-card__title mdl-card--expand">
-              <h4 class="mdl-color-text--white">
-                {{ event.name }}<br><br>
-                {{ event.date | date: "%b %-d, %Y" }}<br>
-              </h4>
-          </div>
-          <div class="mdl-card__actions mdl-card--border" align="left">
-              <div class="mdl-layout-spacer"></div>
-              <i class="material-icons ">event</i>
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" href="{{ event.url }}">Event Info</a>
-          </div>
-      </div>
-    {% endfor %}
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect home">
+
+  <div class="mdl-tabs__tab-bar">
+    <a href="#news-panel" class="mdl-tabs__tab is-active"> News </a>
+    <a href="#events-panel" class="mdl-tabs__tab"> Events </a>
+  </div>
+
+  <div class="mdl-tabs__panel is-active demo-blog" id="news-panel">
+    <div class="mdl-grid max-width">
+    	{% include news.html %}
+    </div>
+  </div>
+
+  <div class="mdl-tabs__panel" id="events-panel">
+    <div class="mdl-grid max-width">
+      <div class="mdl-layout-spacer"></div>
+     	{% include events.html %}
+      <div class="mdl-layout-spacer"></div>
+    </div>
+  </div>
 </div>
-<div class="sponsorlist mdl-color-text--grey-800">
-  <ul align="center"><br>
-    {% for sponsor in site.data.sponsors %}
-      <a href="{{ sponsor.permalink }}"><img src="{{ sponsor.image }}" style="height:36px;"></a>&nbsp;&nbsp;&nbsp;
-    {% endfor %}
-  </ul>
-</div>
+{% include sponsors.html %}

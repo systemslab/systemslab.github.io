@@ -1,482 +1,689 @@
-/* line 1, ../sass/_main.scss */
-.portfolio-header {
-  position: relative;
-  /* Replace these with background-image: url('../../../images/pic.png')
-   * if you want a picture instead of a gradient in the header. */
-  background: #134E5E;
-  background: -webkit-linear-gradient(to left, #134E5E, #71B280);
-  background: linear-gradient(to left, #134e5e, #71b280);
+@charset "UTF-8";
+/* material icons fonts */
+/* line 3, ../sass/_main.scss */
+.material-icons.md-12 {
+  font-size: 12px;
 }
 
-/* line 15, ../sass/_main.scss */
-.portfolio-header .mdl-layout__header-row {
-  padding: 0;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+/* line 4, ../sass/_main.scss */
+.material-icons.md-18 {
+  font-size: 18px;
 }
 
-/* line 22, ../sass/_main.scss */
-.mdl-layout__title {
-  font-size: 14px;
-  text-align: center;
-  font-weight: 300;
+/* line 5, ../sass/_main.scss */
+.material-icons.md-24 {
+  font-size: 24px;
 }
 
-/* line 28, ../sass/_main.scss */
-.is-compact .mdl-layout__title span {
-  display: none;
+/* line 6, ../sass/_main.scss */
+.material-icons.md-36 {
+  font-size: 36px;
 }
 
-/* line 32, ../sass/_main.scss */
-.portfolio-logo-row {
-  min-height: 200px;
+/* line 7, ../sass/_main.scss */
+.material-icons.md-48 {
+  font-size: 48px;
 }
 
-/* line 36, ../sass/_main.scss */
-.is-compact .portfolio-logo-row {
-  min-height: auto;
-}
-
-/* line 40, ../sass/_main.scss */
-.portfolio-logo {
-  background: url("../../../images/Baskin_logo2.png") 50% no-repeat;
-  background-size: 60%;
-  height: 150px;
-  width: 1100px;
-  margin: auto auto 10px;
-}
-
-/* line 48, ../sass/_main.scss */
-.is-compact .portfolio-logo {
-  height: 350px;
-  width: 350px;
-  margin-top: 7px;
-}
-
-/* line 54, ../sass/_main.scss */
-.portfolio-navigation-row {
-  background-color: rgba(0, 0, 0, 0.08);
-  text-transform: uppercase;
-  height: 45px;
-}
-
-/* line 60, ../sass/_main.scss */
-.portfolio-navigation-row .mdl-navigation {
-  text-align: center;
-  max-width: 900px;
-  width: 100%;
-}
-
-/* line 66, ../sass/_main.scss */
-.portfolio-navigation-row .mdl-navigation__link {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  line-height: 42px;
-}
-
-/* line 73, ../sass/_main.scss */
-.portfolio-header .mdl-layout__drawer-button {
-  background-color: rgba(197, 197, 197, 0.44);
-}
-
-/* line 77, ../sass/_main.scss */
-.portfolio-navigation-row .is-active {
-  position: relative;
-  font-weight: bold;
-}
-
-/* line 82, ../sass/_main.scss */
-.portfolio-navigation-row .is-active:after {
-  content: "";
-  width: 70%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #ff4081;
-  left: 15%;
-}
-
-/* line 94, ../sass/_main.scss */
-.portfolio-blog-card-compact .mdl-card__title {
-  padding-bottom: 0;
-}
-
-/* line 98, ../sass/_main.scss */
-.portfolio-blog-card-bg > .mdl-card__actions {
-  height: 52px;
-  padding: 16px;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-/* line 104, ../sass/_main.scss */
-img.article-image {
-  width: 100%;
-  height: auto;
-}
-
-/* line 109, ../sass/_main.scss */
-.portfolio-max-width {
-  max-width: 900px;
-  margin: auto;
-}
-
-/* line 114, ../sass/_main.scss */
-.portfolio-copy {
-  max-width: 700px;
-}
-
-/* line 118, ../sass/_main.scss */
-.no-padding {
-  padding: 0;
-}
-
-/* line 122, ../sass/_main.scss */
-.no-left-padding {
-  padding-left: 0;
-}
-
-/* line 126, ../sass/_main.scss */
-.no-bottom-padding {
-  padding-bottom: 0;
-}
-
-/* line 130, ../sass/_main.scss */
-.padding-top {
-  padding: 10px 0 0;
-}
-
-/* line 134, ../sass/_main.scss */
-.portfolio-share-btn {
-  position: relative;
-  float: right;
-  top: -4px;
-}
-
-/* line 140, ../sass/_main.scss */
-.article-image .mdl-card__media {
-  width: 250px;
-  /* you can use % */
-  height: auto;
-}
-
-/* line 1, ../sass/_people.scss */
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 7, ../sass/_people.scss */
-.mdl-demo .mdl-card {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 12, ../sass/_people.scss */
-.mdl-demo .mdl-card > * {
-  height: auto;
-}
-
-/* line 15, ../sass/_people.scss */
-.mdl-demo .mdl-card .mdl-card__supporting-text {
-  margin: 40px;
-  flex-grow: 1;
-  padding: 0;
-  color: inherit;
-  width: calc(100% - 80px);
-}
-
-/* line 22, ../sass/_people.scss */
-.mdl-demo.mdl-demo .mdl-card__supporting-text h4 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-/* line 26, ../sass/_people.scss */
-.mdl-demo .mdl-card__actions {
-  margin: 0;
-  padding: 4px 40px;
-  color: inherit;
-}
-
-/* line 31, ../sass/_people.scss */
-.mdl-demo .mdl-card__actions a {
-  color: #00BCD4;
-  margin: 0;
-}
-
-/* line 35, ../sass/_people.scss */
-.mdl-demo .mdl-card__actions a:hover,
-.mdl-demo .mdl-card__actions a:active {
-  color: inherit;
-  background-color: transparent;
-}
-
-/* line 40, ../sass/_people.scss */
-.mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
+/* line 9, ../sass/_main.scss */
+.thin-border {
+  margin-top: -15px;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-/* line 43, ../sass/_people.scss */
-.mdl-demo #add {
-  position: absolute;
-  right: 40px;
-  top: 36px;
-  z-index: 999;
+/* line 14, ../sass/_main.scss */
+a {
+  width: auto !important;
 }
 
-/* line 50, ../sass/_people.scss */
-.mdl-demo .mdl-layout__content section:not(:last-of-type) {
-  position: relative;
-  margin-bottom: 48px;
+/* line 18, ../sass/_main.scss */
+.vertical-line {
+  border-left: rgba(0, 0, 0, 0.12) 1px solid;
+  padding-right: 20px;
 }
 
-/* line 54, ../sass/_people.scss */
-.mdl-demo section.section--center {
-  max-width: 860px;
+/*
+ * Replace these with background-image: url('../../../images/pic.png')
+ * if you want a picture instead of a gradient in the header.
+ */
+/* Resizes logo to fit in the navbar */
+/* line 29, ../sass/_main.scss */
+.site-logo {
+  width: 230px;
+  height: 36px;
 }
 
-/* line 57, ../sass/_people.scss */
-.mdl-demo #features section.section--center {
-  max-width: 620px;
+/* Adds a gradient to this */
+/* line 35, ../sass/_main.scss */
+.mdl-layout__header {
+  background: #525252;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #525252, #3d72b4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #525252, #3d72b4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* line 60, ../sass/_people.scss */
-.mdl-demo section > header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* line 45, ../sass/_main.scss */
+.is-small-screen .mdl-layout-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 50, ../sass/_main.scss */
+.is-small-screen .edit_desktop {
+  display: none;
 }
 
-/* line 65, ../sass/_people.scss */
-.mdl-demo section > .section__play-btn {
-  min-height: 200px;
+/* line 55, ../sass/_main.scss */
+.spacer {
+  flex-grow: 1;
 }
 
-/* line 68, ../sass/_people.scss */
-.mdl-demo section > header > .material-icons {
-  font-size: 3rem;
+/* line 59, ../sass/_main.scss */
+.description {
+  font-size: 12px;
+  text-indent: 10px;
+  color: grey;
 }
 
-/* line 71, ../sass/_people.scss */
-.mdl-demo section > button {
-  position: absolute;
-  z-index: 99;
-  top: 8px;
-  right: 8px;
+/* line 66, ../sass/_main.scss */
+.descrip-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* line 77, ../sass/_people.scss */
-.mdl-demo section .section__circle {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 0;
-  flex-shrink: 1;
+/* highlight navbar on hover */
+/* line 74, ../sass/_main.scss */
+.highlight:hover {
+  color: #37474f;
 }
 
-/* line 84, ../sass/_people.scss */
-.mdl-demo section .section__text {
+/* line 79, ../sass/_main.scss */
+.active .text {
+  color: #37474f;
+}
+
+/* line 84, ../sass/_main.scss */
+.inactive-text {
+  color: dark-grey;
+}
+
+/* slick carousel css */
+/* line 90, ../sass/_main.scss */
+.banner-background {
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0px 2px 2px #c3c3c3;
+  -moz-box-shadow: 0px 2px 2px #c3c3c3;
+  box-shadow: 0px 2px 2px #c3c3c3;
+}
+
+/* line 97, ../sass/_main.scss */
+.inner-content {
+  padding-right: 60px;
+}
+/* line 99, ../sass/_main.scss */
+.inner-content .format-content {
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 107, ../sass/_main.scss */
+.inner-content img {
+  width: 720px;
+  height: 340px;
+  float: left;
+  padding-right: 10px;
+}
+
+/* arrow keys  */
+/* line 115, ../sass/_main.scss */
+.slick-prev:before, .slick-next:before {
+  color: grey !important;
+}
+
+/* line 119, ../sass/_main.scss */
+.slick-next {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+/* Makes images with the img-circle class into a circle
+ * Also adds a Material Design-esque shadow to each profile picture
+ * Source: https://codepen.io/sdthornton/pen/wBZdXq
+ */
+/* line 5, ../sass/_people.scss */
+.img-circle {
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* Align text below an image
+ * Source: http://stackoverflow.com/questions/22592064/how-to-align-text-below-an-image-in-css
+ */
+/* line 13, ../sass/_people.scss */
+.person {
+  /* for borders */
+}
+/* line 14, ../sass/_people.scss */
+.person div.item {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
+/* line 20, ../sass/_people.scss */
+.person img {
+  width: 100px;
+  height: 100px;
+}
+/* line 24, ../sass/_people.scss */
+.person .caption {
+  display: block;
+}
+/* line 27, ../sass/_people.scss */
+.person .section__text {
   flex-grow: 1;
   flex-shrink: 0;
   padding-top: 8px;
 }
-
-/* line 89, ../sass/_people.scss */
-.mdl-demo section .section__text h5 {
-  font-size: inherit;
-  margin: 0;
-  margin-bottom: 0.5em;
-}
-
-/* line 94, ../sass/_people.scss */
-.mdl-demo section .section__text a {
+/* line 33, ../sass/_people.scss */
+.person .section__text a {
   text-decoration: none;
 }
+/* line 38, ../sass/_people.scss */
+.person .contact-border {
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  border-radius: 0.3em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: #fff 0.5em solid;
+}
 
-/* line 97, ../sass/_people.scss */
-.mdl-demo section .section__circle-container > .section__circle-container__circle {
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
+/* line 1, ../sass/_card.scss */
+.demo-card-event {
+  padding-bottom: 30px;
+}
+
+/* line 6, ../sass/_card.scss */
+.home .mdl-grid {
+  max-width: 100%;
+  margin: auto;
+}
+/* line 10, ../sass/_card.scss */
+.home .mdl-grid .mdl-card .mdl-card__media {
+  margin: 0;
+}
+/* line 13, ../sass/_card.scss */
+.home .mdl-grid .mdl-card .mdl-card__media > img {
+  max-width: 100%;
+}
+/* line 16, ../sass/_card.scss */
+.home .mdl-grid .mdl-card .mdl-card__actions {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+}
+/* line 24, ../sass/_card.scss */
+.home .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+/* line 30, ../sass/_card.scss */
+.home .mdl-grid .demo-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+/* line 38, ../sass/_card.scss */
+.home .mdl-grid .portfolio-card {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: -50px;
+  /* to undo padding for project description */
+}
+
+/* For cards on the project page */
+/* line 49, ../sass/_card.scss */
+.demo-card-square .mdl-card {
+  width: 320px;
+  height: 320px;
+}
+
+/* line 54, ../sass/_card.scss */
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  height: auto;
+  background: url("../assets/demos/dog.png") bottom right 15% no-repeat #48617F;
+}
+
+/* line 1, ../sass/_sidebar.scss */
+.drawer {
+  border-right: none;
+}
+/* line 4, ../sass/_sidebar.scss */
+.drawer span.mdl-navigation__link.mdl-navigation__link {
+  color: #8bc34a;
+}
+/* line 8, ../sass/_sidebar.scss */
+.drawer .mdl-navigation__link.mdl-navigation__link {
+  font-size: 14px;
+  color: #757575;
+}
+/* line 13, ../sass/_sidebar.scss */
+.drawer .mdl-layout-title {
+  position: relative;
+  background: #136a8a;
+  height: 160px;
+}
+/* line 19, ../sass/_sidebar.scss */
+.drawer .logo-image {
+  position: absolute;
+  bottom: 16px;
+  width: 210px;
+  height: 36px;
+}
+
+/* line 28, ../sass/_sidebar.scss */
+.drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
   margin: 8px 0;
 }
 
-/* line 103, ../sass/_people.scss */
-.mdl-demo section.section--footer .section__circle--big {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  margin: 8px 32px;
+/* line 1, ../sass/_posts.scss */
+body::before {
+  background-size: cover;
+  background-attachment: fixed;
+  content: '';
+  will-change: transform;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  position: fixed;
 }
 
-/* line 109, ../sass/_people.scss */
-.mdl-demo .is-small-screen section.section--footer .section__circle--big {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
-  margin: 8px 16px;
+@media (max-width: 512px) and (min-resolution: 1.5dppx), (max-width: 1024px) and (max-resolution: 1.5dppx) {
+  /* line 15, ../sass/_posts.scss */
+  body::before {
+    background-image: url("images/bg_1024.jpg");
+  }
+}
+@media (min-width: 513px) and (max-width: 1024px) and (min-resolution: 1.5dppx), (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx) {
+  /* line 21, ../sass/_posts.scss */
+  body::before {
+    background-image: url("images/bg_2048.jpg");
+  }
+}
+@media (min-width: 1025px) and (min-resolution: 1.5dppx), (min-width: 2049px) and (max-resolution: 1.5dppx) {
+  /* line 27, ../sass/_posts.scss */
+  body::before {
+    background-image: url("images/bg_2880.jpg");
+  }
+}
+/* line 31, ../sass/_posts.scss */
+body .demo-blog {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-/* line 115, ../sass/_people.scss */
-.mdl-demo section.section--footer {
-  padding: 64px 0;
-  margin: 0 -8px -8px -8px;
-}
-
-/* line 119, ../sass/_people.scss */
-.mdl-demo section.section--center .section__text:not(:last-child) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
-}
-
-/* line 122, ../sass/_people.scss */
-.mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
-  margin-bottom: 24px;
-}
-
-/* line 125, ../sass/_people.scss */
-.mdl-demo .mdl-layout__tab-panel:not(#overview) {
-  background-color: white;
-}
-
-/* line 128, ../sass/_people.scss */
-.mdl-demo #features section {
-  margin-bottom: 72px;
-}
-
-/* line 131, ../sass/_people.scss */
-.mdl-demo #features h4, #features h5 {
-  margin-bottom: 16px;
-}
-
-/* line 134, ../sass/_people.scss */
-.mdl-demo .toc {
-  border-left: 4px solid #C1EEF4;
-  margin: 24px;
+/* line 35, ../sass/_posts.scss */
+.demo-blog .demo-blog__posts {
+  max-width: 900px;
   padding: 0;
-  padding-left: 8px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  flex-shrink: 0;
+}
+
+/* line 44, ../sass/_posts.scss */
+.demo-blog.mdl-layout .mdl-layout__content {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 48, ../sass/_posts.scss */
+.demo-blog .mdl-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 360px;
+}
+
+/* line 54, ../sass/_posts.scss */
+.demo-blog .mdl-card__title {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+/* line 58, ../sass/_posts.scss */
+.demo-blog .mdl-card__media {
+  box-sizing: border-box;
+  background-size: cover;
+  padding: 24px;
+  display: flex;
+  background-color: #48617F;
+  flex-grow: 1;
+  flex-direction: row;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+/* line 69, ../sass/_posts.scss */
+.demo-blog .mdl-card__media a,
+.demo-blog .mdl-card__title a {
+  color: inherit;
+}
+
+/* line 73, ../sass/_posts.scss */
+.demo-blog .mdl-card__supporting-text {
+  width: 100%;
+  padding: 16px;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 80, ../sass/_posts.scss */
+.demo-blog .mdl-card__supporting-text strong {
+  font-weight: 400;
+}
+
+/* line 83, ../sass/_posts.scss */
+.demo-blog .mdl-card__media ~ .mdl-card__supporting-text {
+  min-height: 64px;
+}
+
+/* line 86, ../sass/_posts.scss */
+.demo-blog .mdl-card__supporting-text:not(:last-child) {
+  box-sizing: border-box;
+  min-height: 76px;
+}
+
+/* line 90, ../sass/_posts.scss */
+.demo-blog:not(.demo-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* line 94, ../sass/_posts.scss */
+.demo-blog .mdl-card__actions:first-child {
+  margin-left: 0;
+}
+
+/* line 97, ../sass/_posts.scss */
+.demo-blog .meta {
+  box-sizing: border-box;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+}
+
+/* line 106, ../sass/_posts.scss */
+.demo-blog .meta > .meta__favorites {
+  flex-direction: row;
+  margin: 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* line 112, ../sass/_posts.scss */
+.demo-blog .meta > .meta__favorites .material-icons {
+  font-size: 2em;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+/* line 117, ../sass/_posts.scss */
+.demo-blog .mdl-card .meta.meta--fill {
+  justify-content: space-between;
+}
+
+/* line 120, ../sass/_posts.scss */
+.demo-blog .meta > *:first-child {
+  margin-right: 16px;
+}
+
+/* line 123, ../sass/_posts.scss */
+.demo-blog .meta > * {
   display: flex;
   flex-direction: column;
 }
 
-/* line 142, ../sass/_people.scss */
-.mdl-demo .toc h4 {
-  font-size: 0.9rem;
-  margin-top: 0;
+/* line 127, ../sass/_posts.scss */
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.coffee-pic {
+  order: 0;
 }
 
-/* line 146, ../sass/_people.scss */
-.mdl-demo .toc a {
-  color: #4DD0E1;
+/* line 130, ../sass/_posts.scss */
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.something-else {
+  order: -1;
+}
+
+/* line 133, ../sass/_posts.scss */
+.demo-blog .coffee-pic .mdl-card__media {
+  background-image: url("images/coffee.jpg");
+}
+
+/* line 136, ../sass/_posts.scss */
+.demo-blog .something-else .mdl-card__media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 142, ../sass/_posts.scss */
+.demo-blog .something-else .mdl-card__media {
+  font-size: 13px;
+  font-weight: 500;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+/* line 148, ../sass/_posts.scss */
+.demo-blog .something-else .mdl-card__media img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+}
+
+/* line 153, ../sass/_posts.scss */
+.demo-blog .something-else .mdl-card__supporting-text {
+  background-color: #F5F5F5;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* line 158, ../sass/_posts.scss */
+.demo-blog .mdl-card > a {
+  color: inherit;
   text-decoration: none;
+  font-weight: inherit;
+}
+
+/* line 163, ../sass/_posts.scss */
+.demo-blog .mdl-card h3 {
+  margin: 0;
+}
+
+/* line 166, ../sass/_posts.scss */
+.demo-blog .mdl-card h3 a {
+  text-decoration: none;
+}
+
+/* line 169, ../sass/_posts.scss */
+.demo-blog .mdl-card h3.quote:before, .demo-blog .mdl-card h3.quote:after {
+  display: block;
+  font-size: 3em;
+  margin-top: 0.5em;
+}
+
+/* line 174, ../sass/_posts.scss */
+.demo-blog .mdl-card h3.quote:before {
+  content: '“';
+}
+
+/* line 177, ../sass/_posts.scss */
+.demo-blog .mdl-card h3.quote:after {
+  content: '”';
+}
+
+/* line 180, ../sass/_posts.scss */
+.demo-blog--blogpost .custom-header {
+  background-color: transparent;
+}
+
+/* line 183, ../sass/_posts.scss */
+.demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
+  background-image: url("images/road_big.jpg");
+  height: 280px;
+}
+
+/* line 187, ../sass/_posts.scss */
+.demo-blog--blogpost .comments {
+  background-color: #EEE;
+}
+
+/* line 190, ../sass/_posts.scss */
+.demo-blog--blogpost .meta > * {
+  align-items: center;
+}
+
+/* line 193, ../sass/_posts.scss */
+.demo-blog--blogpost .meta + .mdl-card__supporting-text {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 198, ../sass/_posts.scss */
+.demo-blog--blogpost .meta + .mdl-card__supporting-text p {
+  max-width: 512px;
+  margin: 16px auto;
   font-size: 16px;
   line-height: 28px;
-  display: block;
 }
 
-/* line 153, ../sass/_people.scss */
-.mdl-demo .mdl-menu__container {
-  z-index: 99;
+/* line 205, ../sass/_posts.scss */
+.demo-blog--blogpost .demo-back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: white;
+  z-index: 9999;
 }
 
-/* http://uigradients.com/ */
-/* line 2, ../sass/_card.scss */
-.portfolio-blog-card-event-bg {
-  background: #005C97;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #005C97, #363795);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #005c97, #363795);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* line 212, ../sass/_posts.scss */
+.demo-blog .section-spacer {
+  flex-grow: 1;
 }
 
-/* line 8, ../sass/_card.scss */
-.mdl-card__title-text {
-  font-size: 20px;
+/* line 215, ../sass/_posts.scss */
+.demo-blog .something-else {
+  overflow: visible;
+  z-index: 10;
 }
 
-/* line 12, ../sass/_card.scss */
-.demo-card-event > .mdl-card__actions {
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  box-sizing: border-box;
+/* line 219, ../sass/_posts.scss */
+.demo-blog .amazing .mdl-card__title {
+  background-color: #263238;
+}
+
+/* line 222, ../sass/_posts.scss */
+.demo-blog .minilogo {
+  width: 44px;
+  height: 44px;
+  background-image: url("../../../assets/images/avatars/anon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 22px;
+  background-color: #F5F5F5;
+}
+
+/* Fixes for IE 10 */
+/* line 234, ../sass/_posts.scss */
+.mdl-grid {
+  display: flex !important;
+}
+
+/*
+ * Change the layout__content class to Flex (instead of inline-block) to allow
+ * spacer to work.
+ */
+/* line 5, ../sass/_footer.scss */
+.mdl-layout__content {
   display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 
-/* line 22, ../sass/_card.scss */
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
+/* Contains formatting for edit on github pages.
+ * Example taken from Facebook React. */
+/* line 15, ../sass/_footer.scss */
+.edit-page-link {
+  float: right;
+  font-size: 16px;
 }
 
-/* line 26, ../sass/_card.scss */
-.portfolio-blog-card-full-bg {
-  background: url("../../../images/example-blog03.jpg") center/cover;
+/* line 20, ../sass/_footer.scss */
+.right {
+  float: right;
+  text-align: right;
 }
 
-/* line 31, ../sass/_card.scss */
-.portfolio-blog-card-strip-bg {
-  background: url("../../../images/example-blog06.jpg") center/cover;
+/* line 25, ../sass/_footer.scss */
+.sponsor-img {
+  -webkit-transform: scale(0.5);
+  /* Saf3.1+, Chrome */
+  -moz-transform: scale(0.5);
+  /* FF3.5+ */
+  -ms-transform: scale(0.5);
+  /* IE9 */
+  -o-transform: scale(0.5);
+  /* Opera 10.5+ */
+  transform: scale(0.5);
+  /* IE6–IE */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
 }
 
-/* line 1, ../sass/_post.scss */
-.demo-ribbon {
-  width: 100%;
-  height: 40vh;
-  background-color: #004D40;
-  flex-shrink: 0;
+/* line 1, ../sass/_publications.scss */
+.dated-entry {
+  margin-bottom: 30px;
 }
 
-/* line 8, ../sass/_post.scss */
-.demo-main {
-  margin-top: -35vh;
-  flex-shrink: 0;
+/* line 5, ../sass/_publications.scss */
+.dated-entry .date {
+  color: #989898;
+  font-size: 85%;
+  letter-spacing: 1px;
+  float: left;
+  width: 10px;
+  margin: 0 auto 0 0;
+  line-height: 15px;
 }
 
-/* line 13, ../sass/_post.scss */
-.demo-header .mdl-layout__header-row {
-  padding-left: 40px;
+/* line 15, ../sass/_publications.scss */
+.dated-entry .dated-event {
+  width: 90%;
+  margin: 0 0 0 auto;
+  padding-left: 15px;
+  border-left: rgba(0, 0, 0, 0.12) 1px solid;
 }
-
-/* line 17, ../sass/_post.scss */
-.demo-container {
-  max-width: 1600px;
-  width: calc(100% - 16px);
-  margin: 0 auto;
-}
-
-/* line 23, ../sass/_post.scss */
-.demo-content {
-  border-radius: 2px;
-  padding: 80px 56px;
-  margin-bottom: 80px;
-}
-
-/* line 29, ../sass/_post.scss */
-.demo-layout.is-small-screen .demo-content {
-  padding: 40px 28px;
-}
-
-/* line 34, ../sass/_post.scss */
-.demo-footer {
-  padding-left: 40px;
-}
-
-/* line 38, ../sass/_post.scss */
-.demo-footer .mdl-mini-footer--link-list a {
-  font-size: 13px;
-}
-
- /*.mdl-mega-footer {
-https://github.com/google/material-design-lite/issues/913
- position: absolute !important;
- bottom: 0 !important;
- left: 0 !important;
- right: 0 !important; }*/

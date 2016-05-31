@@ -1,33 +1,60 @@
-/* http://uigradients.com/ */
-.portfolio-blog-card-event-bg {
-  background: #005C97; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.demo-card-event{
+	padding-bottom: 30px;
 }
 
-.mdl-card__title-text{
-  font-size: 20px;
+.home{
+	.mdl-grid {
+		max-width: 100%;
+		margin: auto;
+		.mdl-card {
+			.mdl-card__media {
+				margin: 0;
+			}
+			.mdl-card__media > img {
+				max-width: 100%;
+			}
+			.mdl-card__actions {
+				display: flex;
+				box-sizing:border-box;
+				align-items: center;
+				position: absolute;
+			  bottom: 0px;
+			}
+
+			.mdl-card__actions > .mdl-button--icon {
+				margin-right: 3px;
+				margin-left: 3px;
+			}
+		}
+
+		.demo-content {
+		   padding-top: 15px;
+		   padding-bottom: 15px;
+		   padding-right:20px;
+		   padding-left: 20px;
+
+		}
+
+		.portfolio-card {
+		   padding-right:20px;
+		   padding-left: 20px;
+		   padding-bottom: -50px; /* to undo padding for project description */
+
+		}
+	}
 }
 
-.demo-card-event > .mdl-card__actions {
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    box-sizing: border-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
+
+/* For cards on the project page */
+.demo-card-square .mdl-card {
+  width: 320px;
+  height: 320px;
+
 }
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+	height: auto;
+  background:
+    url('../assets/demos/dog.png') bottom right 15% no-repeat #48617F;
 
-.portfolio-card .mdl-card__title {
-  padding-bottom: 0;
-}
-
-.portfolio-blog-card-full-bg {
-  background: url('../../../images/example-blog03.jpg') center / cover;
-}
-
-
-.portfolio-blog-card-strip-bg {
-  background: url('../../../images/example-blog06.jpg') center / cover;
 }
