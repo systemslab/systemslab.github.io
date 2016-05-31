@@ -1,6 +1,6 @@
 <!-- Event card -->
 {% assign sorted_events = site.events | sort: 'date' | reverse %}
-{% for event in sorted_events %}
+{% for event in sorted_events limit: 4 %}
 <div class="demo-card-event mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-card mdl-shadow--4dp portfolio-blog-card-event-bg mdl-color-text--grey">
   <div class="mdl-card__title">
 		<h1 class="mdl-card__title-text">{{ event.name }}</h1>
