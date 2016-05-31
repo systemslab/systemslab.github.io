@@ -1,6 +1,7 @@
 ---
 title: Anna Povzner, Computer Science Ph.D. student, and Scott Brandt to win Best Paper Award
 date:   2010-05-21 00:00:00 -0800
+blurb: The ACM International Symposium on High Performance Distributed Computing will present its 2010 Best Paper award to Doctoral Candidate Povzner, Professor of Computer Science Brandt, and collaborator Darren Sawyer for the work "Horizon Efficient Deadline-Driven Disk I/O Management for Distributed Storage Systems" at the annual conference on June 23.
 ---
 The ACM International Symposium on High Performance Distributed Computing will
 present its 2010 Best Paper award to Doctoral Candidate Povzner, Professor of

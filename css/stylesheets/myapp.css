@@ -1,42 +1,42 @@
 @charset "UTF-8";
 /* material icons fonts */
-/* line 2, ../sass/_main.scss */
+/* line 3, ../sass/_main.scss */
 .material-icons.md-12 {
   font-size: 12px;
 }
 
-/* line 3, ../sass/_main.scss */
+/* line 4, ../sass/_main.scss */
 .material-icons.md-18 {
   font-size: 18px;
 }
 
-/* line 4, ../sass/_main.scss */
+/* line 5, ../sass/_main.scss */
 .material-icons.md-24 {
   font-size: 24px;
 }
 
-/* line 5, ../sass/_main.scss */
+/* line 6, ../sass/_main.scss */
 .material-icons.md-36 {
   font-size: 36px;
 }
 
-/* line 6, ../sass/_main.scss */
+/* line 7, ../sass/_main.scss */
 .material-icons.md-48 {
   font-size: 48px;
 }
 
-/* line 8, ../sass/_main.scss */
+/* line 9, ../sass/_main.scss */
 .thin-border {
   margin-top: -15px;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-/* line 13, ../sass/_main.scss */
+/* line 14, ../sass/_main.scss */
 a {
   width: auto !important;
 }
 
-/* line 17, ../sass/_main.scss */
+/* line 18, ../sass/_main.scss */
 .vertical-line {
   border-left: rgba(0, 0, 0, 0.12) 1px solid;
   padding-right: 20px;
@@ -47,14 +47,14 @@ a {
  * if you want a picture instead of a gradient in the header.
  */
 /* Resizes logo to fit in the navbar */
-/* line 28, ../sass/_main.scss */
+/* line 29, ../sass/_main.scss */
 .site-logo {
   width: 230px;
   height: 36px;
 }
 
 /* Adds a gradient to this */
-/* line 34, ../sass/_main.scss */
+/* line 35, ../sass/_main.scss */
 .mdl-layout__header {
   background: #525252;
   /* fallback for old browsers */
@@ -64,30 +64,30 @@ a {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* line 44, ../sass/_main.scss */
+/* line 45, ../sass/_main.scss */
 .is-small-screen .mdl-layout-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 49, ../sass/_main.scss */
+/* line 50, ../sass/_main.scss */
 .is-small-screen .edit_desktop {
   display: none;
 }
 
-/* line 54, ../sass/_main.scss */
+/* line 55, ../sass/_main.scss */
 .spacer {
   flex-grow: 1;
 }
 
-/* line 58, ../sass/_main.scss */
+/* line 59, ../sass/_main.scss */
 .description {
   font-size: 12px;
   text-indent: 10px;
   color: grey;
 }
 
-/* line 65, ../sass/_main.scss */
+/* line 66, ../sass/_main.scss */
 .descrip-title {
   font-size: 12px;
   text-transform: uppercase;
@@ -95,23 +95,23 @@ a {
 }
 
 /* highlight navbar on hover */
-/* line 73, ../sass/_main.scss */
+/* line 74, ../sass/_main.scss */
 .highlight:hover {
   color: #37474f;
 }
 
-/* line 78, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 .active .text {
   color: #37474f;
 }
 
-/* line 83, ../sass/_main.scss */
+/* line 84, ../sass/_main.scss */
 .inactive-text {
   color: dark-grey;
 }
 
 /* slick carousel css */
-/* line 89, ../sass/_main.scss */
+/* line 90, ../sass/_main.scss */
 .banner-background {
   background-color: #f3f3f3;
   -webkit-box-shadow: 0px 2px 2px #c3c3c3;
@@ -119,22 +119,21 @@ a {
   box-shadow: 0px 2px 2px #c3c3c3;
 }
 
-/* line 96, ../sass/_main.scss */
+/* line 97, ../sass/_main.scss */
 .inner-content {
   padding-right: 60px;
 }
-/* line 98, ../sass/_main.scss */
+/* line 99, ../sass/_main.scss */
 .inner-content .format-content {
   padding-top: 15px;
   margin-bottom: 15px;
 }
 
-/* line 106, ../sass/_main.scss */
+/* line 107, ../sass/_main.scss */
 .inner-content img {
   width: 720px;
   height: 340px;
   float: left;
-  padding-top: 5px;
   padding-right: 10px;
 }
 
@@ -214,29 +213,25 @@ a {
   border: #fff 0.5em solid;
 }
 
-/* line 58, ../sass/_people.scss */
-.right {
-  float: right;
+/* line 1, ../sass/_card.scss */
+.demo-card-event {
+  padding-bottom: 30px;
 }
 
-/* line 2, ../sass/_card.scss */
+/* line 6, ../sass/_card.scss */
 .home .mdl-grid {
   max-width: 100%;
   margin: auto;
 }
-/* line 5, ../sass/_card.scss */
-.home .mdl-grid .mdl-card {
-  padding-bottom: 30px;
-}
-/* line 7, ../sass/_card.scss */
+/* line 10, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__media {
   margin: 0;
 }
-/* line 10, ../sass/_card.scss */
+/* line 13, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__media > img {
   max-width: 100%;
 }
-/* line 13, ../sass/_card.scss */
+/* line 16, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__actions {
   display: flex;
   box-sizing: border-box;
@@ -244,19 +239,19 @@ a {
   position: absolute;
   bottom: 0px;
 }
-/* line 21, ../sass/_card.scss */
+/* line 24, ../sass/_card.scss */
 .home .mdl-grid .mdl-card .mdl-card__actions > .mdl-button--icon {
   margin-right: 3px;
   margin-left: 3px;
 }
-/* line 27, ../sass/_card.scss */
+/* line 30, ../sass/_card.scss */
 .home .mdl-grid .demo-content {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 20px;
   padding-left: 20px;
 }
-/* line 35, ../sass/_card.scss */
+/* line 38, ../sass/_card.scss */
 .home .mdl-grid .portfolio-card {
   padding-right: 20px;
   padding-left: 20px;
@@ -265,17 +260,17 @@ a {
 }
 
 /* For cards on the project page */
-/* line 46, ../sass/_card.scss */
+/* line 49, ../sass/_card.scss */
 .demo-card-square .mdl-card {
   width: 320px;
   height: 320px;
 }
 
-/* line 51, ../sass/_card.scss */
+/* line 54, ../sass/_card.scss */
 .demo-card-square > .mdl-card__title {
   color: #fff;
   height: auto;
-  background: url("../assets/demos/dog.png") bottom right 15% no-repeat #134E5E;
+  background: url("../assets/demos/dog.png") bottom right 15% no-repeat #48617F;
 }
 
 /* line 1, ../sass/_sidebar.scss */
@@ -312,7 +307,7 @@ a {
   margin: 8px 0;
 }
 
-/* line 2, ../sass/_posts.scss */
+/* line 1, ../sass/_posts.scss */
 body::before {
   background-size: cover;
   background-attachment: fixed;
@@ -326,30 +321,12 @@ body::before {
   position: fixed;
 }
 
-@media (max-width: 512px) and (min-resolution: 1.5dppx), (max-width: 1024px) and (max-resolution: 1.5dppx) {
-  /* line 16, ../sass/_posts.scss */
-  body::before {
-    background-image: url("images/bg_1024.jpg");
-  }
-}
-@media (min-width: 513px) and (max-width: 1024px) and (min-resolution: 1.5dppx), (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx) {
-  /* line 22, ../sass/_posts.scss */
-  body::before {
-    background-image: url("images/bg_2048.jpg");
-  }
-}
-@media (min-width: 1025px) and (min-resolution: 1.5dppx), (min-width: 2049px) and (max-resolution: 1.5dppx) {
-  /* line 28, ../sass/_posts.scss */
-  body::before {
-    background-image: url("images/bg_2880.jpg");
-  }
-}
-/* line 32, ../sass/_posts.scss */
+/* line 13, ../sass/_posts.scss */
 body .demo-blog {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-/* line 36, ../sass/_posts.scss */
+/* line 17, ../sass/_posts.scss */
 .demo-blog .demo-blog__posts {
   max-width: 900px;
   padding: 0;
@@ -359,13 +336,13 @@ body .demo-blog {
   flex-shrink: 0;
 }
 
-/* line 45, ../sass/_posts.scss */
+/* line 26, ../sass/_posts.scss */
 .demo-blog.mdl-layout .mdl-layout__content {
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
 
-/* line 49, ../sass/_posts.scss */
+/* line 30, ../sass/_posts.scss */
 .demo-blog .mdl-card {
   display: flex;
   flex-direction: column;
@@ -373,31 +350,32 @@ body .demo-blog {
   min-height: 360px;
 }
 
-/* line 55, ../sass/_posts.scss */
+/* line 36, ../sass/_posts.scss */
 .demo-blog .mdl-card__title {
   padding: 16px;
   flex-grow: 1;
 }
 
-/* line 59, ../sass/_posts.scss */
+/* line 40, ../sass/_posts.scss */
 .demo-blog .mdl-card__media {
   box-sizing: border-box;
   background-size: cover;
   padding: 24px;
   display: flex;
+  background-color: #48617F;
   flex-grow: 1;
   flex-direction: row;
   align-items: flex-end;
   cursor: pointer;
 }
 
-/* line 69, ../sass/_posts.scss */
+/* line 51, ../sass/_posts.scss */
 .demo-blog .mdl-card__media a,
 .demo-blog .mdl-card__title a {
   color: inherit;
 }
 
-/* line 73, ../sass/_posts.scss */
+/* line 55, ../sass/_posts.scss */
 .demo-blog .mdl-card__supporting-text {
   width: 100%;
   padding: 16px;
@@ -406,33 +384,33 @@ body .demo-blog {
   align-items: center;
 }
 
-/* line 80, ../sass/_posts.scss */
+/* line 62, ../sass/_posts.scss */
 .demo-blog .mdl-card__supporting-text strong {
   font-weight: 400;
 }
 
-/* line 83, ../sass/_posts.scss */
+/* line 65, ../sass/_posts.scss */
 .demo-blog .mdl-card__media ~ .mdl-card__supporting-text {
   min-height: 64px;
 }
 
-/* line 86, ../sass/_posts.scss */
+/* line 68, ../sass/_posts.scss */
 .demo-blog .mdl-card__supporting-text:not(:last-child) {
   box-sizing: border-box;
   min-height: 76px;
 }
 
-/* line 90, ../sass/_posts.scss */
+/* line 72, ../sass/_posts.scss */
 .demo-blog:not(.demo-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 94, ../sass/_posts.scss */
+/* line 76, ../sass/_posts.scss */
 .demo-blog .mdl-card__actions:first-child {
   margin-left: 0;
 }
 
-/* line 97, ../sass/_posts.scss */
+/* line 79, ../sass/_posts.scss */
 .demo-blog .meta {
   box-sizing: border-box;
   padding: 16px;
@@ -443,7 +421,7 @@ body .demo-blog {
   height: auto;
 }
 
-/* line 106, ../sass/_posts.scss */
+/* line 88, ../sass/_posts.scss */
 .demo-blog .meta > .meta__favorites {
   flex-direction: row;
   margin: 0 8px;
@@ -451,45 +429,45 @@ body .demo-blog {
   font-weight: 500;
 }
 
-/* line 112, ../sass/_posts.scss */
+/* line 94, ../sass/_posts.scss */
 .demo-blog .meta > .meta__favorites .material-icons {
   font-size: 2em;
   cursor: pointer;
   margin-left: 12px;
 }
 
-/* line 117, ../sass/_posts.scss */
+/* line 99, ../sass/_posts.scss */
 .demo-blog .mdl-card .meta.meta--fill {
   justify-content: space-between;
 }
 
-/* line 120, ../sass/_posts.scss */
+/* line 102, ../sass/_posts.scss */
 .demo-blog .meta > *:first-child {
   margin-right: 16px;
 }
 
-/* line 123, ../sass/_posts.scss */
+/* line 105, ../sass/_posts.scss */
 .demo-blog .meta > * {
   display: flex;
   flex-direction: column;
 }
 
-/* line 127, ../sass/_posts.scss */
+/* line 109, ../sass/_posts.scss */
 .demo-blog.is-small-screen .demo-blog__posts > .mdl-card.coffee-pic {
   order: 0;
 }
 
-/* line 130, ../sass/_posts.scss */
+/* line 112, ../sass/_posts.scss */
 .demo-blog.is-small-screen .demo-blog__posts > .mdl-card.something-else {
   order: -1;
 }
 
-/* line 133, ../sass/_posts.scss */
+/* line 115, ../sass/_posts.scss */
 .demo-blog .coffee-pic .mdl-card__media {
   background-image: url("images/coffee.jpg");
 }
 
-/* line 136, ../sass/_posts.scss */
+/* line 118, ../sass/_posts.scss */
 .demo-blog .something-else .mdl-card__media {
   display: flex;
   flex-direction: column;
@@ -497,15 +475,7 @@ body .demo-blog {
   align-items: center;
 }
 
-/* line 142, ../sass/_posts.scss */
-.demo-blog .something-else > button {
-  position: absolute;
-  top: 0;
-  right: 28px;
-  transform: translate(0px, -28px);
-}
-
-/* line 148, ../sass/_posts.scss */
+/* line 124, ../sass/_posts.scss */
 .demo-blog .something-else .mdl-card__media {
   font-size: 13px;
   font-weight: 500;
@@ -513,116 +483,83 @@ body .demo-blog {
   border-top-right-radius: 2px;
 }
 
-/* line 154, ../sass/_posts.scss */
+/* line 130, ../sass/_posts.scss */
 .demo-blog .something-else .mdl-card__media img {
   width: 64px;
   height: 64px;
   margin-bottom: 10px;
 }
 
-/* line 159, ../sass/_posts.scss */
+/* line 135, ../sass/_posts.scss */
 .demo-blog .something-else .mdl-card__supporting-text {
   background-color: #F5F5F5;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
-/* line 164, ../sass/_posts.scss */
-.demo-blog .demo-blog__posts > .demo-nav {
-  margin: 12px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-weight: 500;
-}
-
-/* line 173, ../sass/_posts.scss */
-.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 177, ../sass/_posts.scss */
-.demo-blog .demo-blog__posts > .demo-nav .mdl-button {
-  color: rgba(0, 0, 0, 0.54);
-  background-color: white;
-}
-
-/* line 181, ../sass/_posts.scss */
-.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:first-child .mdl-button {
-  margin-right: 16px;
-}
-
-/* line 184, ../sass/_posts.scss */
-.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:last-child .mdl-button {
-  margin-left: 16px;
-}
-
-/* line 187, ../sass/_posts.scss */
+/* line 140, ../sass/_posts.scss */
 .demo-blog .mdl-card > a {
   color: inherit;
   text-decoration: none;
   font-weight: inherit;
 }
 
-/* line 192, ../sass/_posts.scss */
+/* line 145, ../sass/_posts.scss */
 .demo-blog .mdl-card h3 {
   margin: 0;
 }
 
-/* line 195, ../sass/_posts.scss */
+/* line 148, ../sass/_posts.scss */
 .demo-blog .mdl-card h3 a {
   text-decoration: none;
 }
 
-/* line 198, ../sass/_posts.scss */
+/* line 151, ../sass/_posts.scss */
 .demo-blog .mdl-card h3.quote:before, .demo-blog .mdl-card h3.quote:after {
   display: block;
   font-size: 3em;
   margin-top: 0.5em;
 }
 
-/* line 203, ../sass/_posts.scss */
+/* line 156, ../sass/_posts.scss */
 .demo-blog .mdl-card h3.quote:before {
   content: '“';
 }
 
-/* line 206, ../sass/_posts.scss */
+/* line 159, ../sass/_posts.scss */
 .demo-blog .mdl-card h3.quote:after {
   content: '”';
 }
 
-/* line 209, ../sass/_posts.scss */
+/* line 162, ../sass/_posts.scss */
 .demo-blog--blogpost .custom-header {
   background-color: transparent;
 }
 
-/* line 212, ../sass/_posts.scss */
+/* line 165, ../sass/_posts.scss */
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
   background-image: url("images/road_big.jpg");
   height: 280px;
 }
 
-/* line 216, ../sass/_posts.scss */
+/* line 169, ../sass/_posts.scss */
 .demo-blog--blogpost .comments {
   background-color: #EEE;
 }
 
-/* line 219, ../sass/_posts.scss */
+/* line 172, ../sass/_posts.scss */
 .demo-blog--blogpost .meta > * {
   align-items: center;
 }
 
-/* line 222, ../sass/_posts.scss */
+/* line 175, ../sass/_posts.scss */
 .demo-blog--blogpost .meta + .mdl-card__supporting-text {
   border: 0;
   display: flex;
   flex-direction: column;
 }
 
-/* line 227, ../sass/_posts.scss */
+/* line 180, ../sass/_posts.scss */
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 512px;
   margin: 16px auto;
@@ -630,109 +567,7 @@ body .demo-blog {
   line-height: 28px;
 }
 
-/* line 234, ../sass/_posts.scss */
-.demo-blog--blogpost .comments {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  padding: 32px;
-  box-sizing: border-box;
-}
-
-/* line 242, ../sass/_posts.scss */
-.demo-blog--blogpost .comments > form {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 16px;
-}
-
-/* line 247, ../sass/_posts.scss */
-.demo-blog--blogpost .comments > form .mdl-textfield {
-  flex-grow: 1;
-  margin-right: 16px;
-  color: #616161;
-}
-
-/* Workaround for Firefox.
- * User agent stylesheet kept overwriting the font in FF only.
- */
-/* line 255, ../sass/_posts.scss */
-.demo-blog--blogpost .comments > form .mdl-textfield .mdl-textfield__input {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
-}
-
-/* line 258, ../sass/_posts.scss */
-.demo-blog--blogpost .comments > form .mdl-textfield input,
-.demo-blog--blogpost .comments > form .mdl-textfield textarea {
-  resize: none;
-}
-
-/* line 262, ../sass/_posts.scss */
-.demo-blog--blogpost .comments > form button {
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.24);
-  color: white;
-}
-
-/* line 267, ../sass/_posts.scss */
-.demo-blog--blogpost .comments .comment {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-/* line 272, ../sass/_posts.scss */
-.demo-blog--blogpost .comments .comment > .comment__header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-/* line 278, ../sass/_posts.scss */
-.demo-blog--blogpost .comments .comment > .comment__header > .comment__avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
-  margin-right: 16px;
-}
-
-/* line 284, ../sass/_posts.scss */
-.demo-blog--blogpost .comments .comment > .comment__header > .comment__author {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* line 289, ../sass/_posts.scss */
-.demo-blog--blogpost .comments .comment > .comment__text {
-  line-height: 1.5em;
-}
-
-/* line 292, ../sass/_posts.scss */
-.demo-blog--blogpost .comments .comment > .comment__actions {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 0.8em;
-  margin-top: 16px;
-}
-
-/* line 300, ../sass/_posts.scss */
-.demo-blog--blogpost .comments .comment > .comment__actions button {
-  margin-right: 16px;
-  color: rgba(0, 0, 0, 0.24);
-}
-
-/* line 304, ../sass/_posts.scss */
-.demo-blog--blogpost .comments .comment > .comment__answers {
-  padding-top: 32px;
-  padding-left: 48px;
-}
-
-/* line 309, ../sass/_posts.scss */
+/* line 187, ../sass/_posts.scss */
 .demo-blog--blogpost .demo-back {
   position: absolute;
   top: 16px;
@@ -741,23 +576,23 @@ body .demo-blog {
   z-index: 9999;
 }
 
-/* line 316, ../sass/_posts.scss */
+/* line 194, ../sass/_posts.scss */
 .demo-blog .section-spacer {
   flex-grow: 1;
 }
 
-/* line 319, ../sass/_posts.scss */
+/* line 197, ../sass/_posts.scss */
 .demo-blog .something-else {
   overflow: visible;
   z-index: 10;
 }
 
-/* line 323, ../sass/_posts.scss */
+/* line 201, ../sass/_posts.scss */
 .demo-blog .amazing .mdl-card__title {
   background-color: #263238;
 }
 
-/* line 326, ../sass/_posts.scss */
+/* line 204, ../sass/_posts.scss */
 .demo-blog .minilogo {
   width: 44px;
   height: 44px;
@@ -770,7 +605,7 @@ body .demo-blog {
 }
 
 /* Fixes for IE 10 */
-/* line 338, ../sass/_posts.scss */
+/* line 216, ../sass/_posts.scss */
 .mdl-grid {
   display: flex !important;
 }

@@ -2,6 +2,7 @@
 title: Joe Buck, Michael Sevilla, and Adam Crume to present at Supercomputing 2013
 author: Joe Buck
 date:   2013-11-20 00:00:00 -0800
+blurb: PhD student Joe Buck will present the paper "SIDR Structure-Aware Intelligent Data Routing in Hadoop" at the Supercomputing 2013 conference in Denver, CO on Wednesday, Nov 20th.
 ---
 PhD student Joe Buck will present the paper "SIDR: Structure-Aware Intelligent
 Data Routing in Hadoop" at the Supercomputing 2013 conference in Denver, CO on

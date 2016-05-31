@@ -2,6 +2,7 @@
 title: New version of Linux OS includes Ceph file system developed at UC Santa Cruz
 author: Tim Stephens
 date:   2010-05-20 00:00:00 -0800
+blurb: New version of Linux OS includes Ceph file system developed at UC Santa Cruz. Efficient, reliable storage of electronic data is a growing challenge of the digital age. Ceph, an open-source file system developed by computer scientists in the Baskin School of Engineering at the University of California, Santa Cruz, offers an innovative approach to the data storage challenge.
 ---
 New version of Linux OS includes Ceph file system developed at UC Santa Cruz
 
