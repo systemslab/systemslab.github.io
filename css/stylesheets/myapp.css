@@ -149,11 +149,6 @@ a {
   margin-right: 5%;
 }
 
-/* line 124, ../sass/_main.scss */
-.mdl-card__media {
-  background-color: #48617F;
-}
-
 /* Makes images with the img-circle class into a circle
  * Also adds a Material Design-esque shadow to each profile picture
  * Source: https://codepen.io/sdthornton/pen/wBZdXq
@@ -538,7 +533,7 @@ body .demo-blog {
 
 /* line 165, ../sass/_posts.scss */
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url("images/road_big.jpg");
+  background-color: #48617F;
   height: 280px;
 }
 

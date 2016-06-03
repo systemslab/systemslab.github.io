@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<title>
+
+    | 
+ Systems Research Lab
+</title>
+<html amp lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>New version of Linux OS includes Ceph file system developed at UC Santa Cruz</title>
+  <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+  </script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="New version of Linux OS includes Ceph file system developed at UC Santa Cruz">
+  <!-- Support for toolbar color in Chrome on Android -->
+  <meta name="theme-color" content="#136a8a">
+
+  <!-- MDL CSS/JS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-indigo.min.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  
+  <!-- Slick CSS/JS -->
+  <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css"/>
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+
+  <!-- MDL specific CSS generated from Compass -->
+  <link href="/css/stylesheets/myapp.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="/css/stylesheets/main.css">
+  <link rel="canonical" href="http://systems.soe.ucsc.edu/news/2010/05/20/linux-includes-ceph">
+  <link rel="alternate" type="application/rss+xml" title="Systems Research Lab" href="http://systems.soe.ucsc.edu/feed.xml">
+  <link rel="shortcut icon" href="/assets/images/Logos/favicon2.ico" /> 
+
+</head>
+
+  <body>
+    <div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button is-upgraded">
+      <!-- Always shows a header, even in smaller screens. -->
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title"><a href="/"><img class="site-logo" src="/assets/images/Logos/Baskin_logo2.png"</img></a></span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      
+        <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      
+
+      
+         
+      
+         
+      
+         
+      
+         
+            
+            <a class="mdl-navigation__link highlight" href="/people/">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">people</i>&nbsp;People </div>
+            </a>
+            
+         
+      
+         
+            
+            <a class="mdl-navigation__link highlight" href="/projects/">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">code</i>&nbsp;Projects </div>
+            </a>
+            
+         
+      
+         
+            
+            <a class="mdl-navigation__link highlight" href="/publications/">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">book</i>&nbsp;Publications </div>
+            </a>
+            
+         
+      
+    </nav>
+  </div>
+</header>
+
+      <div class="drawer mdl-layout__drawer">
+  <span class="mdl-layout-title"><img class="logo-image" src="/assets/images/Logos/Baskin_logo2.png"></span>
+  <nav class="navigation mdl-navigation">
+    <a class="mdl-navigation__link" href="http://systems.soe.ucsc.edu"><i class="material-icons md-18" role="presentation">home</i>Home</a>
+    <a class="mdl-navigation__link" href="https://github.com/systemslab/systemslab.github.io/edit/master/_news/linux-includes-ceph.md"><i class="material-icons md-18" role="presentation">&#xE254;</i>Edit on GitHub</a>
+    <div class="drawer-separator"></div>
+    
+       
+    
+       
+    
+       
+    
+       
+          <a class="mdl-navigation__link" href="/people/">
+            <i class="material-icons md-18" role="presentation">people</i> People
+          </a>
+       
+    
+       
+          <a class="mdl-navigation__link" href="/projects/">
+            <i class="material-icons md-18" role="presentation">code</i> Projects
+          </a>
+       
+    
+       
+          <a class="mdl-navigation__link" href="/publications/">
+            <i class="material-icons md-18" role="presentation">book</i> Publications
+          </a>
+       
+    
+  </nav>
+</div>
+
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="demo-blog__posts mdl-grid">
+  <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+    <div class="mdl-card__media mdl-color-text--grey-50">
+      <h3>New version of Linux OS includes Ceph file system developed at UC Santa Cruz</h3>
+    </div>
+    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+      <div class="minilogo"></div>
+      <div>
+        
+          <strong>Tim Stephens</strong>
+        
+        <span><time datetime="2010-05-20T01:00:00-07:00" itemprop="datePublished">May 20, 2010</time></span>
+      </div>
+    <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+      <p><p>New version of Linux OS includes Ceph file system developed at UC Santa Cruz</p>
+
+<p>Efficient, reliable storage of electronic data is a growing challenge of the
+digital age. Ceph, an open-source file system developed by computer scientists
+in the Baskin School of Engineering at the University of California, Santa Cruz,
+offers an innovative approach to the data storage challenge.</p>
+
+<p>A file system is the software that organizes and manages computer files and
+provides access to them on a data storage device such as a hard disk (or on an
+array of devices in a large storage system). Ceph is a distributed network
+file system, the type that allows multiple clients to access files stored on
+remote servers. It is designed to manage vast amounts of data with ease,
+meeting the growing demand for data storage on the scale of petabytes. (A
+petabyte is one quadrillion bytes, or a million gigabytes–enough data to
+fill 223,000 DVDs.)</p>
+
+<p>According to a recent study, the amount of digital data created in a year grew
+by 62 percent from 2008 to 2009, and will increase 44-fold by 2020 (IDC “Digital
+Universe Study). The study also reported a growing gap between the amount of
+digital data being created (nearly 800,000 petabytes in 2009) and the amount of
+available storage.</p>
+
+<p>“Everybody needs a solution to the problem of how to handle all this data. Our
+goal with Ceph was to build a scalable system that would allow storage of
+petabytes and beyond,” said Scott Brandt, professor of computer science at UC
+Santa Cruz and director of the UCSC / Los Alamos Institute for Scalable
+Scientific Data Management at UCSC’s Baskin School of Engineering.</p>
+
+<p>Although Ceph is still in development, it just received a big vote of confidence
+from Linus Torvalds, who included Ceph in the latest version of the Linux kernel
+(Linux 2.6.34). Brandt’s graduate student Sage Weil did much of the development
+work on Ceph for his Ph.D. thesis, and he has continued working on it since
+earning his degree in 2007.</p>
+
+<p>“Having Ceph in the Linux kernel makes it much easier for people to use, so a
+lot more people will be testing it now and contributing to the project,” Weil
+said.</p>
+
+<p>Ceph is designed for high performance, scalability, and reliability. “When you
+reach the scale of a storage system with 10,000 disks, failure of individual
+components becomes the norm, so the file system has to be able to monitor and
+deal with that. With Ceph, any node can fail and the system heals itself,” Weil
+said.</p>
+
+<p>A Ceph file system can be seamlessly expanded simply by adding new servers to
+the system. Ceph automatically distributes data across the new servers. All
+data are replicated across multiple storage devices, and if any device fails,
+the data are automatically re-replicated to other devices.</p>
+
+<p>Ceph is also designed to dynamically adapt to changing workloads. It can handle
+scenarios in which thousands of clients suddenly access the same file or write
+to the same directory.</p>
+
+<p>“A Ceph storage system can be both big and fast, because all the operations
+are parallelized,” Brandt said. “We made it open-source, so the source code is
+out there, and people are starting to be interested.”</p>
+
+<p>Brandt, Weil, and others in UCSC’s Computer Science Department have been working
+on Ceph for about 8 years. The project was primarily funded by a Department of
+Energy grant from the Lawrence Livermore, Los Alamos, and Sandia National
+Laboratories. Data storage is a big concern for the national labs, where the
+most powerful supercomputers in the world run simulations that generate vast
+amounts of data.</p>
+
+<p>The project has also received industry support from companies such as Yahoo and
+NetApp. Weil, who founded a web hosting company (DreamHost) before pursuing his
+doctorate at UCSC, said companies like his need affordable, scalable storage
+systems for customer data. But he said his main motivation for continuing to
+work on Ceph is simply a desire to see the project succeed.</p>
+
+<p>“I want it to be something people can use and not just a research project,” Weil
+said. “It began as pure research, and now it’s actually made it into the real
+world.”</p>
+
+<p>Note to reporters: You may contact Brandt at (831) 566-2801 or scott@cs.ucsc.edu
+and Weil at sage@newdream.net.</p>
+</p>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </main>
+      <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Systems Research Lab</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a class="highlight" href="http://ucsc.edu/">UCSC Home</a></li>
+      <li><a class="highlight" href="http://soe.ucsc.edu/">BSOE Home</a></li>
+      <li><a class="highlight" href="http://issdm.soe.ucsc.edu/">ISSDM Home</a></li>
+      <div class="edit_desktop">
+        <li><a class="highlight" href="https://github.com/systemslab/systemslab.github.io/edit/master/_news/linux-includes-ceph.md">Edit on GitHub</a></li>
+      </div>
+    </ul>
+
+  </div>
+
+</footer>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<title>
+
+   Multiprocessor Scheduling | 
+ Systems Research Lab
+</title>
+<html amp lang="en">
+  <head>
+  <meta charset="utf-8">
+  <title>Mps</title>
+  <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+  </script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="Project 1">
+  <!-- Support for toolbar color in Chrome on Android -->
+  <meta name="theme-color" content="#136a8a">
+
+  <!-- MDL CSS/JS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-indigo.min.css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  
+  <!-- Slick CSS/JS -->
+  <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css"/>
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css"/>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+
+  <!-- MDL specific CSS generated from Compass -->
+  <link href="/css/stylesheets/myapp.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="/css/stylesheets/main.css">
+  <link rel="canonical" href="http://systems.soe.ucsc.edu/projects/mps">
+  <link rel="alternate" type="application/rss+xml" title="Systems Research Lab" href="http://systems.soe.ucsc.edu/feed.xml">
+  <link rel="shortcut icon" href="/assets/images/Logos/favicon2.ico" /> 
+
+</head>
+
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+      <!-- Always shows a header, even in smaller screens. -->
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title"><a href="/"><img class="site-logo" src="/assets/images/Logos/Baskin_logo2.png"</img></a></span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      
+        <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      
+
+      
+         
+      
+         
+      
+         
+      
+         
+            
+            <a class="mdl-navigation__link highlight" href="/people/">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">people</i>&nbsp;People </div>
+            </a>
+            
+         
+      
+         
+            
+            <a class="active mdl-navigation__link highlight" href="/projects/">
+             <span class="text"><i class="material-icons md-18" role="presentation">code</i>&nbsp;Projects</span>
+            </a>
+            
+         
+      
+         
+            
+            <a class="mdl-navigation__link highlight" href="/publications/">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">book</i>&nbsp;Publications </div>
+            </a>
+            
+         
+      
+    </nav>
+  </div>
+</header>
+
+      <div class="drawer mdl-layout__drawer">
+  <span class="mdl-layout-title"><img class="logo-image" src="/assets/images/Logos/Baskin_logo2.png"></span>
+  <nav class="navigation mdl-navigation">
+    <a class="mdl-navigation__link" href="http://systems.soe.ucsc.edu"><i class="material-icons md-18" role="presentation">home</i>Home</a>
+    <a class="mdl-navigation__link" href="https://github.com/systemslab/systemslab.github.io/edit/master/_projects/mps.md"><i class="material-icons md-18" role="presentation">&#xE254;</i>Edit on GitHub</a>
+    <div class="drawer-separator"></div>
+    
+       
+    
+       
+    
+       
+    
+       
+          <a class="mdl-navigation__link" href="/people/">
+            <i class="material-icons md-18" role="presentation">people</i> People
+          </a>
+       
+    
+       
+          <a class="mdl-navigation__link" href="/projects/">
+            <i class="material-icons md-18" role="presentation">code</i> Projects
+          </a>
+       
+    
+       
+          <a class="mdl-navigation__link" href="/publications/">
+            <i class="material-icons md-18" role="presentation">book</i> Publications
+          </a>
+       
+    
+  </nav>
+</div>
+
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <title> f </title>
+<style>
+.customized {
+    width: 65%;
+    align: center;
+}
+</style>
+ <div class="home">
+    <div class="demo-container mdl-grid">
+
+      <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+
+      <div class="demo-content mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800 customized">
+        <div class="mdl-layout-spacer"></div> 
+        <h4 align="center"> Multiprocessor Scheduling </h4>
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect home">
+  <div class="mdl-tabs__tab-bar">
+    <a href="#overview-panel" class="mdl-tabs__tab is-active"> Project </a>
+    <a href="#people-panel" class="mdl-tabs__tab"> People Involved </a>
+    <a href="#ack-panel" class="mdl-tabs__tab"> Acknowledgments </a>
+  </div>
+
+  <div class="mdl-tabs__panel is-active" id="overview-panel">
+    	<p>Project 1</p>
+
+<p>DP-FAIR: A Simple Model for Understanding Optimal Multiprocessor Scheduling</p>
+
+<p>Members: Greg Levin, Caitlin Sadowski, Ian Pye, Scott Brandt (with Shelby Funk)</p>
+
+<p>We consider the problem of optimal real-time scheduling of periodic and sporadic tasks for identical multiprocessors. A number of recent papers have used the notions of fluid scheduling and deadline partitioning to guarantee optimality and improve performance. Prior work has been theoretically challenging and algorithmically complex. With this project, we have developed a unifying theory with the DP-FAIR scheduling policy to clarify the problem of optimal scheduling. We have also devised a simple scheduling algorithm, DP-WRAP, which serves as a least common ancestor to more complex recent algorithms. We are now working to extend the DP-FAIR scheduling theory to broader problem domains, and to refine DP-WRAP to improve its performance.</p>
+
+<p>Publications:</p>
+
+<p>DP-FAIR: A Simple Model for Understanding Optimal Multiprocessor Scheduling, Greg Levin, Shelby Funk, Caitlin Sadowski, Ian Pye, Scott Brandt. ECRTS 2010.</p>
+
+<p>SNS: A Simple Model for Understanding Optimal Hard Real-Time Multiprocessor Scheduling, Greg Levin, Caitlin Sadowski, Ian Pye, Scott Brandt.  UCSC Tech Report.  (This is the preliminary version of the work that would eventually be published, in collaboration with Shelby Funk, as DP-FAIR.  It contains a section on Scheduling Duality and an extended survey of other work in the field.)</p>
+
+<p>Project 2</p>
+
+<p>RUN: Optimal Multiprocessor Real-Time Scheduling via Reduction to Uniprocessor</p>
+
+<p>Members: Greg Levin, Scott Brandt (with Paul Regnier, George Lima, Ernesto Massa)</p>
+
+<p>Existing optimal multiprocessor real-time schedulers incur significant overhead for preemptions and migrations. We present RUN, a new approach to optimal scheduling which reduces the multiprocessor problem to a series of uniprocessor problems. RUN is observed to have no more than three preemptions per job, reduces to Partitioned EDF whenever a proper partitioning is found, and significantly outperforms existing optimal algorithms.</p>
+
+<p>Publications:</p>
+
+<p>RUN: Optimal Multiprocessor Real-Time Scheduling via Reduction to Uniprocessor, Paul Regnier, George Lima, Ernesto Massa, Greg Levin, Scott Brandt.  To appear.</p>
+
+<p>Publications:
+G. Levin, Funk, S., Sadowski, C., Pye, I., and Brandt, S., “DP-FAIR: A Simple Model for Understanding Optimal Multiprocessor Scheduling”, in Euromicro Conference on Real-Time Systems (ECRTS) (Best Paper Award), Brussels, Belgium, 2010, pp. 3 - 13.
+P. Regnier, Lima, G., Massa, E., Levin, G., and Brandt, S., “RUN: Optimal Multiprocessor Real-Time Scheduling via Reduction to Uniprocessor”, in RTSS 2011 (Best Paper Award), Vienna, Austria, 2011.</p>
+
+  </div>
+
+  <div class="mdl-tabs__panel" id="people-panel">
+     	<h4> Participants </h4>
+        <ul>
+        
+          
+          
+          
+               <li> <a href="/people/alexander-sasha-ames">Alexander "Sasha" Ames</a></li>
+          
+          
+
+     	 
+          
+          
+          
+               <li> <a href="/people/varun-bhagwan">Varun Bhagwan</a></li>
+          
+          
+
+     	 
+     	 </ul>
+  </div>
+  
+   <div class="mdl-tabs__panel" id="ack-panel">
+     
+     
+        <h4> Sponsors </h4>
+        <ul>
+        
+     	   <li>LLNL</li>
+     	  
+     	   <li>ISSDM</li>
+     	  
+     	   <li>IBM Almaden</li>
+     	  
+     	</ul>
+     
+  </div>
+</div>
+
+        <div class="mdl-layout-spacer"></div>
+      </div>
+
+    </div>
+</div>
+        </div>
+      </main>
+      <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Systems Research Lab</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a class="highlight" href="http://ucsc.edu/">UCSC Home</a></li>
+      <li><a class="highlight" href="http://soe.ucsc.edu/">BSOE Home</a></li>
+      <li><a class="highlight" href="http://issdm.soe.ucsc.edu/">ISSDM Home</a></li>
+      <div class="edit_desktop">
+        <li><a class="highlight" href="https://github.com/systemslab/systemslab.github.io/edit/master/_projects/mps.md">Edit on GitHub</a></li>
+      </div>
+    </ul>
+
+  </div>
+
+</footer>
+
+    </div>
+  </body>
+</html>
