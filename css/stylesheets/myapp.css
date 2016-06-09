@@ -25,18 +25,24 @@
   font-size: 48px;
 }
 
-/* line 9, ../sass/_main.scss */
+/* Override default hotpink link color from material.min.css */
+/* line 10, ../sass/_main.scss */
+a {
+  color: #00e;
+}
+
+/* line 14, ../sass/_main.scss */
 .thin-border {
   margin-top: -15px;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-/* line 14, ../sass/_main.scss */
+/* line 19, ../sass/_main.scss */
 a {
   width: auto !important;
 }
 
-/* line 18, ../sass/_main.scss */
+/* line 23, ../sass/_main.scss */
 .vertical-line {
   border-left: rgba(0, 0, 0, 0.12) 1px solid;
   padding-right: 20px;
@@ -47,14 +53,14 @@ a {
  * if you want a picture instead of a gradient in the header.
  */
 /* Resizes logo to fit in the navbar */
-/* line 29, ../sass/_main.scss */
+/* line 34, ../sass/_main.scss */
 .site-logo {
   width: 230px;
   height: 36px;
 }
 
 /* Adds a gradient to this */
-/* line 35, ../sass/_main.scss */
+/* line 40, ../sass/_main.scss */
 .mdl-layout__header {
   background: #525252;
   /* fallback for old browsers */
@@ -64,30 +70,30 @@ a {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/* line 45, ../sass/_main.scss */
+/* line 50, ../sass/_main.scss */
 .is-small-screen .mdl-layout-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 50, ../sass/_main.scss */
+/* line 55, ../sass/_main.scss */
 .is-small-screen .edit_desktop {
   display: none;
 }
 
-/* line 55, ../sass/_main.scss */
+/* line 60, ../sass/_main.scss */
 .spacer {
   flex-grow: 1;
 }
 
-/* line 59, ../sass/_main.scss */
+/* line 64, ../sass/_main.scss */
 .description {
   font-size: 12px;
   text-indent: 10px;
   color: grey;
 }
 
-/* line 66, ../sass/_main.scss */
+/* line 71, ../sass/_main.scss */
 .descrip-title {
   font-size: 12px;
   text-transform: uppercase;
@@ -95,23 +101,23 @@ a {
 }
 
 /* highlight navbar on hover */
-/* line 74, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 .highlight:hover {
   color: #37474f;
 }
 
-/* line 79, ../sass/_main.scss */
+/* line 84, ../sass/_main.scss */
 .active .text {
   color: #37474f;
 }
 
-/* line 84, ../sass/_main.scss */
+/* line 89, ../sass/_main.scss */
 .inactive-text {
   color: dark-grey;
 }
 
 /* slick carousel css */
-/* line 90, ../sass/_main.scss */
+/* line 95, ../sass/_main.scss */
 .banner-background {
   background-color: #f3f3f3;
   -webkit-box-shadow: 0px 2px 2px #c3c3c3;
@@ -119,17 +125,17 @@ a {
   box-shadow: 0px 2px 2px #c3c3c3;
 }
 
-/* line 97, ../sass/_main.scss */
+/* line 102, ../sass/_main.scss */
 .inner-content {
   padding-right: 60px;
 }
-/* line 99, ../sass/_main.scss */
+/* line 104, ../sass/_main.scss */
 .inner-content .format-content {
   padding-top: 15px;
   margin-bottom: 15px;
 }
 
-/* line 107, ../sass/_main.scss */
+/* line 112, ../sass/_main.scss */
 .inner-content img {
   width: 720px;
   height: 340px;
@@ -138,20 +144,35 @@ a {
 }
 
 /* arrow keys  */
-/* line 115, ../sass/_main.scss */
+/* line 120, ../sass/_main.scss */
 .slick-prev:before, .slick-next:before {
   color: grey !important;
 }
 
-/* line 119, ../sass/_main.scss */
+/* line 124, ../sass/_main.scss */
 .slick-next {
   margin-left: 10%;
   margin-right: 5%;
 }
 
-/* line 124, ../sass/_main.scss */
+/* line 129, ../sass/_main.scss */
 .mdl-card__media {
   background-color: #48617F;
+}
+
+/* tab colors */
+/* line 135, ../sass/_main.scss */
+.mdl-tabs .mdl-tabs__tab.is-active {
+  color: #48617F;
+}
+/* line 138, ../sass/_main.scss */
+.mdl-tabs .mdl-tabs__tab.is-active.is-active {
+  color: #48617F;
+}
+
+/* line 143, ../sass/_main.scss */
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  background: #48617F;
 }
 
 /* Makes images with the img-circle class into a circle
@@ -270,7 +291,7 @@ a {
 .demo-card-square > .mdl-card__title {
   color: #fff;
   height: auto;
-  background: url("../assets/demos/dog.png") bottom right 15% no-repeat #48617F;
+  background: bottom right 15% no-repeat #48617F;
 }
 
 /* line 1, ../sass/_sidebar.scss */
@@ -538,28 +559,27 @@ body .demo-blog {
 
 /* line 165, ../sass/_posts.scss */
 .demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media {
-  background-image: url("images/road_big.jpg");
   height: 280px;
 }
 
-/* line 169, ../sass/_posts.scss */
+/* line 168, ../sass/_posts.scss */
 .demo-blog--blogpost .comments {
   background-color: #EEE;
 }
 
-/* line 172, ../sass/_posts.scss */
+/* line 171, ../sass/_posts.scss */
 .demo-blog--blogpost .meta > * {
   align-items: center;
 }
 
-/* line 175, ../sass/_posts.scss */
+/* line 174, ../sass/_posts.scss */
 .demo-blog--blogpost .meta + .mdl-card__supporting-text {
   border: 0;
   display: flex;
   flex-direction: column;
 }
 
-/* line 180, ../sass/_posts.scss */
+/* line 179, ../sass/_posts.scss */
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 512px;
   margin: 16px auto;
@@ -567,7 +587,7 @@ body .demo-blog {
   line-height: 28px;
 }
 
-/* line 187, ../sass/_posts.scss */
+/* line 186, ../sass/_posts.scss */
 .demo-blog--blogpost .demo-back {
   position: absolute;
   top: 16px;
@@ -576,23 +596,23 @@ body .demo-blog {
   z-index: 9999;
 }
 
-/* line 194, ../sass/_posts.scss */
+/* line 193, ../sass/_posts.scss */
 .demo-blog .section-spacer {
   flex-grow: 1;
 }
 
-/* line 197, ../sass/_posts.scss */
+/* line 196, ../sass/_posts.scss */
 .demo-blog .something-else {
   overflow: visible;
   z-index: 10;
 }
 
-/* line 201, ../sass/_posts.scss */
+/* line 200, ../sass/_posts.scss */
 .demo-blog .amazing .mdl-card__title {
   background-color: #263238;
 }
 
-/* line 204, ../sass/_posts.scss */
+/* line 203, ../sass/_posts.scss */
 .demo-blog .minilogo {
   width: 44px;
   height: 44px;
@@ -605,7 +625,7 @@ body .demo-blog {
 }
 
 /* Fixes for IE 10 */
-/* line 216, ../sass/_posts.scss */
+/* line 215, ../sass/_posts.scss */
 .mdl-grid {
   display: flex !important;
 }

@@ -6,6 +6,11 @@
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
 
+/* Override default hotpink link color from material.min.css */
+a {
+    color: #00e;
+}
+
 .thin-border {
   margin-top: -15px;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
@@ -124,3 +129,18 @@ a{
 .mdl-card__media{
    background-color: #48617F;
 }
+
+
+/* tab colors */
+.mdl-tabs .mdl-tabs__tab.is-active {
+    color: #48617F;
+    
+    &.is-active {
+	    color: #48617F;
+	  }
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+    background: #48617F;
+}
+
