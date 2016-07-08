@@ -1,10 +1,11 @@
 ---
 layout: page
 permalink: /events/
-group: hidden
+icon: perm_contact_calendar
 title: Events
+group: hidden
 ---
-<h4 align="center"> All events </h4>
+<h4 align="center"> Events, archived </h4>
 {% assign sorted_events = site.events | sort: 'date' | reverse %}
 <ul>
 {% for item in sorted_events %}

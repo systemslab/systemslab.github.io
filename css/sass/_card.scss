@@ -49,8 +49,14 @@
 .demo-card-square .mdl-card {
   width: 320px;
   height: 320px;
+  
 
 }
+
+.demo-card-square:hover {
+    opacity: 0.4;
+}
+
 .demo-card-square > .mdl-card__title {
   color: #fff;
 	height: auto;

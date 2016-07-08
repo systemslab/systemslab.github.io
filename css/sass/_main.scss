@@ -11,9 +11,30 @@ a {
     color: #00e;
 }
 
+.mdl-mini-footer {
+  background-color: white;
+   margin-top: -10px;
+}
+
 .thin-border {
   margin-top: -15px;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.project-border {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.limit-border {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.inset {
+  background: #f0f0f0;
+  padding-right: 10px;
+  padding-left: 10px;
+  
 }
 
 a{

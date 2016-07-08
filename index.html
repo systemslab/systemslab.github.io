@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <span class="mdl-layout--large-screen-only">
 {% include banner.js %}
 {% include banner.html %}
@@ -9,15 +10,15 @@ layout: default
 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect mdl-button--accent home">
 
   <div class="mdl-tabs__tab-bar">
-    <a href="#news-panel" class="mdl-tabs__tab is-active"> News </a>
-    <a href="#events-panel" class="mdl-tabs__tab"> Events </a>
+    <a href="#news-panel" class="mdl-tabs__tab is-active"> Recent News </a>
+    <a href="#events-panel" class="mdl-tabs__tab"> Recent Events </a>
   </div>
 
   <div class="mdl-tabs__panel is-active demo-blog" id="news-panel">
     <div class="mdl-grid max-width">
     	{% include news.html %}
     </div>
-         	<h5 align="center"> <a href="/news/"> See all news </a> </h5> 
+<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/news/"><i class="material-icons md-18">dashboard</i>See all news</a>
 
   </div>
 
@@ -27,7 +28,7 @@ layout: default
      	{% include events.html %} <!-- limits view to 4 events !-->
       <div class="mdl-layout-spacer"></div>
     </div>
-         	<h5 align="center"> <a href="/events/"> See all events </a> </h5> 
+<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/events/"><i class="material-icons md-18">perm_contact_calendar</i> See all events</a>
 
   </div>
 </div>

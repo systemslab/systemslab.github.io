@@ -45,9 +45,10 @@ layout: page
 
     <h4> Publications </h4>
     {% assign name = page.name | split: ' ' %}
+    {% assign firstname = name[0] %}
     {% assign lastname = name[1] %}
     
-    {% bibliography --template person-pub --query @*[author ~= {{ lastname }}] %}
+    {% bibliography --template person-pub --query @*[author ~= {{ lastname }}, {{ firstname }}] %}
     </div>
 
 
