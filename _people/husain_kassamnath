@@ -1,5 +1,7 @@
+---
 layout: person
 name: Husain Kassamnath
+icon: /assets/images/avatars/husain.jpg
 category: student
 email: hkassamn@ucsc.edu
 office: E2-375
@@ -7,5 +9,6 @@ permalink: https://www.soe.ucsc.edu/people/husain
 website: https://husainkassamnath.wordpress.com/
 projects:
         - SIRIUS
+---
 
 Husain Kassamnath is a 2nd year graduate student working with Carlos Maltzahn on data refactorization for Ceph file systems. He received his B.E. at the Sardar Patel Institute of Technology, University of Mumbai in 2011 with a degree in Electronics Engineering. Husain has completed 4 years of work experience as a senior robotics engineer for Amada.
