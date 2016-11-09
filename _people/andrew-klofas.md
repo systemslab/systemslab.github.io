@@ -9,4 +9,3 @@ permalink: /people/andrew-klofas
 ---
 
 Andrew is a second year Ph.D. student in computer science.
--

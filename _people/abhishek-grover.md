@@ -1,7 +1,7 @@
 ---
 layout: person
 name: Abhishek Grover
-icon: /assets/images/avatars/14368774_10205969172708651_3532020785384082390_n.jpg
+icon: /assets/images/avatars/abhishek-grover.jpg
 category: student
 email: abgrover@ucsc.edu
 permalink: /people/abhishek-grover
