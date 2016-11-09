@@ -3,15 +3,23 @@ layout: person
 name: Ivo Jimenez
 icon: /assets/images/avatars/ivo-jimenez.jpg
 category: student
-email: ivo@soe.ucsc.edu
+email: ivo@cs.ucsc.edu
 permalink: /people/ivo-jimenez
-website: http://users.soe.ucsc.edu/~ivo/
+website: http://cs.ucsc.edu/~ivo/
 projects:
+        - Reproducibility
         - Predictable Performance Management and Simulation
         - Scientific Data Management
 ---
 
-Ivo is a 3rd year PhD student at the UCSC Computer Science Department, and a
-member of the Systems Research Lab, advised by Professor Carlos Maltzahn.
-Currently, he is a collaborator of the DAMASC project, investigating ways of
-fusing data management services with file systems.
+Ivo Jimenez is a PhD candidate at the UC Santa Cruz Computer Science 
+Department and a member of the Systems Research Lab. His interests 
+center around distributed storage and data management systems. His 
+current research focuses on the reproducible evaluation and validation 
+of systems research. In particular, he is interested in developing new 
+methodologies for making it practical for researchers to generate 
+reproducible academic articles. Ivo holds a B.S. in Computer Science 
+from University of Sonora and is a UCMEXUS/CoNaCyT doctoral fellow. 
+Before joining the PhD program, he worked for four years as a Research 
+Associate at HP Labs working in the Advanced Database Research 
+laboratory.
