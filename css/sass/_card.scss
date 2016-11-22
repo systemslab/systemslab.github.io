@@ -1,0 +1,66 @@
+.demo-card-event{
+	padding-bottom: 30px;
+}
+
+.home{
+	.mdl-grid {
+		max-width: 100%;
+		margin: auto;
+		.mdl-card {
+			.mdl-card__media {
+				margin: 0;
+			}
+			.mdl-card__media > img {
+				max-width: 100%;
+			}
+			.mdl-card__actions {
+				display: flex;
+				box-sizing:border-box;
+				align-items: center;
+				position: absolute;
+			  bottom: 0px;
+			}
+
+			.mdl-card__actions > .mdl-button--icon {
+				margin-right: 3px;
+				margin-left: 3px;
+			}
+		}
+
+		.demo-content {
+		   padding-top: 15px;
+		   padding-bottom: 15px;
+		   padding-right:20px;
+		   padding-left: 20px;
+
+		}
+
+		.portfolio-card {
+		   padding-right:20px;
+		   padding-left: 20px;
+		   padding-bottom: -50px; /* to undo padding for project description */
+
+		}
+	}
+}
+
+
+/* For cards on the project page */
+.demo-card-square .mdl-card {
+  width: 320px;
+  height: 320px;
+  
+
+}
+
+.demo-card-square:hover {
+    opacity: 0.4;
+}
+
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+	height: auto;
+  background:
+    bottom right 15% no-repeat #48617F;
+
+}

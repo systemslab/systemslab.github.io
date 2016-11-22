@@ -1,0 +1,55 @@
+---
+layout: page
+---
+<article class="post">
+  <div class="post-content">
+    <h3> {{ page.title }} </h3>
+	<div class="mdl-card__actions mdl-card--border"></div>
+    	{% if page.icon %}
+    	<div style="padding-left: 10px;" class="person right">
+    	   <div class="contact-border"> 
+    	     <div style="text-align: center;">
+		       <p><img class="img-circle img-small" src="{{ page.icon }}" /> <br></p>
+		     </div>
+		    <div style="display: inline-block; text-align: left; max-width: 250px;">
+		      {% if page.titles %}
+			   {% for t in page.titles %}
+			    	<li>{{t}}</li>
+			   {% endfor %}
+			  {% endif %} 
+			  {% if page.office %}	
+	     	  <b>Office: </b> {{ page.office }}<br>
+	     	  {% endif %}
+	     	  {% if page.email %}
+	     	  <b>Email: </b> {{ page.email }}
+	     	  {% endif %}
+	     	</div>
+	     	</div>
+	    </div> 
+	    {% endif %}
+	    
+	    
+	    <div class="pad-right"> {{ content }} </div>
+
+
+
+    {% if page.interests %}
+      <h4> Research Interests </h4>
+       {% capture interests %}
+        {% for interest in page.interests %}
+          {{ interest }}, 
+        {% endfor %}
+       {% endcapture %}
+       {{ interests | strip | append: '@' | remove: ',@' | capitalize | append: '.'}}
+    {% endif %}
+
+    <h4> Publications </h4>
+    {% assign name = page.name | split: ' ' %}
+    {% assign firstname = name[0] %}
+    {% assign lastname = name[1] %}
+    
+    {% bibliography --template person-pub --query @*[author ~= {{ lastname }}, {{ firstname }}] %}
+    </div>
+
+
+</article>

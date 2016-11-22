@@ -57,15 +57,27 @@ a {
 /* line 33, ../sass/_main.scss */
 .inset {
   background: #f0f0f0;
+<<<<<<< HEAD
   padding: 10px 10px 10px 10px;
 }
 
 /* line 39, ../sass/_main.scss */
+=======
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* line 40, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 a {
   width: auto !important;
 }
 
+<<<<<<< HEAD
 /* line 43, ../sass/_main.scss */
+=======
+/* line 44, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .vertical-line {
   border-left: rgba(0, 0, 0, 0.12) 1px solid;
   padding-right: 20px;
@@ -76,14 +88,22 @@ a {
  * if you want a picture instead of a gradient in the header.
  */
 /* Resizes logo to fit in the navbar */
+<<<<<<< HEAD
 /* line 54, ../sass/_main.scss */
+=======
+/* line 55, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .site-logo {
   width: 230px;
   height: 36px;
 }
 
 /* Adds a gradient to this */
+<<<<<<< HEAD
 /* line 60, ../sass/_main.scss */
+=======
+/* line 61, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .mdl-layout__header {
   background: #525252;
   /* fallback for old browsers */
@@ -93,30 +113,50 @@ a {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+<<<<<<< HEAD
 /* line 70, ../sass/_main.scss */
+=======
+/* line 71, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .is-small-screen .mdl-layout-title {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+<<<<<<< HEAD
 /* line 75, ../sass/_main.scss */
+=======
+/* line 76, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .is-small-screen .edit_desktop {
   display: none;
 }
 
+<<<<<<< HEAD
 /* line 80, ../sass/_main.scss */
+=======
+/* line 81, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .spacer {
   flex-grow: 1;
 }
 
+<<<<<<< HEAD
 /* line 84, ../sass/_main.scss */
+=======
+/* line 85, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .description {
   font-size: 12px;
   text-indent: 10px;
   color: grey;
 }
 
+<<<<<<< HEAD
 /* line 91, ../sass/_main.scss */
+=======
+/* line 92, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .descrip-title {
   font-size: 12px;
   text-transform: uppercase;
@@ -124,23 +164,39 @@ a {
 }
 
 /* highlight navbar on hover */
+<<<<<<< HEAD
 /* line 99, ../sass/_main.scss */
+=======
+/* line 100, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .highlight:hover {
   color: #37474f;
 }
 
+<<<<<<< HEAD
 /* line 104, ../sass/_main.scss */
+=======
+/* line 105, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .active .text {
   color: #37474f;
 }
 
+<<<<<<< HEAD
 /* line 109, ../sass/_main.scss */
+=======
+/* line 110, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .inactive-text {
   color: dark-grey;
 }
 
 /* slick carousel css */
+<<<<<<< HEAD
 /* line 115, ../sass/_main.scss */
+=======
+/* line 116, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .banner-background {
   background-color: #f3f3f3;
   -webkit-box-shadow: 0px 2px 2px #c3c3c3;
@@ -148,17 +204,29 @@ a {
   box-shadow: 0px 2px 2px #c3c3c3;
 }
 
+<<<<<<< HEAD
 /* line 122, ../sass/_main.scss */
 .inner-content {
   padding-right: 60px;
 }
 /* line 124, ../sass/_main.scss */
+=======
+/* line 123, ../sass/_main.scss */
+.inner-content {
+  padding-right: 60px;
+}
+/* line 125, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .inner-content .format-content {
   padding-top: 15px;
   margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 /* line 132, ../sass/_main.scss */
+=======
+/* line 133, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .inner-content img {
   width: 720px;
   height: 340px;
@@ -167,33 +235,57 @@ a {
 }
 
 /* arrow keys  */
+<<<<<<< HEAD
 /* line 140, ../sass/_main.scss */
+=======
+/* line 141, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .slick-prev:before, .slick-next:before {
   color: grey !important;
 }
 
+<<<<<<< HEAD
 /* line 144, ../sass/_main.scss */
+=======
+/* line 145, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .slick-next {
   margin-left: 10%;
   margin-right: 5%;
 }
 
+<<<<<<< HEAD
 /* line 149, ../sass/_main.scss */
+=======
+/* line 150, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .mdl-card__media {
   background-color: #48617F;
 }
 
 /* tab colors */
+<<<<<<< HEAD
 /* line 155, ../sass/_main.scss */
 .mdl-tabs .mdl-tabs__tab.is-active {
   color: #48617F;
 }
 /* line 158, ../sass/_main.scss */
+=======
+/* line 156, ../sass/_main.scss */
+.mdl-tabs .mdl-tabs__tab.is-active {
+  color: #48617F;
+}
+/* line 159, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .mdl-tabs .mdl-tabs__tab.is-active.is-active {
   color: #48617F;
 }
 
+<<<<<<< HEAD
 /* line 163, ../sass/_main.scss */
+=======
+/* line 164, ../sass/_main.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
   background: #48617F;
 }
@@ -317,6 +409,7 @@ a {
   height: 320px;
 }
 
+<<<<<<< HEAD
 /* line 57, ../sass/_card.scss */
 .mdl-card__title-text {
   color: #000;
@@ -357,6 +450,14 @@ a {
 }
 
 /* line 96, ../sass/_card.scss */
+=======
+/* line 56, ../sass/_card.scss */
+.demo-card-square:hover {
+  opacity: 0.4;
+}
+
+/* line 60, ../sass/_card.scss */
+>>>>>>> 59dd7c9449824ec17ed742c03088e1ca71a98fe6
 .demo-card-square > .mdl-card__title {
   color: #fff;
   height: auto;
