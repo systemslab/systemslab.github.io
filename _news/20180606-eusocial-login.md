@@ -1,5 +1,5 @@
 ---
-title: Eusocial Storage Devices in USENIX ;login:
+title: Eusocial Storage Devices in USENIX login Magazine
 date:   2018-06-06 00:00:00 -0800
 blurb: Philip Kufeldt, Carlos Maltzahn, Tim Feldman, Christine Green, Grant Mackey, and Shingo Tanaka co-author a vision paper on storage devices that can talk to each other and provide services collectively.
 ---
