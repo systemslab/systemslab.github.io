@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<title>
+
+   Shinpei Kato Managing GPUs as First-Class Operating System Resources | 
+ Systems Research Lab
+</title>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>110711_kato</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="Seminar Telecast from UCSC to LANL">
+  <!-- Support for toolbar color in Chrome on Android -->
+  <meta name="theme-color" content="#136a8a">
+
+  <!-- MDL CSS/JS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.teal-indigo.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  
+  <!-- Slick CSS/JS -->
+  <link rel="stylesheet" type="text/css" href="/assets/slick/slick.css"/>
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  <link rel="stylesheet" type="text/css" href="/assets/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="/assets/slick/slick.min.js"></script>
+
+  <!-- MDL specific CSS generated from Compass -->
+  <link href="/css/stylesheets/myapp.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="/css/stylesheets/main.css">
+  <link rel="canonical" href="http://systems.soe.ucsc.edu/events/2011/11/07/110711_kato">
+  <link rel="alternate" type="application/rss+xml" title="Systems Research Lab" href="http://systems.soe.ucsc.edu/feed.xml">
+  <link rel="shortcut icon" href="/assets/images/Logos/favicon2.ico" /> 
+
+</head>
+
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button">
+      <!-- Always shows a header, even in smaller screens. -->
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title"><a href="/"><img class="site-logo" src="/assets/images/Logos/Baskin_logo2.png"</img></a></span>
+    <!-- Add spacer, to align navigation to the right -->
+    <div class="mdl-layout-spacer"></div>
+    <!-- Navigation. We hide it in small screens. -->
+    <nav class="mdl-navigation mdl-layout--large-screen-only">
+      
+        <a class="mdl-navigation__link highlight" href="/"> <i class="material-icons md-18" role="presentation">home</i>&nbsp;Home</a>
+      
+
+      
+         
+      
+         
+      
+         
+      
+         
+      
+         
+      
+         
+            
+            <a class="mdl-navigation__link highlight" href="/people/">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">people</i>&nbsp;People </div>
+            </a>
+            
+         
+      
+         
+            
+            <a class="mdl-navigation__link highlight" href="/projects/">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">code</i>&nbsp;Projects </div>
+            </a>
+            
+         
+      
+         
+            
+            <a class="mdl-navigation__link highlight" href="/publications/">
+            <div class="inactive-text"><i class="material-icons md-18" role="presentation">book</i>&nbsp;Publications </div>
+            </a>
+            
+         
+      
+         
+      
+    </nav>
+  </div>
+</header>
+
+      <div class="drawer mdl-layout__drawer">
+  <span class="mdl-layout-title"><img class="logo-image" src="/assets/images/Logos/Baskin_logo2.png"></span>
+  <nav class="navigation mdl-navigation">
+    <a class="mdl-navigation__link" href="http://systems.soe.ucsc.edu"><i class="material-icons md-18" role="presentation">home</i>Home</a>
+    <a class="mdl-navigation__link" href="https://github.com/systemslab/systemslab.github.io/edit/master/_events/110711_kato.md"><i class="material-icons md-18" role="presentation">&#xE254;</i>Edit on GitHub</a>
+    <div class="drawer-separator"></div>
+    
+       
+          <a class="mdl-navigation__link" href="/events/">
+            <i class="material-icons md-18" role="presentation"></i> Events
+          </a>
+       
+    
+       
+    
+       
+    
+       
+    
+       
+          <a class="mdl-navigation__link" href="/news/">
+            <i class="material-icons md-18" role="presentation"></i> News
+          </a>
+       
+    
+       
+          <a class="mdl-navigation__link" href="/people/">
+            <i class="material-icons md-18" role="presentation">people</i> People
+          </a>
+       
+    
+       
+          <a class="mdl-navigation__link" href="/projects/">
+            <i class="material-icons md-18" role="presentation">code</i> Projects
+          </a>
+       
+    
+       
+          <a class="mdl-navigation__link" href="/publications/">
+            <i class="material-icons md-18" role="presentation">book</i> Publications
+          </a>
+       
+    
+       
+    
+  </nav>
+</div>
+
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="demo-container mdl-grid">
+    <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+    <div style="padding: 10px;" class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+      <!-- Navigation heirachy to the post -->
+      <div class="demo-crumbs mdl-color-text--grey-500"><a class="highlight" href="/"> Systems Research Lab</a> &gt; <a class="highlight" href="/events"> Events</a><br> Shinpei Kato Managing GPUs as First-Class Operating System Resources</div><br>
+      <!-- Event title -->
+      <h3>Shinpei Kato Managing GPUs as First-Class Operating System Resources</h3>
+      <!-- Post date -->
+      <div class="demo-crumbs mdl-color-text--grey-500">
+        <p class="post-meta">
+          <time datetime="2011-11-07T10:00:00-08:00" itemprop="datePublished">Nov 7, 2011</time><br>
+          LANL - Access Grid Room and UCSC - E2 586
+          
+        </p>
+      </div>
+      <!-- Post contents -->
+      <p>Seminar Telecast from UCSC to LANL</p>
+
+<p>Managing GPUs as First-Class Operating System Resources
+by Shinpei Kato, Visiting Scientist, UCSC</p>
+
+<p>[ABSTRACT] The graphics processing unit (GPU) is becoming one of the most
+powerful platforms to support high-performance computing. Due to recent advances
+in programming support for general-purpose computation on GPUs, also known as
+GPGPU, GPUs are now used in not only graphics but also general compute domains.
+This talk presents Gdev, a new approach to GPU resource management in operating
+systems. Gdev manages GPUs as first-class operating system resources so that
+GPU-accelerated applications can be provided with fine-grained prioritization
+and isolation in multi-tasking environments. Gdev also provides a unified
+application programming interface for operating systems and user-space programs.
+This unified interface enables operating systems to launch GPU code directly,
+while user-space programs can also launch the same GPU code through system calls,
+such as “ioctl”, or user-space Gdev runtime. We believe that Gdev will broaden
+a class of applications that benefit from GPUs and enhance the reliability of
+GPU computing.</p>
+
+<p>[BIO] Shinpei Kato is a Visiting Assistant Research Computer Scientist in the
+Department of Computer Science at University of California, Santa Cruz. He
+received his B.S., M.S., and Ph.D. degrees from Keio University in 2004, 2006,
+and 2008 respectively. He has also worked at The University of Tokyo and
+Carnegie Mellon University from 2009 to 2011 as a postdoctoral scientist. His
+research interests include, real-time systems, operating systems, and parallel
+and distributed systems. More information is available at his website
+(http://users.soe.ucsc.edu/~shinpei).</p>
+
+    </div>
+  </div>
+</article>
+
+        </div>
+      </main>
+      <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Systems Research Lab</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a class="highlight" href="https://cross.ucsc.edu/">CROSS Home</a></li>
+      <li><a class="highlight" href="https://issdm.soe.ucsc.edu/">ISSDM Home</a></li>
+      <li><a class="highlight" href="https://soe.ucsc.edu/">BSOE Home</a></li>
+      <li><a class="highlight" href="https://ucsc.edu/">UCSC Home</a></li>
+      <div class="edit_desktop">
+        <li><a class="highlight" href="https://github.com/systemslab/systemslab.github.io/edit/master/_events/110711_kato.md">Edit on GitHub</a></li>
+      </div>
+    </ul>
+
+  </div>
+
+</footer>
+
+    </div>
+  </body>
+</html>
